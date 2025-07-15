@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import logo from '../assets/logo_01.png';
 
 export const Navbar = () => {
   const location = useLocation();
@@ -26,17 +27,18 @@ export const Navbar = () => {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link 
-              to="/" 
-              className="text-xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent"
+            <Link
+              to="/"
+              className="text-xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent flex items-center space-x-2"
               onClick={handleLinkClick}
             >
-              超材料與超元件實驗室
+              <img src={logo} alt="實驗室 Logo" className="h-5" />
+              <span className="whitespace-nowrap">超材料與超元件實驗室</span> {/* ADDED whitespace-nowrap */}
             </Link>
           </div>
 
           {/* Navigation Items */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
               <Link
                 key={item.path}

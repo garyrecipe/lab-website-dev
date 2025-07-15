@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <Layout>
       {/* 研究內容輪播 */}
-      <section className="relative bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
+      <section className="relative bg-gradient-to-r from-blue-50 to-indigo-50 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative h-[500px] overflow-hidden rounded-xl shadow-xl">
             {RESEARCH_TOPICS.map((topic, index) => (
