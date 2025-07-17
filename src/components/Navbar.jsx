@@ -38,7 +38,7 @@ export const Navbar = () => {
           </div>
 
           {/* Navigation Items */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}

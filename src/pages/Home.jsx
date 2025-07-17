@@ -5,17 +5,38 @@ import { LATEST_PUBLICATIONS } from '../data/publications';
 import { NEWS_LIST } from '../data/news';
 import { HiOutlineOfficeBuilding, HiOutlinePhone, HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import NewsModal from '../components/NewsModal'; // Import your new modal component
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  // --- BUG FIX: Declare these state variables ---
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
+  const [selectedNews, setSelectedNews] = useState(null); // State to hold the news item to display
+  // ---------------------------------------------
 
   // 自動輪播
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % RESEARCH_TOPICS.length);
-    }, 5000);
+    }, 8000);
     return () => clearInterval(timer);
   }, []);
+
+  // Sort NEWS_LIST by date in descending order and then take the first 6
+  // This ensures the 6 most recent news items are displayed.
+  const sortedAndSlicedNews = [...NEWS_LIST].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 6);
+
+  // Function to open the modal
+  const openNewsModal = (newsItem) => {
+    setSelectedNews(newsItem);
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeNewsModal = () => {
+    setIsModalOpen(false);
+    setSelectedNews(null); // Clear the selected news item when closing
+  };
 
   return (
     <Layout>
@@ -32,7 +53,7 @@ const Home = () => {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 h-full">
                   <div className="bg-white/90 backdrop-blur-sm p-8 flex flex-col justify-center">
-                    <h3 className="text-2xl font-semibold text-indigo-900 mb-4">
+                    <h3 className="text-3xl font-semibold text-indigo-900 mb-4">
                       {topic.title}
                     </h3>
                     <p className="text-gray-700 mb-6">{topic.description}</p>
@@ -76,10 +97,11 @@ const Home = () => {
             最新消息
           </h2>
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
-            {NEWS_LIST.slice(0, 10).map((news, index) => (
+            {sortedAndSlicedNews.map((news, index) => ( // Using sortedAndSlicedNews here as well, good.
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                onClick={() => openNewsModal(news)} // Add onClick handler
               >
                 <div className="flex h-full">
                   {news.image && (
@@ -194,8 +216,14 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* News Modal */}
+      <NewsModal
+        show={isModalOpen}
+        onClose={closeNewsModal}
+        newsItem={selectedNews}
+      />
     </Layout>
   );
 };
 
-export default Home; 
+export default Home;
