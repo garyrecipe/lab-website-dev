@@ -68,7 +68,7 @@ const Publications = () => {
             <input
               type="text"
               placeholder="搜尋論文標題、摘要、作者或期刊..."
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-2 bg-white rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
             />
@@ -100,7 +100,7 @@ const Publications = () => {
           {paginatedPublications.map(publication => (
             <div
               key={publication.id}
-              className="py-6 hover:bg-gray-50 transition-colors duration-150"
+              className="p-4 mb-4 bg-white rounded-lg shadow-md hover:bg-gray-50 transition-colors duration-150"
             >
               <div className="flex flex-col space-y-2">
                 <h2 className="text-xl font-semibold text-gray-900 group">
@@ -150,6 +150,8 @@ const Publications = () => {
                     </svg>
                     {publication.authors.join(', ')}
                   </span>
+                </div>
+                <div className="flex flex-wrap items-center text-sm text-gray-600 gap-x-4">
                   <span className="inline-flex items-center">
                     <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />

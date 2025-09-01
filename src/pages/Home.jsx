@@ -52,6 +52,13 @@ const Home = () => {
                 }`}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 h-full">
+                  <div className="relative">
+                    <img
+                      src={topic.image}
+                      alt={topic.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
                   <div className="bg-white/90 backdrop-blur-sm p-8 flex flex-col justify-center">
                     <h3 className="text-3xl font-semibold text-indigo-900 mb-4">
                       {topic.title}
@@ -63,13 +70,6 @@ const Home = () => {
                     >
                       了解更多 →
                     </Link>
-                  </div>
-                  <div className="relative">
-                    <img
-                      src={topic.image}
-                      alt={topic.title}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
                   </div>
                 </div>
               </div>
