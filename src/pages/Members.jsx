@@ -22,7 +22,7 @@ const Members = () => {
       <div className="space-y-12">
         {memberCategories.map(category => (
           <div key={category.title} className="bg-white/90 rounded-xl shadow-lg p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-indigo-900 mb-6">{category.title}</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mb-6">{category.title}</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {category.data.map((member, index) => (
                 <div key={index} className="flex flex-col items-center">
@@ -68,7 +68,7 @@ const Members = () => {
                       href={alumni.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block ml-2 mb-1 text-indigo-400 hover:text-indigo-600 align-middle"
+                      className="inline-block ml-2 mb-1 text-blue-400 hover:text-blue-600 align-middle"
                       title="前往公司網站"
                     >
                       <FaExternalLinkAlt />
@@ -97,7 +97,7 @@ const Members = () => {
                 className={`
                   cursor-pointer px-6 py-2.5 text-sm font-medium rounded-md transition-colors duration-200
                   ${activeTab === tab.id
-                    ? 'bg-indigo-600 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
                   }
                 `}

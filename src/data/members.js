@@ -18,7 +18,7 @@ export const PROFESSOR = {
     "2014/06 - 2015/06 帝國理工大學博士後研究員"
   ],
   awards: [
-    "104-106 獨立博士後研究員",
+    "104-106年 獨立博士後研究員",
     "103年 補助赴國外從事博士後研究",
     "斐陶斐獎章"
   ],
@@ -79,12 +79,12 @@ export const CURRENT_MEMBERS = {
     },
     {
       name: "陳冠文",
-      photo: "",
+      photo: "./images/members/m11.jpg",
       year: "二年級"
     },
     {
       name: "項品堯",
-      photo: "",
+      photo: "./images/members/m9.jpg",
       year: "長庚光電所共同指導 二年級"
     },
     {

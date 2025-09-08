@@ -13,7 +13,7 @@ const Contact = () => {
             </h2>
             <div className="space-y-4">
               <div className="flex items-start">
-                <HiOutlineOfficeBuilding className="w-6 h-6 text-indigo-600 mt-1 flex-shrink-0" />
+                <HiOutlineOfficeBuilding className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">辦公室位置</h3>
                   <p className="mt-1 text-gray-700">
@@ -23,19 +23,19 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <HiOutlinePhone className="w-6 h-6 text-indigo-600 mt-1 flex-shrink-0" />
+                <HiOutlinePhone className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">辦公室電話</h3>
                   <p className="mt-1 text-gray-700">02-29089899 ext. 6316</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <HiOutlineMail className="w-6 h-6 text-indigo-600 mt-1 flex-shrink-0" />
+                <HiOutlineMail className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">電子郵件</h3>
                   <a 
                     href="mailto:professor@mail.nsysu.edu.tw" 
-                    className="mt-1 text-indigo-600 hover:text-indigo-800 transition-colors duration-200"
+                    className="mt-1 text-blue-600 hover:text-blue-800 transition-colors duration-200"
                   >
                     huang.tsungyu@mail.mcut.edu.tw
                   </a>
@@ -51,7 +51,7 @@ const Contact = () => {
             </h2>
             <div className="space-y-4">
               <div className="flex items-start">
-                <HiOutlineLocationMarker className="w-6 h-6 text-indigo-600 mt-1 flex-shrink-0" />
+                <HiOutlineLocationMarker className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">實驗室位置</h3>
                   <p className="mt-1 text-gray-700">
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <HiOutlinePhone className="w-6 h-6 text-indigo-600 mt-1 flex-shrink-0" />
+                <HiOutlinePhone className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">實驗室電話</h3>
                   <p className="mt-1 text-gray-700">02-29089899 ext. </p>

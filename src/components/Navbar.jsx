@@ -22,17 +22,17 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md shadow-lg">
+    <nav className="bg-blue-950 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link
               to="/"
-              className="text-xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent flex items-center space-x-2"
+              className="text-2xl font-bold bg-white bg-clip-text text-transparent flex items-center space-x-2"
               onClick={handleLinkClick}
             >
-              <img src={logo} alt="實驗室 Logo" className="h-5" />
+              <img src={logo} alt="實驗室 Logo" className="h-7" />
               <span className="whitespace-nowrap">超材料與超元件實驗室</span> {/* ADDED whitespace-nowrap */}
             </Link>
           </div>
@@ -43,10 +43,10 @@ export const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                className={`px-2 py-2 rounded-md text-sm transition-colors duration-100 ${
                   location.pathname === item.path
-                    ? 'text-blue-700 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+                    ? 'font-bold text-blue-950 bg-white'
+                    : 'text-white hover:text-white hover:bg-blue-800'
                 }`}
               >
                 {item.label}
@@ -58,7 +58,7 @@ export const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-700 hover:bg-blue-50 focus:outline-none cursor-pointer"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-blue-950 hover:bg-blue-50 focus:outline-none cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
@@ -115,8 +115,8 @@ export const Navbar = () => {
               onClick={handleLinkClick}
               className={`block px-3 py-2 rounded-md text-base font-medium ${
                 location.pathname === item.path
-                  ? 'text-blue-700 bg-blue-50'
-                  : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+                  ? 'text-blue-950 bg-blue-50'
+                  : 'text-white hover:text-blue-700 hover:bg-white'
               }`}
             >
               {item.label}

@@ -22,14 +22,14 @@ const Equipment = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {equipment.name}
                 </h3>
-                <div className="bg-indigo-50 rounded-lg p-4 mb-4">
-                  <h4 className="text-sm font-medium text-indigo-900 mb-2">
+                <div className="bg-blue-50 rounded-lg p-4 mb-4">
+                  <h4 className="text-sm font-medium text-blue-900 mb-2">
                     主要用途
                   </h4>
                   <p className="text-gray-700 mb-4">
                     {equipment.purpose}
                   </p>
-                  <h4 className="text-sm font-medium text-indigo-900 mb-2">
+                  <h4 className="text-sm font-medium text-blue-900 mb-2">
                     規格
                   </h4>
                   <p className="text-gray-700">
@@ -37,7 +37,7 @@ const Equipment = () => {
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="text-sm font-medium text-indigo-900">
+                  <h4 className="text-sm font-medium text-blue-900">
                     設備特點
                   </h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-1">

@@ -16,65 +16,76 @@ const Professor = () => {
               <h2 className="text-3xl font-bold text-gray-900 mt-6">{PROFESSOR.name}</h2>
             </div>
             <div className="space-y-8">
+              {<div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">職稱</h3>
+                <ul className="space-y-3">
+                  <li
+                    className="text-gray-700 flex items-start"
+                  >
+                    <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
+                    <span>{PROFESSOR.title}</span>
+                  </li>
+                </ul>
+              </div>}
               <div>
-                <h3 className="text-xl font-semibold text-indigo-900 mb-4">學歷</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">學歷</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.education.map((edu, index) => (
                     <li 
                       key={index} 
                       className="text-gray-700 flex items-start"
                     >
-                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-indigo-500 mr-2" />
+                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
                       <span>{edu}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-indigo-900 mb-4">得獎紀錄</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">得獎紀錄</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.awards.map((award, index) => (
                     <li 
                       key={index} 
                       className="text-gray-700 flex items-start"
                     >
-                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-indigo-500 mr-2" />
+                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
                       <span>{award}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-indigo-900 mb-4">研究主題</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">研究主題</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.researchInterests.map((interest, index) => (
                     <li 
                       key={index} 
                       className="text-gray-700 flex items-start"
                     >
-                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-indigo-500 mr-2" />
+                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
                       <span>{interest}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              {/* <div>
-                <h3 className="text-xl font-semibold text-indigo-900 mb-4">聯絡資訊</h3>
+              {<div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">聯絡資訊</h3>
                 <ul className="space-y-3">
                   <li
                     className="text-gray-700 flex items-start"
                   >
-                    <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-indigo-500 mr-2" />
+                    <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
                     <span>{PROFESSOR.phone}</span>
                   </li>
                   <li
                     className="text-gray-700 flex items-start"
                   >
-                    <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-indigo-500 mr-2" />
+                    <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
                     <span>{PROFESSOR.email}</span>
                   </li>
                 </ul>
-              </div> */}
+              </div>}
             </div>
           </div>
         </div>
