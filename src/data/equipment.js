@@ -80,14 +80,14 @@ export const EQUIPMENT_LIST = [
   },
   {
     name: '傅立葉紅外線光譜儀',
-    image: '',
+    image: './images/equipment/e8.jpg',
     purpose: '利用紅外光源照射樣品，確認材料或化合物的分子結構與化學組成，判斷樣品是否為某種已知物質。',
     features: [
       '官能基辨識',
       '化學結構',
       'IR吸收峰'
     ],
-    spec: ''
+    spec: '廠牌／型號：PerkinElmer Spectrum Two/模組配置：具備兩套可更換模組，分別為 穿透（Transmission）模組 與 衰減全反射（ATR, Attenuated Total Reflection）模組，可依樣品性質與需求切換使用。'
   },
   {
     name: 'X光繞射儀',

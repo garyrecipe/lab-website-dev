@@ -1,9 +1,9 @@
-// 研究大綱
+// 研究大綱 https://placehold.co/1200x600
 export const RESEARCH_OVERVIEW = {
   title: "研究大綱",
   description: `本實驗室致力於超材料(Metamaterials)的設計、製造與應用研究。我們專注於開發具有特殊物理性質的人工結構材料，
     這些材料可以實現自然界中難以找到的特性。我們的研究涵蓋了從理論設計、數值模擬到實際製造和性能測試的完整流程。`,
-  image: "https://placehold.co/1200x600",
+  image: "./images/research/r0.jpg",
   imageCaption: "超材料研究領域概覽"
 };
 

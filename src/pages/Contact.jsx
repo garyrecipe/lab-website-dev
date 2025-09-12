@@ -56,7 +56,7 @@ const Contact = () => {
                   <h3 className="text-lg font-medium text-gray-900">實驗室位置</h3>
                   <p className="mt-1 text-gray-700">
                     明志科技大學 電漿與薄膜科技中心<br />
-                    308-2室
+                    電2-202
                   </p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                 <HiOutlinePhone className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">實驗室電話</h3>
-                  <p className="mt-1 text-gray-700">02-29089899 ext. </p>
+                  <p className="mt-1 text-gray-700">02-29089899 ext. 7506 </p>
                 </div>
               </div>
             </div>
