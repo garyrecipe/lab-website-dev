@@ -36,12 +36,12 @@ export const CURRENT_MEMBERS = {
     {
       name: "呂政育",
       photo: "./images/members/m5.jpg",
-      title: "研究助理",
+      title: "碩士畢業",
     },
     {
       name: "顏偉翔",
       photo: "./images/members/m14.jpg",
-      title: "研究助理",
+      title: "學士畢業",
     },
     {
       name: "劉峻瑋",
@@ -56,19 +56,19 @@ export const CURRENT_MEMBERS = {
     {
       name: "吳峻宇",
       photo: "./images/members/m3.jpg",
-      project: "大學部三年級"
+      title: "大學部三年級"
     }
   ],
   phdStudents: [
     {
       name: "蕭楷霖",
       photo: "./images/members/m6.jpg",
-      year: "成大材料系博班 一年級"
+      year: "成大共指博士班 一年級"
     },
     {
       name: "翁瑋志",
       photo: "./images/members/m1.jpg",
-      year: "成大材料系博班 一年級"
+      year: "成大共指博士班 一年級"
     }
   ],
   masterStudents: [
@@ -103,9 +103,19 @@ export const CURRENT_MEMBERS = {
       year: "一年級"
     },
     {
-      name: "張宸愷",
+      name: "陳俊銘",
       photo: "",
       year: "一年級"
+    },
+    {
+      name: "張宸愷",
+      photo: "",
+      year: "大學部五年級(4+1)"
+    },
+    {
+      name: "黃程佑",
+      photo: "./images/members/m16.jpg",
+      year: "進修部四年級"
     }
   ]
 };
