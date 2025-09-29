@@ -12,7 +12,7 @@ export const RESEARCH_TOPICS = [
   {
     id: 1,
     title: "奈米雷射",
-    description: "使用COMSOL模擬軟體，設計能夠使表面電漿子在次波長的尺度下達到三維侷限的結構。接著使用Lumerical模擬軟體，對雷射激發的表現進行分析。在製程部分，透過離子輔助蒸鍍以及FIB製程，驗證模擬結果。",
+    description: "使用 COMSOL 模擬軟體，設計能夠使表面電漿子在次波長的尺度下達到三維侷限的結構。接著使用Lumerical模擬軟體，對雷射激發的表現進行分析。在製程部分，透過離子輔助蒸鍍以及FIB製程，驗證模擬結果。",
     keyPoints: [
       "表面電漿奈米雷射",
       "表面電漿共振",
@@ -93,7 +93,7 @@ export const RESEARCH_TOPICS = [
   {
     id: 8,
     title: "電化學製備智慧窗戶",
-    description: "使用CST與COMSOL模擬軟體觀測製程參數，在使用奈米球微影製程進行透明電極的製作，並在最後達成電致變色的智慧窗戶。",
+    description: "使用 CST 與 COMSOL 模擬軟體觀測製程參數，在使用奈米球微影製程進行透明電極的製作，並在最後達成電致變色的智慧窗戶。",
     keyPoints: [
       "奈米球微影",
       "電化學",

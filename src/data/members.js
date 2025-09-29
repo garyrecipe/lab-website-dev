@@ -83,6 +83,11 @@ export const CURRENT_MEMBERS = {
       year: "二年級"
     },
     {
+      name: "蕭丞芫",
+      photo: "./images/members/m17.jpg",
+      year: "二年級"
+    },
+    {
       name: "項品堯",
       photo: "./images/members/m9.jpg",
       year: "長庚光電所共同指導 二年級"

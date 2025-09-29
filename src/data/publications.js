@@ -14,6 +14,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["蕭楷霖", "黃宗鈺"],
     publishDate: "2025",
     journal: "明志學報",
+    info: [],
     tags: [],
     url: ""
   },
@@ -24,6 +25,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Po-Hsuan Hsiao", "Hong Li", "Jacky Lessage", "Joon Ching Juan", "Kai-Lin Hsiao", "Tsung-Yu Huang", "Chia-Yun Chen"],
     publishDate: "2025",
     journal: "Surfaces and Intefaces",
+    info: [72, 1, 10],
     tags: [],
     url: "https://doi.org/10.1016/j.surfin.2025.107189"
   },
@@ -34,6 +36,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Ying-Feng Chang", "Yu-Chung Wang", "Tsung-Yu Huang", "Meng-Chi Li", "Sin-You Chen", "Yu-Xen Lin", "Li-Chen Su", "Kwei-Jay Lin"],
     publishDate: "2025",
     journal: "Analytica Chimica Acta",
+    info: [13, , 34],
     tags: ["deep learning"],
     url: "https://doi.org/10.1016/j.aca.2025.343640"
   },
@@ -44,6 +47,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Jing-Hao Huang", "He-Jun Ren", "Tsung-Yu Huang"],
     publishDate: "2025",
     journal: "Scientific Reports",
+    info: [15, 1, 94],
     tags: [],
     url: "https://doi.org/10.1038/s41598-025-94344-z"
   },
@@ -54,6 +58,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Te-Hsien Wang", "Tsung-Yu Huang", "Cheng-Lung Chen"],
     publishDate: "2024",
     journal: "ACS Applied Materials & Interfaces",
+    info: [16, 35, 46],
     tags: ["thermoelectric", "bismuth telluride", "energy efficiency", "intercalation", "thermal-driven", "sustainable manufacturing"],
     url: "https://doi.org/10.1021/acsami.4c08479"
   },
@@ -64,6 +69,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Mochamad Januar", "Cheng-Yu Lu", "Horng-Chih Lin", "Tsung-Yu Huang", "Chia-Ming Yang", "Kuo Kang Liu", "Kou-Chen Liu"],
     publishDate: "2024",
     journal: "Materials Advances",
+    info: [5, 11, 46],
     tags: [],
     url: "https://doi.org/10.1039/D3MA01119D"
   },
@@ -74,6 +80,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Hsueh-Shun Lee", "Yu-Ping Kuang", "Cheng-Yu Lu", "Ta-Jen Yen", "Tsung-Yu Huang"],
     publishDate: "2024",
     journal: "Scientific Reports",
+    info: [14, 1, 27],
     tags: [],
     url: "https://doi.org/10.1038/s41598-024-78633-7"
   },
@@ -84,6 +91,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Chin-Chien Chung", "Dong-Sheng Su", "Tsung-Yu Huang", "Cheng-Yi Lee", "Robert Jan Visser", "B. Leo Kwak", "Hyunsung Bang", "Chung-Chia Chen", "Wan-Yu Lin", "Ta-Jen Yen"],
     publishDate: "2022",
     journal: "Scientific Reports",
+    info: [12, 1, 11],
     tags: [],
     url: "https://doi.org/10.1038/s41598-022-14756-z"
   },
@@ -94,6 +102,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Xin-Xian Wu", "Cheng-Yu Lu", "Tsung-Yu Huang"],
     publishDate: "2022",
     journal: "Scientific Reports",
+    info: [12, 1, 35],
     tags: [],
     url: "https://doi.org/10.1038/s41598-022-07338-6"
   },
@@ -104,6 +113,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tse-An Chen", "Yu-Cheng Chou", "Tsung-Yu Huang", "Yu-Jung Lu", "Yu-Ping Kuang", "Ta-Jen Yen"],
     publishDate: "2022",
     journal: "ACS Applied Nano Materials",
+    info: [5, 1, 92],
     tags: ["Huygens' metasurface", "flat optical devices", "beam bending", "phase manipulation", "ultraviolet"],
     url: "https://doi.org/10.1021/acsanm.1c03585"
   },
@@ -114,6 +124,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Cheng-Yu Lu", "Chin-Chien Chung", "Ta-Jen Yen", "Tsung-Yu Huang"],
     publishDate: "2021",
     journal: "Scientific Reports",
+    info: [11, 1, 18],
     tags: [],
     url: "https://doi.org/10.1038/s41598-021-98077-7"
   },
@@ -124,6 +135,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Chieh-Ting Lin", "Ta-Jen Yen", "Tsung-Yu Huang"],
     publishDate: "2021",
     journal: "Coatings",
+    info: [11, 7, 78],
     tags: ["SEIRA", "Fano resonance", "metamaterial perfect absorber", "chemical detection"],
     url: "https://doi.org/10.3390/coatings11070789"
   },
@@ -134,6 +146,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Jian-Hui Lin", "Ta-Jen Yen", "Tsung-Yu Huang"],
     publishDate: "2020",
     journal: "Journal of Optics",
+    info: [22, 8, 85],
     tags: [],
     url: "https://doi.org/10.1088/2040-8986/ab9cdb"
   },
@@ -144,6 +157,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Chung-Wei Tao", "Ta-Jen Yen", "Tsung-Yu Huang"],
     publishDate: "2020",
     journal: "Scientific Reports",
+    info: [10, 1, 52],
     tags: [],
     url: "https://doi.org/10.1038/s41598-020-62243-0"
   },
@@ -154,6 +168,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Jian-Hui Lin", "Tung Lee", "Ta-Jen Yen"],
     publishDate: "2019",
     journal: "Journal of Optics",
+    info: [21, 8, 8],
     tags: [],
     url: "https://doi.org/10.1088/2040-8986/ab2358"
   },
@@ -164,6 +179,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Ta-Jen Yen"],
     publishDate: "2019",
     journal: "Scientific Reports",
+    info: [9, 1, 35],
     tags: [],
     url: "https://doi.org/10.1038/s41598-019-39906-8"
   },
@@ -174,6 +190,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Ting-Tso Yeh", "Tsung-Yu Huang", "Takuo Tanaka", "Ta-Jen Yen"],
     publishDate: "2017",
     journal: "Scientific Reports",
+    info: [7, 1, 45],
     tags: [],
     url: "https://doi.org/10.1038/srep45549"
   },
@@ -184,6 +201,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Yueh-Chun Lai", "Ta-Jen Yen"],
     publishDate: "2016",
     journal: "Applied Physics Express",
+    info: [9, 1, 12],
     tags: [],
     url: "https://doi.org/10.7567/APEX.9.012003"
   },
@@ -194,6 +212,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Ching-Wei Tseng", "Ting-Tso Yeh", "Tien-Tien Yen", "Chih-Wei Luo", "Tahsin Akalin", "Ta-Jen Yen"],
     publishDate: "2015",
     journal: "Scientific Reports",
+    info: [5, 1, 18],
     tags: [],
     url: "https://doi.org/10.1038/srep18605"
   },
@@ -204,6 +223,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Tien-Chung Yang", "Ta-Jen Yen"],
     publishDate: "2013",
     journal: "Applied Physics Letters",
+    info: [10, 11, 11],
     tags: [],
     url: "https://doi.org/10.1063/1.4795788"
   },
@@ -214,6 +234,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Ting-Tso Yeh", "Simone Genovesi", "Agostino Monorchio", "Enrico Prati", "Filippo Costa", "Tsung-Yu Huang", "Ta-Jen Yen"],
     publishDate: "2012",
     journal: "Optics Express",
+    info: [20, 7, 75],
     tags: [],
     url: "https://doi.org/10.1364/OE.20.007580"
   },
@@ -224,6 +245,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Hsin-Cheng Lee", "Ieng-Wai Un", "Ta-Jen Yen"],
     publishDate: "2012",
     journal: "Applied Physics Letters",
+    info: [10, 15, 15],
     tags: [],
     url: "https://doi.org/10.1063/1.4757868"
   },
@@ -234,6 +256,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Chia-Yun Chen", "Ta-Jen Yen"],
     publishDate: "2011",
     journal: "Journal of Applied Physics",
+    info: [11, 9, 13],
     tags: [],
     url: "https://doi.org/10.1063/1.3656717"
   },
@@ -244,6 +267,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Ta-Jen Yen"],
     publishDate: "2011",
     journal: "Progress In Electromagnetics Research Letters",
+    info: [21, , 19],
     tags: [],
     url: "https://doi.org/10.2528/PIERL10111706"
   }

@@ -74,7 +74,7 @@ const Contact = () => {
           <div className="bg-white/90 rounded-xl shadow-lg overflow-hidden backdrop-blur-sm">
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.7246395799897!2d120.28274571534897!3d22.62557798515685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0491b7f22a39%3A0x16bbd4d39e7e9db1!2z5ZyL56uL5Lit5bGx5aSn5a245bel5a2457O75Yqb5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1645491234567!5m2!1szh-TW!2stw"
+                src="https://www.google.com/maps?q=25.04108754356325,121.42229525515422&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -42,6 +42,20 @@ const Professor = () => {
                 </ul>
               </div>
               <div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">經歷</h3>
+                <ul className="space-y-3">
+                  {PROFESSOR.experience.map((edu, index) => (
+                    <li 
+                      key={index} 
+                      className="text-gray-700 flex items-start"
+                    >
+                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
+                      <span>{edu}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
                 <h3 className="text-xl font-semibold text-blue-900 mb-4">得獎紀錄</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.awards.map((award, index) => (
