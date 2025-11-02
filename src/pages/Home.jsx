@@ -142,21 +142,21 @@ const Home = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {pub.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{pub.authors}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-blue-600 font-medium">
-                    {pub.journal}, {pub.year}
+                <div className="flex flex-wrap items-center text-sm text-gray-600 gap-x-4">
+                  <span className="inline-flex items-center">
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    {pub.authors.join(', ')}
                   </span>
-                  {pub.doi && (
-                    <a
-                      href={`https://doi.org/${pub.doi}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-900 font-medium"
-                    >
-                      DOI →
-                    </a>
-                  )}
+                </div>
+                <div className="flex flex-wrap items-center text-sm text-gray-600 gap-x-4">
+                  <span className="inline-flex items-center">
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />
+                    </svg>
+                    {pub.journal}, {pub.info.join(', ')}, {pub.publishDate}
+                  </span>
                 </div>
               </div>
             ))}
@@ -191,16 +191,17 @@ const Home = () => {
             <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <HiOutlinePhone className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">電話</h3>
-              <p className="text-gray-700">02-29089899 ext. 6316</p>
+              <p className="text-gray-700">辦公室 02-29089899 ext. 6316</p>
+              <p className="text-gray-700">實驗室 02-29089899 ext. 7506</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <HiOutlineMail className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
               <a
-                href="mailto:professor@mail.nsysu.edu.tw"
+                href="mailto:huang.tsungyu@mail.mcut.edu.tw"
                 className="text-blue-600 hover:text-blue-800"
               >
-                professor@mail.nsysu.edu.tw
+                huang.tsungyu@mail.mcut.edu.tw
               </a>
             </div>
           </div>

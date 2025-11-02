@@ -1,7 +1,39 @@
+import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import { RESEARCH_OVERVIEW, RESEARCH_TOPICS } from '../data/research';
 
 const Research = () => {
+  // 從研究主題列表中提取所有圖片（過濾掉佔位符圖片）
+  const researchImages = [{image: RESEARCH_OVERVIEW.image, caption: RESEARCH_OVERVIEW.imageCaption}, ...RESEARCH_TOPICS
+    .map(topic => ({
+      image: topic.image,
+      caption: topic.imageCaption || topic.title
+    }))]
+    .filter(item => !item.image.includes('placehold.co'));
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // 自動輪播效果
+  useEffect(() => {
+    if (researchImages.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % researchImages.length
+      );
+    }, 3000); // 每3秒切換一次
+
+    return () => clearInterval(interval);
+  }, [researchImages.length]);
+
+  // 如果沒有圖片，使用原來的圖片
+  const displayImage = researchImages.length > 0 
+    ? researchImages[currentImageIndex]
+    : {
+        image: RESEARCH_OVERVIEW.image,
+        caption: RESEARCH_OVERVIEW.imageCaption
+      };
+
   return (
     <Layout title="研究方向">
       {/* 研究大綱區塊 */}
@@ -19,13 +51,27 @@ const Research = () => {
             <div className="lg:p-8 p-4">
               <div className="relative aspect-[2/1]">
                 <img
-                  src={RESEARCH_OVERVIEW.image}
-                  alt={RESEARCH_OVERVIEW.imageCaption}
-                  className="rounded-lg shadow-md w-full h-full object-cover"
+                  src={displayImage.image}
+                  alt={displayImage.caption}
+                  className="rounded-lg shadow-md w-full h-full object-cover transition-opacity duration-500"
+                  key={currentImageIndex}
                 />
                 <p className="text-sm text-gray-600 mt-2 text-center">
-                  {RESEARCH_OVERVIEW.imageCaption}
+                  {displayImage.caption}
                 </p>
+                {/* 輪播指示點 */}
+                {researchImages.length > 1 && (
+                  <div className="flex justify-center mt-2 space-x-2">
+                    {researchImages.map((_, index) => (
+                      <span
+                        key={index}
+                        className={`inline-block w-2 h-2 rounded-full transition-colors ${
+                          index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>

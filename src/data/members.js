@@ -1,7 +1,7 @@
 // 指導教授資料
 export const PROFESSOR = {
   name: "黃宗鈺 Huang, Tsung-Yu",
-  photo: "https://placehold.co/400x400",
+  photo: "./images/members/t1.jpg",
   phone: "02-29089899#6316",
   email: "huang.tsungyu@mail.mcut.edu.tw",
   title: "材料工程系副教授暨環資學院榮譽學程主任",
@@ -65,11 +65,6 @@ export const CURRENT_MEMBERS = {
       photo: "./images/members/m6.jpg",
       year: "成大共指博士班 一年級"
     },
-    {
-      name: "翁瑋志",
-      photo: "./images/members/m1.jpg",
-      year: "成大共指博士班 一年級"
-    }
   ],
   masterStudents: [
     {
@@ -212,5 +207,12 @@ export const ALUMNI = [
     degree: "",
     company: "",
     position: ""
+  },
+  {
+    name: "翁瑋志",
+    graduationYear: 2025,
+    degree: "",
+    company: "國立成功大學材料科學與工程學系",
+    position: "博士班一年級"
   }
 ]; 
