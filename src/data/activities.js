@@ -1,6 +1,16 @@
 export const ACTIVITIES = [
   {
-    id: 1,
+    title: "2025 EMRS 在波蘭",
+    date: "September 11-21, 2025",
+    description: "前往波蘭參加EMRS，大會招待的很豐盛，學生站海報跟日本老師聊起來了～",
+    photos: [
+      {
+        url: "./images/activities/a9-1.jpg",
+        caption: "大合照"
+      }
+    ]
+  },
+  {
     title: "2025 實驗室出遊在澎湖",
     date: "August 29-31, 2025",
     description: "澎湖好熱，好多五秒景點，不過跟大家聚在一起就是酷～",
@@ -12,7 +22,6 @@ export const ACTIVITIES = [
     ]
   },
   {
-    id: 2,
     title: "META 2025 在西班牙",
     date: "July 17-26, 2025",
     description: "西班牙好讚，高第也好讚！幸福實驗室出國一遊～～",
@@ -32,7 +41,6 @@ export const ACTIVITIES = [
     ]
   },
   {
-    id: 3,
     title: "2025 老師生日慶生",
     date: "June 10, 2025",
     description: "感謝大家還記得老師的生日(不枉費每次考試的提醒，科科)",
@@ -44,7 +52,6 @@ export const ACTIVITIES = [
     ]
   },
   {
-    id: 4,
     title: "2025 實驗室餐敘在板橋六必居",
     date: "February 19, 2025",
     description: "和畢業學生一起吃飯敘舊，大家要記得回來找老師抬槓阿！",
@@ -56,7 +63,6 @@ export const ACTIVITIES = [
     ]
   },
   {
-    id: 5,
     title: "2025 實驗室聚餐在橘色涮涮鍋",
     date: "February 13, 2025",
     description: "明天情人節，感謝大家一年的陪伴，不要再跟老師一樣魯下去了，趕快脫魯吧！這是老師對大家的祝福。今年大家也要繼續加油啊，給我幾個博班，幾個產學，幾個計劃，幾個專利，幾篇paper，一個升等，老師就心滿意足了！共勉之～～",
@@ -76,7 +82,6 @@ export const ACTIVITIES = [
     ]
   },
   {
-    id: 6,
     title: "2025 實驗室尾牙在泰山老巷弄",
     date: "January 10, 2025",
     description: "又到了一年一度的尾牙了～感謝大家一年的努力💪，讓去年表現比前年好，也讓老師荷包滿滿XD",
@@ -88,7 +93,6 @@ export const ACTIVITIES = [
     ]
   },
   {
-    id: 7,
     title: "2024 實驗室出遊在小琉球",
     date: "August 25-27, 2024",
     description: "一年一度的實驗室暑假出遊！今年去小琉球玩潛水看海龜。",
@@ -112,7 +116,6 @@ export const ACTIVITIES = [
     ]
   },
   {
-    id: 8,
     title: "2024 實驗室尾牙在泰山王牌餐館",
     date: "January 26, 2024",
     description: "悄悄的又到了年終，感謝大家今年的付出，不過明年要更努力，一起加油吧～～",

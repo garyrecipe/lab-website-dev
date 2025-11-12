@@ -13,7 +13,7 @@ export const EQUIPMENT_LIST = [
   },
   {
     name: 'SEM+電子束微影系統',
-    image: './images/equipment/e1.jpg',
+    image: './images/equipment/e2.jpg',
     purpose: '利用高能量電子束，精確地在材料表面形成微米或奈米級的圖案，以用於製造各種微米和奈米結構。',
     features: [
       '奈米結構圖形寫入',

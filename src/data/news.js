@@ -18,9 +18,15 @@ export const NEWS_LIST = [
     image: 'images/news/n3.jpg'
   },
   {
-    date: '--',
+    date: 'September 28, 2025',
     title: '恭賀黃宗鈺老師獲得113學年度環境資源學院優良教學奉獻獎',
     content: '經學生投票推薦，恭喜黃宗鈺老師榮獲113學年度環境資源學院優良教學奉獻獎。',
-    image: ''
+    image: 'images/news/n4.jpg'
+  },
+  {
+    date: 'October 18, 2025',
+    title: '恭賀實驗室研發成果『智慧窗戶的製備方法』榮獲台灣創新博覽會銅質獎',
+    content: '\實驗室開發的智慧窗戶可以在3秒內從64%的穿透度降至為零，並可依需求讓穿透度在0~64%無段切換。除此之外，還可以屏蔽紅外光，使得室內溫度可以維持涼爽狀態。該研究獲得台灣創新博覽會評審青睞，獲頒銅質獎。',
+    image: 'images/news/n5.jpg'
   }
 ]; 

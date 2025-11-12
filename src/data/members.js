@@ -39,25 +39,25 @@ export const CURRENT_MEMBERS = {
       title: "碩士畢業",
     },
     {
+      name: "陳決",
+      photo: "./images/members/m18.jpg",
+      title: "學士畢業",
+    },
+    {
       name: "顏偉翔",
       photo: "./images/members/m14.jpg",
       title: "學士畢業",
     },
     {
-      name: "劉峻瑋",
-      photo: "./images/members/m10.jpg",
-      title: "進修部三年級",
+      name: "蕭至恩",
+      photo: "./images/members/m19.jpg",
+      title: "大學部三年級",
     },
     {
       name: "胡仁聚",
       photo: "./images/members/m13.jpg",
       title: "進修部二年級",
     },
-    {
-      name: "吳峻宇",
-      photo: "./images/members/m3.jpg",
-      title: "大學部三年級"
-    }
   ],
   phdStudents: [
     {
@@ -75,11 +75,6 @@ export const CURRENT_MEMBERS = {
     {
       name: "陳冠文",
       photo: "./images/members/m11.jpg",
-      year: "二年級"
-    },
-    {
-      name: "蕭丞芫",
-      photo: "./images/members/m17.jpg",
       year: "二年級"
     },
     {
@@ -103,20 +98,25 @@ export const CURRENT_MEMBERS = {
       year: "一年級"
     },
     {
-      name: "陳俊銘",
-      photo: "",
+      name: "項峻翔",
+      photo: "./images/members/m21.jpg",
       year: "一年級"
     },
     {
       name: "張宸愷",
-      photo: "",
+      photo: "./images/members/m20.jpg",
       year: "大學部五年級(4+1)"
     },
     {
       name: "黃程佑",
       photo: "./images/members/m16.jpg",
       year: "進修部四年級"
-    }
+    },
+    {
+      name: "劉峻瑋",
+      photo: "./images/members/m10.jpg",
+      title: "進修部三年級",
+    },
   ]
 };
 
