@@ -1,9 +1,27 @@
 import Layout from '../components/Layout';
-import { PROFESSOR } from '../data/members';
+import { useMembersData } from '../hooks/useMembersData';
+import { useTranslation } from '../hooks/useTranslation';
 
 const Professor = () => {
+  const { membersData, loading } = useMembersData();
+  const { t } = useTranslation();
+
+  if (loading || !membersData.PROFESSOR) {
+    return (
+      <Layout title={t('pages.professor')}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">{t('common.loading')}</p>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
+
+  const PROFESSOR = membersData.PROFESSOR;
+
   return (
-    <Layout title="指導教授">
+    <Layout title={t('pages.professor')}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white/90 rounded-xl shadow-lg p-8 backdrop-blur-sm">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -17,7 +35,7 @@ const Professor = () => {
             </div>
             <div className="space-y-8">
               {<div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">職稱</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.title')}</h3>
                 <ul className="space-y-3">
                   <li
                     className="text-gray-700 flex items-start"
@@ -28,7 +46,7 @@ const Professor = () => {
                 </ul>
               </div>}
               <div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">學歷</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.education')}</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.education.map((edu, index) => (
                     <li 
@@ -42,7 +60,7 @@ const Professor = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">經歷</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.experience')}</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.experience.map((edu, index) => (
                     <li 
@@ -56,7 +74,7 @@ const Professor = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">得獎紀錄</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.awards')}</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.awards.map((award, index) => (
                     <li 
@@ -70,7 +88,7 @@ const Professor = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">研究主題</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.researchInterests')}</h3>
                 <ul className="space-y-3">
                   {PROFESSOR.researchInterests.map((interest, index) => (
                     <li 
@@ -84,7 +102,7 @@ const Professor = () => {
                 </ul>
               </div>
               {<div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">聯絡資訊</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.contactInfo')}</h3>
                 <ul className="space-y-3">
                   <li
                     className="text-gray-700 flex items-start"

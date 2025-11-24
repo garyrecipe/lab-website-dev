@@ -1,6 +1,63 @@
 {
-  "about": "關於我們",
-  "members": "實驗室成員",
-  "publications": "論文發表紀錄",
-  "gallery": "活動圖庫"
+  "labName": "超材料與超元件實驗室",
+  "nav": {
+    "home": "首頁",
+    "professor": "指導教授",
+    "research": "研究方向",
+    "members": "研究團隊",
+    "equipment": "實驗設備/軟體",
+    "publications": "發表論文",
+    "activities": "活動照片",
+    "contact": "聯絡我們"
+  },
+  "pages": {
+    "professor": "指導教授",
+    "equipment": "實驗設備/軟體",
+    "members": "實驗室成員",
+    "contact": "聯絡我們"
+  },
+  "common": {
+    "loading": "載入中...",
+    "search": "搜尋",
+    "searchPlaceholder": "搜尋設備名稱、用途、特色或規格...",
+    "foundItems": "找到 {count} 項設備",
+    "noResults": "找不到符合搜尋條件的設備",
+    "tryOtherKeywords": "請嘗試其他關鍵字"
+  },
+  "equipment": {
+    "purpose": "主要用途",
+    "spec": "規格",
+    "manager": "管理者",
+    "filterByFeature": "依特色篩選",
+    "allFeatures": "所有特色"
+  },
+  "members": {
+    "current": "現任成員",
+    "alumni": "歷任成員",
+    "mascots": "吉祥物",
+    "researchAssistants": "研究助理",
+    "phdStudents": "博士班成員",
+    "masterStudents": "碩士班成員",
+    "name": "姓名",
+    "graduationYear": "畢業年份",
+    "currentPosition": "現職",
+    "position": "職稱"
+  },
+  "professor": {
+    "title": "職稱",
+    "education": "學歷",
+    "experience": "經歷",
+    "awards": "得獎紀錄",
+    "researchInterests": "研究主題",
+    "contactInfo": "聯絡資訊"
+  },
+  "contact": {
+    "professorContact": "指導教授聯絡方式",
+    "officeLocation": "辦公室位置",
+    "officePhone": "辦公室電話",
+    "email": "電子郵件",
+    "labContact": "實驗室聯絡方式",
+    "labLocation": "實驗室位置",
+    "labPhone": "實驗室電話"
+  }
 }

@@ -227,4 +227,5 @@ export const ALUMNI = [
     company: "國立成功大學材料科學與工程學系",
     position: "博士班一年級"
   }
-]; 
+];
+

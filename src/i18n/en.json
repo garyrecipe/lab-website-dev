@@ -1,6 +1,63 @@
 {
-  "about": "About Us",
-  "members": "Lab Members",
-  "publications": "Publications",
-  "gallery": "Gallery"
+  "labName": "M&M Laboratory",
+  "nav": {
+    "home": "Home",
+    "professor": "Professor",
+    "research": "Research",
+    "members": "Members",
+    "equipment": "Equipment",
+    "publications": "Publications",
+    "activities": "Activities",
+    "contact": "Contact"
+  },
+  "pages": {
+    "professor": "Professor",
+    "equipment": "Laboratory Equipment",
+    "members": "Lab Members",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "loading": "Loading...",
+    "search": "Search",
+    "searchPlaceholder": "Search equipment name, purpose, features, or specifications...",
+    "foundItems": "Found {count} equipment",
+    "noResults": "No equipment found matching your search",
+    "tryOtherKeywords": "Please try other keywords"
+  },
+  "equipment": {
+    "purpose": "Purpose",
+    "spec": "Specifications",
+    "manager": "Manager",
+    "filterByFeature": "Filter by Feature",
+    "allFeatures": "All Features"
+  },
+  "members": {
+    "current": "Current Members",
+    "alumni": "Alumni",
+    "mascots": "Mascots",
+    "researchAssistants": "Research Assistants",
+    "phdStudents": "PhD Students",
+    "masterStudents": "Master Students",
+    "name": "Name",
+    "graduationYear": "Graduation Year",
+    "currentPosition": "Current Position",
+    "position": "Position"
+  },
+  "professor": {
+    "title": "Title",
+    "education": "Education",
+    "experience": "Experience",
+    "awards": "Awards",
+    "researchInterests": "Research Interests",
+    "contactInfo": "Contact Information"
+  },
+  "contact": {
+    "professorContact": "Professor Contact",
+    "officeLocation": "Office Location",
+    "officePhone": "Office Phone",
+    "email": "Email",
+    "labContact": "Laboratory Contact",
+    "labLocation": "Laboratory Location",
+    "labPhone": "Laboratory Phone"
+  }
 }

@@ -7,10 +7,11 @@ import zh from "./zh.json";
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },
+    zhtc: { translation: zh },
     zh: { translation: zh },
   },
-  lng: "zh",
-  fallbackLng: "zh",
+  lng: "zhtc",
+  fallbackLng: "zhtc",
   interpolation: { escapeValue: false },
 });
 

@@ -1,21 +1,27 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
-import { CURRENT_MEMBERS, ALUMNI } from '../data/members';
+import { useMembersData } from '../hooks/useMembersData';
+import { useTranslation } from '../hooks/useTranslation';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Members = () => {
   const [activeTab, setActiveTab] = useState('current');
+  const { membersData, loading } = useMembersData();
+  const { t } = useTranslation();
 
   const tabs = [
-    { id: 'current', name: '現任成員' },
-    { id: 'alumni', name: '歷任成員' }
+    { id: 'current', name: t('members.current') },
+    { id: 'alumni', name: t('members.alumni') }
   ];
 
   const renderCurrentMembers = () => {
+    if (!membersData.CURRENT_MEMBERS) return null;
+    
     const memberCategories = [
-      { title: '研究助理', data: CURRENT_MEMBERS.researchAssistants },
-      { title: '博士班成員', data: CURRENT_MEMBERS.phdStudents },
-      { title: '碩士班成員', data: CURRENT_MEMBERS.masterStudents },
+      { title: t('members.mascots'), data: membersData.CURRENT_MEMBERS.mascots },
+      { title: t('members.researchAssistants'), data: membersData.CURRENT_MEMBERS.researchAssistants },
+      { title: t('members.phdStudents'), data: membersData.CURRENT_MEMBERS.phdStudents },
+      { title: t('members.masterStudents'), data: membersData.CURRENT_MEMBERS.masterStudents },
     ];
 
     return (
@@ -44,20 +50,23 @@ const Members = () => {
     );
   };
 
-  const renderAlumni = () => (
+  const renderAlumni = () => {
+    if (!membersData.ALUMNI) return null;
+    
+    return (
     <div className="bg-white/90 rounded-xl shadow-lg p-8 backdrop-blur-sm">
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead>
             <tr>
-              <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">姓名</th>
-              <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">畢業年份</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">現職</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">職稱</th>
+              <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">{t('members.name')}</th>
+              <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">{t('members.graduationYear')}</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{t('members.currentPosition')}</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{t('members.position')}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {ALUMNI.slice().sort((a, b) => b.graduationYear - a.graduationYear).map((alumni, index) => (
+            {membersData.ALUMNI.slice().sort((a, b) => b.graduationYear - a.graduationYear).map((alumni, index) => (
               <tr key={index} className={index % 2 === 0 ? 'bg-white/50' : 'bg-gray-50/50'}>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center">{alumni.name}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">{alumni.graduationYear}</td>
@@ -82,10 +91,23 @@ const Members = () => {
         </table>
       </div>
     </div>
-  );
+    );
+  };
+
+  if (loading) {
+    return (
+      <Layout title={t('pages.members')}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">{t('common.loading')}</p>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
 
   return (
-    <Layout title="實驗室成員">
+    <Layout title={t('pages.members')}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Tabs */}
         <div className="flex justify-center mb-8">

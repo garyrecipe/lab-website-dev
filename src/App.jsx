@@ -7,12 +7,13 @@ import Professor from './pages/Professor';
 import Equipment from './pages/Equipment';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 import './i18n';
 
 function App() {
   return (
-    // <Router>
+    <LanguageProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/research" element={<Research />} />
@@ -23,7 +24,7 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    // </Router>
+    </LanguageProvider>
   );
 }
 

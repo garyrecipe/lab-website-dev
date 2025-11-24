@@ -2,6 +2,7 @@ import { Navbar } from './Navbar';
 import backgroundImage from '../assets/bg3.png';
 
 const Layout = ({ children, title }) => {
+
   return (
     <div className="min-h-screen w-screen relative bg-slate-50">
       {/* 背景圖片 */}
