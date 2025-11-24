@@ -78,7 +78,7 @@ const Members = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block ml-2 mb-1 text-blue-400 hover:text-blue-600 align-middle"
-                      title="前往公司網站"
+                      title={t('members.visitCompany')}
                     >
                       <FaExternalLinkAlt />
                     </a>

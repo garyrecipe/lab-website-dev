@@ -1,17 +1,25 @@
 import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
-import { RESEARCH_OVERVIEW, RESEARCH_TOPICS } from '../data/research';
+import { useResearchData } from '../hooks/useResearchData';
+import { useTranslation } from '../hooks/useTranslation';
 
 const Research = () => {
-  // 從研究主題列表中提取所有圖片（過濾掉佔位符圖片）
-  const researchImages = [{image: RESEARCH_OVERVIEW.image, caption: RESEARCH_OVERVIEW.imageCaption}, ...RESEARCH_TOPICS
-    .map(topic => ({
-      image: topic.image,
-      caption: topic.imageCaption || topic.title
-    }))]
-    .filter(item => !item.image.includes('placehold.co'));
-
+  const { t } = useTranslation();
+  const { researchData, loading } = useResearchData();
+  const { RESEARCH_OVERVIEW, RESEARCH_TOPICS } = researchData;
+  
+  // 所有 hooks 必須在條件返回之前調用
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // 從研究主題列表中提取所有圖片（過濾掉佔位符圖片）
+  const researchImages = RESEARCH_OVERVIEW && RESEARCH_TOPICS
+    ? [{image: RESEARCH_OVERVIEW.image, caption: RESEARCH_OVERVIEW.imageCaption}, ...RESEARCH_TOPICS
+        .map(topic => ({
+          image: topic.image,
+          caption: topic.imageCaption || topic.title
+        }))]
+        .filter(item => !item.image.includes('placehold.co'))
+    : [];
 
   // 自動輪播效果
   useEffect(() => {
@@ -25,6 +33,16 @@ const Research = () => {
 
     return () => clearInterval(interval);
   }, [researchImages.length]);
+  
+  if (loading || !RESEARCH_OVERVIEW || !RESEARCH_TOPICS) {
+    return (
+      <Layout title={t('research.title')}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+          <p>{t('common.loading')}</p>
+        </div>
+      </Layout>
+    );
+  }
 
   // 如果沒有圖片，使用原來的圖片
   const displayImage = researchImages.length > 0 
@@ -35,7 +53,7 @@ const Research = () => {
       };
 
   return (
-    <Layout title="研究方向">
+    <Layout title={t('research.title')}>
       {/* 研究大綱區塊 */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white/90 rounded-xl shadow-lg overflow-hidden backdrop-blur-sm mb-12">
@@ -98,7 +116,7 @@ const Research = () => {
                   </p>
                   <div className="space-y-2">
                     <h4 className="text-lg font-semibold text-blue-800 mb-3">
-                      研究重點：
+                      {t('research.keyPoints')}
                     </h4>
                     <ul className="space-y-2">
                       {topic.keyPoints.map((point, idx) => (

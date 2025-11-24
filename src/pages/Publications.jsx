@@ -1,10 +1,15 @@
 import { useState, useMemo } from 'react';
 import Layout from '../components/Layout';
-import { MOCK_PUBLICATIONS } from '../data/publications';
+import { usePublicationsData } from '../hooks/usePublicationsData';
+import { useTranslation } from '../hooks/useTranslation';
 
 const ITEMS_PER_PAGE = 10;
 
 const Publications = () => {
+  const { t } = useTranslation();
+  const { publicationsData, loading } = usePublicationsData();
+  const MOCK_PUBLICATIONS = publicationsData.MOCK_PUBLICATIONS || [];
+  
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
   const [sortBy, setSortBy] = useState('date'); // 'date' or 'title'
@@ -17,7 +22,7 @@ const Publications = () => {
       pub.tags.forEach(tag => tags.add(tag));
     });
     return Array.from(tags);
-  }, []);
+  }, [MOCK_PUBLICATIONS]);
 
   // 過濾和排序論文
   const filteredPublications = useMemo(() => {
@@ -38,7 +43,7 @@ const Publications = () => {
         }
         return a.title.localeCompare(b.title);
       });
-  }, [searchTerm, selectedTag, sortBy]);
+  }, [MOCK_PUBLICATIONS, searchTerm, selectedTag, sortBy]);
 
   // 分頁
   const totalPages = Math.ceil(filteredPublications.length / ITEMS_PER_PAGE);
@@ -58,8 +63,18 @@ const Publications = () => {
     setCurrentPage(1);
   };
 
+  if (loading) {
+    return (
+      <Layout title={t('publications.title')}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+          <p>{t('common.loading')}</p>
+        </div>
+      </Layout>
+    );
+  }
+
   return (
-    <Layout title="發表論文">
+    <Layout title={t('publications.title')}>
       {/* 主要內容區域 */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6 lg:pb-8">
         {/* 搜尋和過濾區域 */}
@@ -67,7 +82,7 @@ const Publications = () => {
           <div className="flex-1">
             <input
               type="text"
-              placeholder="搜尋論文標題、摘要、作者或期刊..."
+              placeholder={t('publications.searchPlaceholder')}
               className="w-full px-4 py-2 bg-white rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
@@ -79,7 +94,7 @@ const Publications = () => {
               value={selectedTag}
               onChange={(e) => handleTagChange(e.target.value)}
             >
-              <option value="">所有類別</option>
+              <option value="">{t('publications.allCategories')}</option>
               {allTags.map(tag => (
                 <option key={tag} value={tag}>{tag}</option>
               ))}
@@ -89,15 +104,20 @@ const Publications = () => {
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
             >
-              <option value="date">依日期排序</option>
-              <option value="title">依標題排序</option>
+              <option value="date">{t('publications.sortByDate')}</option>
+              <option value="title">{t('publications.sortByTitle')}</option>
             </select>
           </div>
         </div>
 
         {/* 論文列表 */}
-        <div className="divide-y divide-gray-200">
-          {paginatedPublications.map(publication => (
+        {MOCK_PUBLICATIONS.length === 0 ? (
+          <div className="text-center py-12 text-gray-600">
+            {t('publications.noPublications')}
+          </div>
+        ) : (
+          <div className="divide-y divide-gray-200">
+            {paginatedPublications.map(publication => (
             <div
               key={publication.id}
               className="p-4 mb-4 bg-white rounded-lg shadow-md hover:bg-gray-50 transition-colors duration-150"
@@ -156,13 +176,18 @@ const Publications = () => {
                     <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />
                     </svg>
-                    {publication.journal}, {publication.info.join(', ')}, {publication.publishDate}
+                    {publication.journal}
+                    {publication.info && publication.info.length > 0 && publication.info.filter(item => item !== undefined && item !== null).length > 0 && (
+                      <>, {publication.info.filter(item => item !== undefined && item !== null).join(', ')}</>
+                    )}
+                    {publication.publishDate && <>, {publication.publishDate}</>}
                   </span>
                 </div>
               </div>
             </div>
           ))}
-        </div>
+          </div>
+        )}
 
         {/* 分頁控制 */}
         {totalPages > 1 && (
@@ -173,17 +198,17 @@ const Publications = () => {
                 disabled={currentPage === 1}
                 className="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
               >
-                上一頁
+                {t('publications.previousPage')}
               </button>
               <span className="px-4 py-2 text-gray-700 bg-white rounded-md shadow">
-                第 {currentPage} 頁，共 {totalPages} 頁
+                {t('publications.pageInfo', { currentPage, totalPages })}
               </span>
               <button
                 onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
                 className="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
               >
-                下一頁
+                {t('publications.nextPage')}
               </button>
             </nav>
           </div>
@@ -192,7 +217,7 @@ const Publications = () => {
         {/* 無結果提示 */}
         {filteredPublications.length === 0 && (
           <div className="text-center py-12 text-gray-600">
-            沒有找到符合條件的論文
+            {t('publications.noResults')}
           </div>
         )}
       </div>

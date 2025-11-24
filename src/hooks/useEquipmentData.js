@@ -5,13 +5,15 @@ import { getEquipmentDataSync } from '../utils/dataLoader';
 export const useEquipmentData = () => {
   const { language } = useLanguage();
   const [equipmentList, setEquipmentList] = useState([]);
+  const [softwareList, setSoftwareList] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
     getEquipmentDataSync(language)
       .then(data => {
-        setEquipmentList(data);
+        setEquipmentList(data.EQUIPMENT_LIST || []);
+        setSoftwareList(data.SOFTWARE_LIST || []);
         setLoading(false);
       })
       .catch(error => {
@@ -20,6 +22,6 @@ export const useEquipmentData = () => {
       });
   }, [language]);
 
-  return { equipmentList, loading };
+  return { equipmentList, softwareList, loading };
 };
 

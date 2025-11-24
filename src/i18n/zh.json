@@ -5,21 +5,21 @@
     "professor": "指導教授",
     "research": "研究方向",
     "members": "研究團隊",
-    "equipment": "實驗設備/軟體",
+    "equipment": "實驗室資源",
     "publications": "發表論文",
     "activities": "活動照片",
     "contact": "聯絡我們"
   },
   "pages": {
     "professor": "指導教授",
-    "equipment": "實驗設備/軟體",
+    "equipment": "實驗室資源",
     "members": "實驗室成員",
     "contact": "聯絡我們"
   },
   "common": {
     "loading": "載入中...",
     "search": "搜尋",
-    "searchPlaceholder": "搜尋設備名稱、用途、特色或規格...",
+    "searchPlaceholder": "搜尋設備名稱、描述或規格...",
     "foundItems": "找到 {count} 項設備",
     "noResults": "找不到符合搜尋條件的設備",
     "tryOtherKeywords": "請嘗試其他關鍵字"
@@ -29,7 +29,11 @@
     "spec": "規格",
     "manager": "管理者",
     "filterByFeature": "依特色篩選",
-    "allFeatures": "所有特色"
+    "allFeatures": "所有特色",
+    "equipment": "設備",
+    "software": "軟體",
+    "switchToEquipment": "切換到設備",
+    "switchToSoftware": "切換到軟體"
   },
   "members": {
     "current": "現任成員",
@@ -41,7 +45,8 @@
     "name": "姓名",
     "graduationYear": "畢業年份",
     "currentPosition": "現職",
-    "position": "職稱"
+    "position": "職稱",
+    "visitCompany": "前往公司網站"
   },
   "professor": {
     "title": "職稱",
@@ -58,6 +63,43 @@
     "email": "電子郵件",
     "labContact": "實驗室聯絡方式",
     "labLocation": "實驗室位置",
-    "labPhone": "實驗室電話"
+    "labPhone": "實驗室電話",
+    "office": "辦公室",
+    "lab": "實驗室",
+    "officeAddress": "明志科技大學 材料工程學系",
+    "officeRoom": "綜合大樓 308-2室",
+    "labAddress": "明志科技大學 電漿與薄膜科技中心",
+    "labRoom": "電2-202"
+  },
+  "home": {
+    "learnMore": "了解更多",
+    "latestNews": "最新消息",
+    "latestPublications": "最新發表論文",
+    "viewMorePublications": "查看更多論文",
+    "contactInfo": "聯絡方式",
+    "address": "地址",
+    "phone": "電話",
+    "moreContactInfo": "更多聯絡資訊",
+    "noPublications": "目前沒有發表論文"
+  },
+  "research": {
+    "title": "研究方向",
+    "keyPoints": "研究重點："
+  },
+  "publications": {
+    "title": "發表論文",
+    "searchPlaceholder": "搜尋論文標題、摘要、作者或期刊...",
+    "allCategories": "所有類別",
+    "sortByDate": "依日期排序",
+    "sortByTitle": "依標題排序",
+    "noPublications": "目前沒有發表論文",
+    "noResults": "沒有找到符合條件的論文",
+    "previousPage": "上一頁",
+    "nextPage": "下一頁",
+    "pageInfo": "第 {currentPage} 頁，共 {totalPages} 頁"
+  },
+  "activities": {
+    "title": "活動照片",
+    "viewMorePhotos": "查看更多照片 ({count})"
   }
 }

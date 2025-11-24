@@ -5,21 +5,21 @@
     "professor": "Professor",
     "research": "Research",
     "members": "Members",
-    "equipment": "Equipment",
+    "equipment": "Resources",
     "publications": "Publications",
     "activities": "Activities",
     "contact": "Contact"
   },
   "pages": {
     "professor": "Professor",
-    "equipment": "Laboratory Equipment",
+    "equipment": "Laboratory Resources",
     "members": "Lab Members",
     "contact": "Contact Us"
   },
   "common": {
     "loading": "Loading...",
     "search": "Search",
-    "searchPlaceholder": "Search equipment name, purpose, features, or specifications...",
+    "searchPlaceholder": "Search equipment name, description, or specifications...",
     "foundItems": "Found {count} equipment",
     "noResults": "No equipment found matching your search",
     "tryOtherKeywords": "Please try other keywords"
@@ -28,8 +28,12 @@
     "purpose": "Purpose",
     "spec": "Specifications",
     "manager": "Manager",
-    "filterByFeature": "Filter by Feature",
-    "allFeatures": "All Features"
+    "filterByFeature": "Filter by Tags",
+    "allFeatures": "All Tags",
+    "equipment": "Equipment",
+    "software": "Software",
+    "switchToEquipment": "Switch to Equipment",
+    "switchToSoftware": "Switch to Software"
   },
   "members": {
     "current": "Current Members",
@@ -41,7 +45,8 @@
     "name": "Name",
     "graduationYear": "Graduation Year",
     "currentPosition": "Current Position",
-    "position": "Position"
+    "position": "Position",
+    "visitCompany": "Visit Company Website"
   },
   "professor": {
     "title": "Title",
@@ -58,6 +63,43 @@
     "email": "Email",
     "labContact": "Laboratory Contact",
     "labLocation": "Laboratory Location",
-    "labPhone": "Laboratory Phone"
+    "labPhone": "Laboratory Phone",
+    "office": "Office",
+    "lab": "Laboratory",
+    "officeAddress": "ME MCUT",
+    "officeRoom": "Room 308-2 Complex Building",
+    "labAddress": "CPTFT MCUT",
+    "labRoom": "Room 2-202"
+  },
+  "home": {
+    "learnMore": "Learn More",
+    "latestNews": "Latest News",
+    "latestPublications": "Latest Publications",
+    "viewMorePublications": "View More Publications",
+    "contactInfo": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "moreContactInfo": "More Contact Information",
+    "noPublications": "No publications available"
+  },
+  "research": {
+    "title": "Research",
+    "keyPoints": "Research Highlights:"
+  },
+  "publications": {
+    "title": "Publications",
+    "searchPlaceholder": "Search publication title, abstract, authors, or journal...",
+    "allCategories": "All Categories",
+    "sortByDate": "Sort by Date",
+    "sortByTitle": "Sort by Title",
+    "noPublications": "No publications available",
+    "noResults": "No publications found matching your criteria",
+    "previousPage": "Previous",
+    "nextPage": "Next",
+    "pageInfo": "Page {currentPage} of {totalPages}"
+  },
+  "activities": {
+    "title": "Activities",
+    "viewMorePhotos": "View More Photos ({count})"
   }
 }

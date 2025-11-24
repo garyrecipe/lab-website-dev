@@ -21,8 +21,13 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">{t('contact.officeLocation')}</h3>
                     <p className="mt-1 text-gray-700">
-                      明志科技大學 材料工程學系<br />
-                      綜合大樓 308-2室
+                      {t('contact.officeAddress')}
+                      {t('contact.officeRoom') && (
+                        <>
+                          <br />
+                          {t('contact.officeRoom')}
+                        </>
+                      )}
                     </p>
                   </div>
                 </div>
@@ -57,7 +62,7 @@ const Contact = () => {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="辦公室位置"
+                    title={t('contact.officeLocation')}
                     className="w-full h-full"
                   />
                 </div>
@@ -78,8 +83,13 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">{t('contact.labLocation')}</h3>
                     <p className="mt-1 text-gray-700">
-                      明志科技大學 電漿與薄膜科技中心<br />
-                      電2-202
+                      {t('contact.labAddress')}
+                      {t('contact.labRoom') && (
+                        <>
+                          <br />
+                          {t('contact.labRoom')}
+                        </>
+                      )}
                     </p>
                   </div>
                 </div>
@@ -102,7 +112,7 @@ const Contact = () => {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="實驗室位置"
+                    title={t('contact.labLocation')}
                     className="w-full h-full"
                   />
                 </div>

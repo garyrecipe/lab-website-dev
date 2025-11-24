@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
-import { ACTIVITIES } from '../data/activities';
+import { useActivitiesData } from '../hooks/useActivitiesData';
+import { useTranslation } from '../hooks/useTranslation';
 
 const Activities = () => {
+  const { t } = useTranslation();
+  const { activities: ACTIVITIES, loading } = useActivitiesData();
   const [selectedActivity, setSelectedActivity] = useState(null);
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
@@ -32,8 +35,18 @@ const Activities = () => {
     }
   };
 
+  if (loading) {
+    return (
+      <Layout title={t('activities.title')}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+          <p>{t('common.loading')}</p>
+        </div>
+      </Layout>
+    );
+  }
+
   return (
-    <Layout title="活動照片">
+    <Layout title={t('activities.title')}>
       {/* 活動列表 */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -53,7 +66,7 @@ const Activities = () => {
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-white text-lg font-medium">
-                    查看更多照片 ({activity.photos.length})
+                    {t('activities.viewMorePhotos', { count: activity.photos.length })}
                   </span>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-// 生成指定範圍內的隨機日期字符串
+// Generate random date string within specified range
 const getRandomDate = (start, end) => {
   const startDate = new Date(start).getTime();
   const endDate = new Date(end).getTime();
@@ -36,7 +36,7 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Ying-Feng Chang", "Yu-Chung Wang", "Tsung-Yu Huang", "Meng-Chi Li", "Sin-You Chen", "Yu-Xen Lin", "Li-Chen Su", "Kwei-Jay Lin"],
     publishDate: "2025",
     journal: "Analytica Chimica Acta",
-    info: [13, , 34],
+    info: [13, null, 34],
     tags: ["deep learning"],
     url: "https://doi.org/10.1016/j.aca.2025.343640"
   },
@@ -76,7 +76,7 @@ export const MOCK_PUBLICATIONS = [
   {
     id: 7,
     title: "Broadband surface enhanced infrared absorption with multiple Fano resonance by metallic oblique-wire-bundle metamaterial absorbers",
-    abstract: "Higher sensitivity with specific recognition of a sensor could ease the burden of sample purification or labelling procedure for specific testing and detection and there appear two methods including surface enhanced infrared absorption (SEIRA) and surface enhanced Raman scattering (SERS), promising better sensitivity and specificity, simultaneously, via detection of molecular footprints. Furthermore, researchers employ Fano resonance to further boost the detection limit of SEIRA by coupling between two absorption bands from molecules and metamaterials. Still, the current metamaterial absorbers are almost narrow band and require a specific design, only suitable for limited chemicals. Thus, in this work, we would like to design a broadband oblique-wire-bundle (OWB) metamaterial absorber (MA) which could interact with multiple functional groups’ absorption from a sample, thus easing the burden of custom-made resonators. In experiments, indeed, our designed OWB MA developed four Fano resonance responses with three PMMAs’ functional groups and one function group from carbon dioxide. The counterpart planar MA also performed SEIRA yet without occurrence of Fano resonance as a comparison. We believe this proposed OWB MA could facilitate the development of rapid detection in the field of food safety and chemical detection.",
+    abstract: "Higher sensitivity with specific recognition of a sensor could ease the burden of sample purification or labelling procedure for specific testing and detection and there appear two methods including surface enhanced infrared absorption (SEIRA) and surface enhanced Raman scattering (SERS), promising better sensitivity and specificity, simultaneously, via detection of molecular footprints. Furthermore, researchers employ Fano resonance to further boost the detection limit of SEIRA by coupling between two absorption bands from molecules and metamaterials. Still, the current metamaterial absorbers are almost narrow band and require a specific design, only suitable for limited chemicals. Thus, in this work, we would like to design a broadband oblique-wire-bundle (OWB) metamaterial absorber (MA) which could interact with multiple functional groups' absorption from a sample, thus easing the burden of custom-made resonators. In experiments, indeed, our designed OWB MA developed four Fano resonance responses with three PMMAs' functional groups and one function group from carbon dioxide. The counterpart planar MA also performed SEIRA yet without occurrence of Fano resonance as a comparison. We believe this proposed OWB MA could facilitate the development of rapid detection in the field of food safety and chemical detection.",
     authors: ["Hsueh-Shun Lee", "Yu-Ping Kuang", "Cheng-Yu Lu", "Ta-Jen Yen", "Tsung-Yu Huang"],
     publishDate: "2024",
     journal: "Scientific Reports",
@@ -108,8 +108,8 @@ export const MOCK_PUBLICATIONS = [
   },
   {
     id: 10,
-    title: "TiO2 Nanodisk Arrays as All-Dielectric Huygens’ Metasurfaces for Engineering the Wavefront of Near-UV Light",
-    abstract: "Electromagnetic components are important for ultraviolet (UV) applications. However, due to the limitation in the materials’ intrinsic responses, there are fewer electromagnetic components in high-frequency regimes than in low-frequency ones. Conventional UV components manipulate the wavefront via geometric phase accumulation; thus, they are significantly bulky and inefficient. In this study, we demonstrate all-dielectric Huygens’ metasurface (ADHMS) at a near-ultraviolet (NUV) regime. The NUV-ADHMS is comprised of resonant titanium dioxide (TiO2) nanodisks, with the ultrathin thickness of the fifth wavelength. In addition, by modulating the diameter of the resonant TiO2 nanodisks, we can simultaneously excite and control both electric and magnetic dipoles, achieving a powerful wavefront engineering of the near-unity transmittance and a full range of the 2π phase coverage. Finally, we employed the NUV-ADHMS to bend a normal incident beam, demonstrating a deflection angle of 11° at a wavelength of 405 nm.",
+    title: "TiO2 Nanodisk Arrays as All-Dielectric Huygens' Metasurfaces for Engineering the Wavefront of Near-UV Light",
+    abstract: "Electromagnetic components are important for ultraviolet (UV) applications. However, due to the limitation in the materials' intrinsic responses, there are fewer electromagnetic components in high-frequency regimes than in low-frequency ones. Conventional UV components manipulate the wavefront via geometric phase accumulation; thus, they are significantly bulky and inefficient. In this study, we demonstrate all-dielectric Huygens' metasurface (ADHMS) at a near-ultraviolet (NUV) regime. The NUV-ADHMS is comprised of resonant titanium dioxide (TiO2) nanodisks, with the ultrathin thickness of the fifth wavelength. In addition, by modulating the diameter of the resonant TiO2 nanodisks, we can simultaneously excite and control both electric and magnetic dipoles, achieving a powerful wavefront engineering of the near-unity transmittance and a full range of the 2π phase coverage. Finally, we employed the NUV-ADHMS to bend a normal incident beam, demonstrating a deflection angle of 11° at a wavelength of 405 nm.",
     authors: ["Tse-An Chen", "Yu-Cheng Chou", "Tsung-Yu Huang", "Yu-Jung Lu", "Yu-Ping Kuang", "Ta-Jen Yen"],
     publishDate: "2022",
     journal: "ACS Applied Nano Materials",
@@ -175,7 +175,7 @@ export const MOCK_PUBLICATIONS = [
   {
     id: 16,
     title: "Experimental demonstration of broadband light trapping by exciting surface modes of an all-dielectric taper",
-    abstract: "We design an all-dielectric taper and then excite its surface modes by illuminating a plane wave upon the taper to achieve broadband light trapping spanning from 20 to 100 GHz. Via Lewin’s theory, such excitation of surface modes could be analogous to “trapped rainbow”, i.e., activation of negative Goos-Hänchen effect within a negative refractive waveguide. To further reinforce this statement, the corresponding power flow distributions within the all-dielectric taper are recorded in finite-integration time domain simulation and suggest that a chromatic incident pulse is indeed trapped at different critical thicknesses of the taper, a character of the negative refractive waveguide. Finally, the transmittance is measured and compared to the simulated ones. The two followed the similar trend.",
+    abstract: "We design an all-dielectric taper and then excite its surface modes by illuminating a plane wave upon the taper to achieve broadband light trapping spanning from 20 to 100 GHz. Via Lewin's theory, such excitation of surface modes could be analogous to \"trapped rainbow\", i.e., activation of negative Goos-Hänchen effect within a negative refractive waveguide. To further reinforce this statement, the corresponding power flow distributions within the all-dielectric taper are recorded in finite-integration time domain simulation and suggest that a chromatic incident pulse is indeed trapped at different critical thicknesses of the taper, a character of the negative refractive waveguide. Finally, the transmittance is measured and compared to the simulated ones. The two followed the similar trend.",
     authors: ["Tsung-Yu Huang", "Ta-Jen Yen"],
     publishDate: "2019",
     journal: "Scientific Reports",
@@ -267,10 +267,11 @@ export const MOCK_PUBLICATIONS = [
     authors: ["Tsung-Yu Huang", "Ta-Jen Yen"],
     publishDate: "2011",
     journal: "Progress In Electromagnetics Research Letters",
-    info: [21, , 19],
+    info: [21, null, 19],
     tags: [],
     url: "https://doi.org/10.2528/PIERL10111706"
   }
 ]; 
 
 export const LATEST_PUBLICATIONS = MOCK_PUBLICATIONS.slice(0, 5);
+

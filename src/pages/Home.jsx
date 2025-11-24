@@ -1,13 +1,23 @@
 import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
-import { RESEARCH_TOPICS } from '../data/research';
-import { LATEST_PUBLICATIONS } from '../data/publications';
-import { NEWS_LIST } from '../data/news';
+import { useResearchData } from '../hooks/useResearchData';
+import { usePublicationsData } from '../hooks/usePublicationsData';
+import { useNewsData } from '../hooks/useNewsData';
+import { useTranslation } from '../hooks/useTranslation';
 import { HiOutlineOfficeBuilding, HiOutlinePhone, HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import NewsModal from '../components/NewsModal'; // Import your new modal component
 
 const Home = () => {
+  const { t } = useTranslation();
+  const { researchData, loading: researchLoading } = useResearchData();
+  const { publicationsData, loading: publicationsLoading } = usePublicationsData();
+  const { newsList, loading: newsLoading } = useNewsData();
+  
+  const RESEARCH_TOPICS = (researchData.RESEARCH_TOPICS || []).filter(topic => topic.description && topic.description.trim() !== '');
+  const LATEST_PUBLICATIONS = publicationsData.LATEST_PUBLICATIONS || [];
+  const NEWS_LIST = newsList || [];
+  
   const [currentSlide, setCurrentSlide] = useState(0);
   // --- BUG FIX: Declare these state variables ---
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
@@ -16,11 +26,13 @@ const Home = () => {
 
   // 自動輪播
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % RESEARCH_TOPICS.length);
-    }, 8000);
-    return () => clearInterval(timer);
-  }, []);
+    if (RESEARCH_TOPICS.length > 0) {
+      const timer = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % RESEARCH_TOPICS.length);
+      }, 8000);
+      return () => clearInterval(timer);
+    }
+  }, [RESEARCH_TOPICS.length]);
 
   // Sort NEWS_LIST by date in descending order and then take the first 6
   // This ensures the 6 most recent news items are displayed.
@@ -67,7 +79,7 @@ const Home = () => {
                       to="/research"
                       className="text-blue-600 hover:text-blue-900 font-medium inline-flex items-center"
                     >
-                      了解更多 →
+                      {t('home.learnMore')} →
                     </Link>
                   </div>
                 </div>
@@ -92,7 +104,7 @@ const Home = () => {
       <section className="py-16 bg-blue-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            最新消息
+            {t('home.latestNews')}
           </h2>
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
             {sortedAndSlicedNews.map((news, index) => (
@@ -131,42 +143,56 @@ const Home = () => {
       <section className="py-16 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            最新發表論文
+            {t('home.latestPublications')}
           </h2>
-          <div className="space-y-6">
-            {LATEST_PUBLICATIONS.slice(0, 3).map((pub, index) => (
-              <div
-                key={index}
-                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-              >
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {pub.title}
-                </h3>
-                <div className="flex flex-wrap items-center text-sm text-gray-600 gap-x-4">
-                  <span className="inline-flex items-center">
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    {pub.authors.join(', ')}
-                  </span>
+          {publicationsLoading ? (
+            <div className="text-center py-8">
+              <p className="text-gray-600">{t('common.loading')}</p>
+            </div>
+          ) : LATEST_PUBLICATIONS.length === 0 ? (
+            <div className="text-center py-8">
+              <p className="text-gray-600">{t('home.noPublications')}</p>
+            </div>
+          ) : (
+            <div className="space-y-6">
+              {LATEST_PUBLICATIONS.slice(0, 3).map((pub, index) => (
+                <div
+                  key={pub.id || index}
+                  className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                >
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {pub.title}
+                  </h3>
+                  <div className="flex flex-wrap items-center text-sm text-gray-600 gap-x-4">
+                    <span className="inline-flex items-center">
+                      <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                      </svg>
+                      {pub.authors && pub.authors.length > 0 ? pub.authors.join(', ') : ''}
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap items-center text-sm text-gray-600 gap-x-4">
+                    <span className="inline-flex items-center">
+                      <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />
+                      </svg>
+                      {pub.journal}
+                      {pub.info && pub.info.length > 0 && pub.info.filter(item => item !== undefined && item !== null).length > 0 && (
+                        <>, {pub.info.filter(item => item !== undefined && item !== null).join(', ')}</>
+                      )}
+                      {pub.publishDate && <>, {pub.publishDate}</>}
+                    </span>
+                  </div>
                 </div>
-                <div className="flex flex-wrap items-center text-sm text-gray-600 gap-x-4">
-                  <span className="inline-flex items-center">
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />
-                    </svg>
-                    {pub.journal}, {pub.info.join(', ')}, {pub.publishDate}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
           <div className="text-center mt-8">
             <Link
               to="/publications"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-800"
             >
-              查看更多論文
+              {t('home.viewMorePublications')}
             </Link>
           </div>
         </div>
@@ -176,23 +202,27 @@ const Home = () => {
       <section className="py-16 bg-blue-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            聯絡方式
+            {t('home.contactInfo')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <HiOutlineOfficeBuilding className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">地址</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('home.address')}</h3>
               <p className="text-gray-700 text-center">
-                明志科技大學 材料工程系
-                <br />
-                綜合大樓 308-2室
+                {t('contact.officeAddress')}
+                {t('contact.officeRoom') && (
+                  <>
+                    <br />
+                    {t('contact.officeRoom')}
+                  </>
+                )}
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <HiOutlinePhone className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">電話</h3>
-              <p className="text-gray-700">辦公室 02-29089899 ext. 6316</p>
-              <p className="text-gray-700">實驗室 02-29089899 ext. 7506</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('home.phone')}</h3>
+              <p className="text-gray-700">{t('contact.office')} 02-29089899 ext. 6316</p>
+              <p className="text-gray-700">{t('contact.lab')} 02-29089899 ext. 7506</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <HiOutlineMail className="w-12 h-12 text-blue-600 mb-4" />
@@ -210,7 +240,7 @@ const Home = () => {
               to="/contact"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-800"
             >
-              更多聯絡資訊
+              {t('home.moreContactInfo')}
             </Link>
           </div>
         </div>
