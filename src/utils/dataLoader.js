@@ -123,3 +123,18 @@ export const getPublicationsDataSync = (language) => {
   }
 };
 
+// Courses data loader
+export const getCoursesDataSync = (language) => {
+  switch (language) {
+    case 'en':
+      return import('../data/courses.en.js').then(module => ({
+        COURSES: module.COURSES
+      }));
+    case 'zhtc':
+    default:
+      return import('../data/courses.zhtc.js').then(module => ({
+        COURSES: module.COURSES
+      }));
+  }
+};
+

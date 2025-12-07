@@ -60,6 +60,7 @@ export const Navbar = () => {
     { path: '/research', label: t('nav.research') },
     { path: '/members', label: t('nav.members') },
     { path: '/equipment', label: t('nav.equipment') },
+    { path: '/courses', label: t('nav.courses') },
     { path: '/publications', label: t('nav.publications') },
     { path: '/activities', label: t('nav.activities') },
     { path: '/contact', label: t('nav.contact') }

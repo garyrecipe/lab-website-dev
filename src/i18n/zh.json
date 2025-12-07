@@ -6,6 +6,7 @@
     "research": "研究方向",
     "members": "研究團隊",
     "equipment": "實驗室資源",
+    "courses": "課程影片",
     "publications": "發表論文",
     "activities": "活動照片",
     "contact": "聯絡我們"
@@ -14,6 +15,7 @@
     "professor": "指導教授",
     "equipment": "實驗室資源",
     "members": "實驗室成員",
+    "courses": "課程影片",
     "contact": "聯絡我們"
   },
   "common": {
@@ -101,5 +103,10 @@
   "activities": {
     "title": "活動照片",
     "viewMorePhotos": "查看更多照片 ({count})"
+  },
+  "courses": {
+    "week": "第 {week} 週",
+    "noVideos": "此科目目前沒有影片",
+    "noCourses": "目前沒有課程"
   }
 }

@@ -6,6 +6,7 @@
     "research": "Research",
     "members": "Members",
     "equipment": "Resources",
+    "courses": "Course Videos",
     "publications": "Publications",
     "activities": "Activities",
     "contact": "Contact"
@@ -14,6 +15,7 @@
     "professor": "Professor",
     "equipment": "Laboratory Resources",
     "members": "Lab Members",
+    "courses": "Course Videos",
     "contact": "Contact Us"
   },
   "common": {
@@ -101,5 +103,10 @@
   "activities": {
     "title": "Activities",
     "viewMorePhotos": "View More Photos ({count})"
+  },
+  "courses": {
+    "week": "Week {week}",
+    "noVideos": "No videos available for this course",
+    "noCourses": "No courses available"
   }
 }

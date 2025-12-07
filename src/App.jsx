@@ -5,6 +5,7 @@ import Publications from './pages/Publications';
 import Activities from './pages/Activities';
 import Professor from './pages/Professor';
 import Equipment from './pages/Equipment';
+import Courses from './pages/Courses';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import { LanguageProvider } from './contexts/LanguageContext';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/professor" element={<Professor />} />
         <Route path="/members" element={<Members />} />
         <Route path="/equipment" element={<Equipment />} />
+        <Route path="/courses" element={<Courses />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/contact" element={<Contact />} />
