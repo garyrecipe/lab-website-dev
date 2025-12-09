@@ -53,7 +53,7 @@ export const MOCK_PUBLICATIONS = [
   },
   {
     id: 5,
-    title: "Thermal-Driven Cobalt Intercalation Enhances Thermoelectric ZT of n‑Type Bi<sub>2</sub>Te<sub>2.7</sub>Se<sub>0.3</sub>",
+    title: "Thermal-Driven Cobalt Intercalation Enhances Thermoelectric <i>ZT</i> of n‑Type Bi<sub>2</sub>Te<sub>2.7</sub>Se<sub>0.3</sub>.",
     abstract: "Layered materials have emerged as stars in the realm of nanomaterials, showcasing exceptional versatility in various fields. This investigation employed a thermally driven method to intercalate cobalt (Co) into the van der Waals gaps of (CuI)0.002Bi<sub>2</sub>Te<sub>2.7</sub>Se<sub>0.3</sub> crystals and investigated the mechanism by which the intercalated Co enhances the thermoelectric performance of the material. Co intercalation decreases the carrier concentration, thereby improving the Seebeck coefficient and decreasing both the mobility and the electrical conductivity. These effects result in a significant enhancement of the power factor above 400 K. Theoretical electronic structure calculations provide insights into the role of Co in this material. Additionally, the presence of intercalated Co significantly enhances phonon scattering, thereby boosting the thermoelectric figure-of-merit, ZT to 1.33 at 350 K for 0.17% Co intercalation. These findings highlight the potential of Co incorporation for improving the thermoelectric energy efficiency of n-type Bi<sub>2</sub>Te<sub>2.7</sub>Se<sub>0.3</sub>, offering avenues for further optimization in thermoelectric applications.",
     authors: ["Te-Hsien Wang", "Tsung-Yu Huang", "Cheng-Lung Chen"],
     publishDate: "2024",

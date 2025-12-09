@@ -122,7 +122,7 @@ const Publications = () => {
               const titleContent = (
                 <Trans
                   defaults={publication.title}
-                  components={{ sub: <sub />, sup: <sup /> }}
+                  components={{ i: <i />, sub: <sub />, sup: <sup /> }}
                 />
               );
 
@@ -138,7 +138,7 @@ const Publications = () => {
                           href={publication.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:text-blue-600 inline-flex items-center gap-1 text-gray-900"
+                          className="hover:text-blue-600 flex-wrap items-center gap-1 text-gray-900"
                         >
                           {titleContent}
                           <svg 
@@ -162,7 +162,7 @@ const Publications = () => {
                     <p className="text-gray-600 line-clamp-2">
                       <Trans
                         defaults={publication.abstract}
-                        components={{ sub: <sub />, sup: <sup /> }}
+                        components={{ i: <i />, sub: <sub />, sup: <sup /> }}
                       />
                     </p>
                     <div className="flex flex-wrap gap-2">
