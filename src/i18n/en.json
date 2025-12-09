@@ -22,7 +22,7 @@
     "loading": "Loading...",
     "search": "Search",
     "searchPlaceholder": "Search equipment name, description, or specifications...",
-    "foundItems": "Found {count} equipment",
+    "foundItems": "Found {{count}} equipment",
     "noResults": "No equipment found matching your search",
     "tryOtherKeywords": "Please try other keywords"
   },
@@ -98,11 +98,11 @@
     "noResults": "No publications found matching your criteria",
     "previousPage": "Previous",
     "nextPage": "Next",
-    "pageInfo": "Page {currentPage} of {totalPages}"
+    "pageInfo": "Page {{currentPage}} of {{totalPages}}"
   },
   "activities": {
     "title": "Activities",
-    "viewMorePhotos": "View More Photos ({count})"
+    "viewMorePhotos": "View More Photos ({{count}})"
   },
   "courses": {
     "week": "Week {week}",

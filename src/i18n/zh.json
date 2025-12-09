@@ -22,7 +22,7 @@
     "loading": "載入中...",
     "search": "搜尋",
     "searchPlaceholder": "搜尋設備名稱、描述或規格...",
-    "foundItems": "找到 {count} 項設備",
+    "foundItems": "找到 {{count}} 項設備",
     "noResults": "找不到符合搜尋條件的設備",
     "tryOtherKeywords": "請嘗試其他關鍵字"
   },
@@ -98,11 +98,11 @@
     "noResults": "沒有找到符合條件的論文",
     "previousPage": "上一頁",
     "nextPage": "下一頁",
-    "pageInfo": "第 {currentPage} 頁，共 {totalPages} 頁"
+    "pageInfo": "第 {{currentPage}} 頁，共 {{totalPages}} 頁"
   },
   "activities": {
     "title": "活動照片",
-    "viewMorePhotos": "查看更多照片 ({count})"
+    "viewMorePhotos": "查看更多照片 ({{count}})"
   },
   "courses": {
     "week": "第 {week} 週",
