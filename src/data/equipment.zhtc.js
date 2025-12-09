@@ -211,7 +211,7 @@ export const EQUIPMENT_LIST = [
 export const SOFTWARE_LIST = [
   {
     name: 'COMSOL MultiPhysics',
-    image: './images/equipment/e17.jpg',
+    image: './images/equipment/e20.jpg',
     purpose: 'COMSOL Multiphysics 是一套以 多物理耦合能力 著稱的數值模擬軟體，最大特色是能在同一平台中同時處理結構、熱、電磁、流體或化學等多種物理場。其圖形化介面直覺，可透過模組化設定建立複雜模型，亦支援使用者自訂方程式，適合研究創新設計。COMSOL 採用有限元素法（FEM） 作為主要求解方式，提供高精度網格控制與穩定的求解器，並可整合 MATLAB 進行進階運算，是跨領域工程模擬中最廣泛使用的工具之一。',
     features: [
       '數值模擬',

@@ -211,11 +211,10 @@ export const EQUIPMENT_LIST = [
 export const SOFTWARE_LIST = [
   {
     name: 'COMSOL MultiPhysics',
-    image: './images/equipment/e17.jpg',
+    image: './images/equipment/e20.jpg',
     purpose: 'COMSOL Multiphysics is a numerical simulation software renowned for its multi-physics coupling capabilities. Its greatest feature is the ability to simultaneously handle multiple physical fields such as structural, thermal, electromagnetic, fluid, or chemical in a single platform. Its graphical interface is intuitive, allowing complex models to be built through modular settings, and also supports user-defined equations, making it suitable for innovative research designs. COMSOL uses the Finite Element Method (FEM) as its main solving approach, providing high-precision mesh control and stable solvers, and can integrate with MATLAB for advanced computations. It is one of the most widely used tools in cross-disciplinary engineering simulation.',
     features: [
-      'Numerical Simulation',
-      'Finite Element'
+      'Numerical'
     ],
     spec: '',
     manager: '',

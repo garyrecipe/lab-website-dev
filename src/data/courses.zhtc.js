@@ -9,14 +9,14 @@ export const COURSES = [
       {
         id: 'video-1-1',
         title: '第一週：材料科學導論',
-        youtubeId: 'dQw4w9WgXcQ', // 請替換為實際的 YouTube 影片 ID
+        youtubeId: '808ET4MUBd0', // 請替換為實際的 YouTube 影片 ID
         week: 1,
         description: '材料科學基礎概述'
       },
       {
         id: 'video-1-2',
         title: '第二週：晶體結構',
-        youtubeId: 'dQw4w9WgXcQ', // 請替換為實際的 YouTube 影片 ID
+        youtubeId: '4uyijq75tX8', // 請替換為實際的 YouTube 影片 ID
         week: 2,
         description: '了解晶體結構及其性質'
       },
@@ -31,7 +31,7 @@ export const COURSES = [
       {
         id: 'video-2-1',
         title: '第一週：超材料導論',
-        youtubeId: 'dQw4w9WgXcQ', // 請替換為實際的 YouTube 影片 ID
+        youtubeId: 'JH3YbgzUL-U', // 請替換為實際的 YouTube 影片 ID
         week: 1,
         description: '超材料的基本概念'
       },

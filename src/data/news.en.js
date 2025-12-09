@@ -1,32 +1,32 @@
 export const NEWS_LIST = [
   {
     date: 'June 6, 2025',
-    title: 'Congratulations to Hsiao, Cheng-Yuan from Metamaterials and Metadevices Lab for Winning Second Place in Formosa Plastics Conference Creative Research Competition (School Category)',
-    content: 'Master student Hsiao, Cheng-Yuan\'s competition entry "Smart Window Achieving Continuous Controllable Switching Between Reflection and Transmission Through Nanosphere Lithography and Electrodeposition" won second place in the Formosa Plastics Conference Creative Research Competition (School Category), demonstrating the lab\'s excellent achievements in talent cultivation.',
+    title: 'Congratulations! Xiao, Cheng-Yuan was awarded 2nd Place in School Category of Formosa Plastics R&D Creative Project Competition',
+    content: 'Our group member, Xiao, Cheng-Yuan, was awarded Second Place in the School Division of the Formosa Plastics Research Seminar\'s R&D Creativity Competition. His project, "Smart Windows with Seamlessly Switching between Reflection and Transmission Using Nanosphere Lithography and Electroplating," highlights our laboratory\'s excellence in talent cultivation.',
     image: 'images/news/n1.jpg'
   },
   {
     date: 'June 28, 2025',
-    title: 'Congratulations to Hsiao, Kai-Lin from Metamaterials and Metadevices Lab for Winning Third Place in 2025 International Plasma Technology Joint Conference Oral Presentation',
-    content: 'Master student Hsiao, Kai-Lin\'s competition entry "Applying Metallic Oblique-Wire-Bundle Metamaterials for Broadband Infrared Absorption with Multiple Fano Resonances" won third place in the IPTJC International Conference Student Oral Competition, demonstrating the lab\'s excellent achievements in practical research and oral presentation training.',
+    title: 'Congratulations! Hsiao, Kai-Lin was awarded the 3rd place in the oral presentation competition of the IPTJC 2025',
+    content: 'Our group member, Hsiao, Kai-Lin, was awarded the third place in the Student Oral Presentation Competition at the IPTJC International Conference with his presentation entitled, "Applying Metallic Oblique-Wire-Bundle Metamaterials for Broadband Infrared Absorption with Multiple Fano Resonances." This achievement demonstrates our laboratory\'s excellence in practical research and oral presentation training.',
     image: 'images/news/n2.jpg'
   },
   {
     date: 'July 7, 2025',
-    title: 'Congratulations to Wu, Chun-Yu from Metamaterials and Metadevices Lab for Receiving 2025 College Student Research Program',
-    content: 'Project title "Achieving Electrically Excited Nanolasers and Their Optimization Using Hyperbolic Metasurfaces in Cartesian Coordinate System". Through the integration of metamaterials or metasurfaces, the lab\'s expertise, we achieved nanolasers with high quality factors and extremely small mode volumes. The excellent results successfully gained favor from the National Science and Technology Council!',
+    title: 'Congratulations! Wu, Jun-Yu was awarded the 2025 College Student Research Project',
+    content: 'Our undergraduate project student, Wu, Jun-Yu, applied for the NSTC Undergraduate Research Project with the project titled "Electrically Pumped Nanolasers and Their Optimization Using Hyperbolic Metasurfaces in Cartesian Coordinates." By leveraging our laboratory\'s expertise in integrating metamaterials and metasurfaces, he achieved nanolasers with high quality factors and extremely small mode volumes. Jun-Yu\'s outstanding results and data performance earned recognition from the NSTC, and his project was successfully awarded the Undergraduate Research Project grant.',
     image: 'images/news/n3.jpg'
   },
   {
     date: 'September 28, 2025',
-    title: 'Congratulations to Professor Huang, Tsung-Yu for Receiving 2024-2025 Academic Year College of Environmental Resources Outstanding Teaching Contribution Award',
-    content: 'Through student voting and recommendation, congratulations to Professor Huang, Tsung-Yu for receiving the 2024-2025 Academic Year College of Environmental Resources Outstanding Teaching Contribution Award.',
+    title: 'Congratulations! PI Huang, Tsung-Yu received the Outstanding Teaching Dedication Award from The Department of Materials Engineering, College of Environmental Resources for the 2024–2025 Academic Year',
+    content: 'Following recommendations and votes from students and faculty-level administrators, congratulations to PI Huang, Tsung-Yu for being awarded the Outstanding Teaching and Service Award for the 113th Academic Year by The Department of Materials Engineering, College of Environmental Resources.',
     image: 'images/news/n4.jpg'
   },
   {
     date: 'October 18, 2025',
-    title: 'Congratulations to Lab Research Achievement "Smart Window Preparation Method" for Winning Bronze Award at Taiwan InnoTech Expo',
-    content: 'The smart window developed by the lab can reduce transmittance from 64% to zero within 3 seconds, and can continuously switch transmittance between 0~64% as needed. In addition, it can block infrared light, keeping indoor temperatures cool. This research gained favor from Taiwan InnoTech Expo judges and was awarded the Bronze Award.',
+    title: 'Congratulations! Our team received the Bronze Award at the Taiwan InnoTech Expo for the research of "Fabrication Method of Smart Windows."',
+    content: 'The smart windows developed by our laboratory can manipulate transmittance from 64% to zero within 3 seconds and allow continuous adjustment between 0% and 64% as needed. In addition, they can block infrared light, helping to maintain a cooler indoor temperature. This research was well received by the judges at the Taiwan Innotech Expo and was awarded the Bronze Medal.',
     image: 'images/news/n5.jpg'
   }
 ]; 

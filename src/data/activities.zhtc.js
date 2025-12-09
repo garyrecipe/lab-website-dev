@@ -1,5 +1,39 @@
 export const ACTIVITIES = [
   {
+    title: "OPTIC 2025",
+    date: "December 4-7, 2025",
+    description: "實驗室大家參加OPTIC 2025，這次會議讓我知道拍照不要找男生拍！結束後的小膳香好吃～",
+    photos: [
+      {
+        url: "./images/activities/a11-1.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a11-2.jpg",
+        caption: "合照"
+      }
+    ]
+  },
+  {
+    title: "2025實驗室小出遊暨材料年會",
+    date: "November 14-15, 2025",
+    description: "大家為了逃避禮拜五的meeting，很認真的規劃了六福村一日遊～",
+    photos: [
+      {
+        url: "./images/activities/a10-1.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a10-2.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a10-3.jpg",
+        caption: "大合照"
+      }
+    ]
+  },
+  {
     title: "2025 EMRS 在波蘭",
     date: "September 11-21, 2025",
     description: "前往波蘭參加EMRS，大會招待的很豐盛，學生站海報跟日本老師聊起來了～",

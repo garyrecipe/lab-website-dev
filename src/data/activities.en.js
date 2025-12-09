@@ -1,5 +1,39 @@
 export const ACTIVITIES = [
   {
+    title: "OPTIC 2025",
+    date: "December 4-7, 2025",
+    description: "We attended OPTIC 2025 @ Taiwan Tech and learned that never ask males to take a group photo!!! Shao Shan Xiang was so good~",
+    photos: [
+      {
+        url: "./images/activities/a11-1.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a11-2.jpg",
+        caption: "Group Photo"
+      }
+    ]
+  },
+  {
+    title: "2025 Lab Trip to Leofoo and 2025 MRS-T in Hsinchu",
+    date: "November 14-15, 2025",
+    description: "To skip the Seminar and Highlight session on Friday, students scheduled a day trip to Leofoo Village Theme Park and attended the 2025 MRS-T conference at NYCU.",
+    photos: [
+      {
+        url: "./images/activities/a10-1.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a10-2.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a10-3.jpg",
+        caption: "Group Photo"
+      }
+    ]
+  },
+  {
     title: "2025 EMRS in Poland",
     date: "September 11-21, 2025",
     description: "Attended EMRS in Poland. The conference hospitality was excellent, and students presented posters and chatted with Japanese professors～",
@@ -43,7 +77,7 @@ export const ACTIVITIES = [
   {
     title: "2025 Professor's Birthday Celebration",
     date: "June 10, 2025",
-    description: "Thank you everyone for remembering the professor's birthday (worth all those exam reminders, hehe)",
+    description: "Thanks everyone for my birthday! (My reminder for every midterm and final exam worked!)",
     photos: [
       {
         url: "./images/activities/a7-1.jpg",

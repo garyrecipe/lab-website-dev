@@ -4,26 +4,26 @@ export const PROFESSOR = {
   photo: "./images/members/t1.jpg",
   phone: "02-29089899#6316",
   email: "huang.tsungyu@mail.mcut.edu.tw",
-  title: "Associate Professor, Department of Materials Engineering & Director of Honors Program",
+  title: "Associate Professor and Director of the Honors Program",
   education: [
-    "Ph.D., Department of Materials Science and Engineering, National Tsing Hua University",
-    "M.S., Department of Materials Science and Engineering, National Tsing Hua University",
-    "B.S., Department of Materials Science and Engineering, National Tsing Hua University"
+    "Ph.D., Materials Science and Engineering, National Tsing Hua University",
+    "M.S., Materials Science and Engineering, National Tsing Hua University",
+    "B.S., Materials Science and Engineering, National Tsing Hua University"
   ],
   experience: [
-    "2022/08 - Present   Associate Professor, Ming Chi University of Technology",
-    "2020/02 - 2022/07  Assistant Professor, Ming Chi University of Technology",
-    "2018/02 - 2020/01  Project Assistant Professor, Ming Chi University of Technology",
-    "2015/08 - 2018/01  Independent Postdoctoral Researcher, National Tsing Hua University",
-    "2014/06 - 2015/06  Postdoctoral Researcher, Imperial College London"
+    "Associate Professor (2022/08 – Present), Department of Materials Engineering, Ming Chi University of Technology (MCUT)",
+    "Assistant Professor (2020/02 – 2022/07), Department of Materials Engineering, Ming Chi University of Technology (MCUT)",
+    "Project Assistant Professor (2018/02 – 2020/01), Department of Materials Engineering, Ming Chi University of Technology (MCUT)",
+    "Independent Postdoctoral Researcher (2015/08 – 2018/01), Department of Materials Science and Engineering, National Tsing Hua University (NTHU)",
+    "Postdoctoral Researcher (2014/06 – 2015/06), Department of Physics, Imperial College London, UK"
   ],
   awards: [
-    "2015-2017 Independent Postdoctoral Researcher",
-    "2014 Subsidy for Postdoctoral Research Abroad",
-    "Phi Tau Phi Scholastic Honor Society"
+    "Independent Researcher (2015–2017)",
+    "Postdoctoral Research Abroad Grant (2014)",
+    "Member, The Phi Tau Phi Scholastic Honor Society"
   ],
   researchInterests: [
-    "Metamaterial Design and Applications",
+    "Design and Application of Metamaterials",
     "Numerical Simulation",
     "Lithography Process",
     "Material Analysis"
@@ -44,7 +44,7 @@ export const CURRENT_MEMBERS = {
       title: "Bachelor's Graduate",
     },
     {
-      name: "Yen, Wei-Hsiang",
+      name: "Gan, Wee-Siong",
       photo: "./images/members/m14.jpg",
       title: "Bachelor's Graduate",
     },

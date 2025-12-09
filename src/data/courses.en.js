@@ -9,14 +9,14 @@ export const COURSES = [
       {
         id: 'video-1-1',
         title: 'Week 1: Introduction to Materials Science',
-        youtubeId: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
+        youtubeId: '808ET4MUBd0', // Replace with actual YouTube video ID
         week: 1,
         description: 'Overview of materials science fundamentals'
       },
       {
         id: 'video-1-2',
         title: 'Week 2: Crystal Structure',
-        youtubeId: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
+        youtubeId: '4uyijq75tX8', // Replace with actual YouTube video ID
         week: 2,
         description: 'Understanding crystal structures and their properties'
       },
@@ -31,7 +31,7 @@ export const COURSES = [
       {
         id: 'video-2-1',
         title: 'Week 1: Introduction to Metamaterials',
-        youtubeId: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
+        youtubeId: 'JH3YbgzUL-U', // Replace with actual YouTube video ID
         week: 1,
         description: 'Basic concepts of metamaterials'
       },

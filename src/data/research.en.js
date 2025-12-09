@@ -12,12 +12,11 @@ export const RESEARCH_TOPICS = [
   {
     id: 1,
     title: "Nanolasers",
-    description: "Using COMSOL simulation software to design structures that enable three-dimensional confinement of surface plasmons at subwavelength scales. Then using Lumerical simulation software to analyze laser excitation performance. In the fabrication process, we verify simulation results through ion-assisted evaporation and FIB processes.",
+    description: "By using COMSOL simulation software, we design structures capable of achieving three-dimensional confinement of surface plasmons at sub-wavelength scales. Subsequently, Lumerical simulation software is employed to analyze the performance of laser excitation. In the fabrication phase, the simulation results are validated through ion-assisted E-gun evaporation and focus ion beam processes.",
     keyPoints: [
       "Surface Plasmon Nanolasers",
-      "Surface Plasmon Resonance",
       "Hyperbolic Metasurfaces",
-      "Electrical Excitation"
+      "Electrically Driven"
     ],
     image: "./images/research/r1.jpg",
     imageCaption: ""
@@ -25,7 +24,7 @@ export const RESEARCH_TOPICS = [
   {
     id: 2,
     title: "Acoustic Metamaterials",
-    description: "Using COMSOL simulation software to simulate the absorption performance of designed acoustic structures. By analyzing simulation results (such as absorption peaks and sound pressure distribution), we adjust structural parameters to optimize acoustic performance. After simulation results are optimized, we use 3D printing technology to fabricate physical samples and place them in impedance tubes for experimental measurements to evaluate actual sound absorption effects.",
+    description: "We utilized COMSOL simulation software to simulate the absorption performance of designed acoustic structures. By analyzing the simulation results (e.g., absorption peaks and sound pressure distribution), we adjusted the structural parameters to optimize their acoustic performance. Once the simulation results are optimized, we used a 3D printer to fabricate the corresponding acoustic metamaterials. These samples are then placed in an impedance tube for experimental measurement to evaluate their actual sound absorption effectiveness.",
     keyPoints: [
       "Acoustic Metamaterials",
       "Noise Absorption",
@@ -36,24 +35,25 @@ export const RESEARCH_TOPICS = [
   },
   {
     id: 3,
-    title: "Silicon Carbide Crystal Growth Simulation",
-    description: "Draw the silicon carbide growth chamber in STR simulation software, set material parameters, and perform crystal growth simulation. Through comparing simulation results with actual experiments, we then modify optimized configurations in simulation to achieve optimized silicon carbide crystal growth.",
+    title: "Simulation for Silicon Carbide Growth",
+    description: "The silicon carbide growth chamber is modeled in STR simulation software. After setting the material parameters, a crystal growth simulation is performed. The simulation results are then compared with actual experiments. Then, the simulation is modified to create an optimized configuration, thereby achieving optimized silicon carbide crystal growth.",
     keyPoints: [
-      "Finite Difference Time Domain Simulation",
-      "Silicon Carbide Crystal Growth Optimization",
-      "Physical Vapor Deposition"
+      "Silicon Carbide Growth",
+      "Physical Vapor Deposition",
+      "Finite Volume Method",
+      "Growth Optimization"
     ],
     image: "./images/research/r3.jpg",
     imageCaption: ""
   },
   {
     id: 4,
-    title: "Applications of Oblique-Wire-Bundle Metamaterial Perfect Absorbers",
-    description: "Using electron beam lithography combined with oblique deposition processes to fabricate oblique-wire-bundle metamaterial perfect absorber samples for applications such as electromagnetic wave absorption and sensors.",
+    title: "Various Applications of Oblique Wire Bundle Metamaterial Perfect Absorbers",
+    description: "We utilized electron beam lithography combined with an oblique angle deposition process to prepare oblique-wire-bundle metamaterial perfect absorber. These can be applied in the fields of electromagnetic wave absorption and sensors.",
     keyPoints: [
-      "Oblique Deposition Technology",
-      "Metamaterial Absorbers",
-      "Broadband Large-Angle Absorption"
+      "Oblique Angle Deposition",
+      "Metamaterial Absorber",
+      "Broadband and Wide-angle Absorption"
     ],
     image: "./images/research/r4.jpg",
     imageCaption: ""
@@ -61,11 +61,11 @@ export const RESEARCH_TOPICS = [
   {
     id: 5,
     title: "P-type SnO Thin Film Deposition",
-    description: "Using ion-assisted evaporation equipment to deposit SnO thin films with P-type characteristics, fabricating them into EIS structure electronic devices. Combined with Cool LED light source irradiation, they can respond to the irradiation range of the light source, achieving sensing and detection effects.",
+    description: "We used ion-assisted E-gun evaporation equipment to deposit SnO thin films with P-type characteristics. These are then fabricated into electrolyte-insulator-semiconductor (EIS) electronic components. When illuminated by a LED light source, they can respond to changes within the illumination range of incident light, achieving a sensing and detection effect.",
     keyPoints: [
-      "Ion-Assisted Evaporation Technology",
-      "Hole-Type Oxide Semiconductors",
-      "Light-Addressable Potentiometric Sensors"
+      "Ion-Assisted E-gun Evaporation",
+      "P-type Oxide Semiconductor",
+      "Light-Addressable Potentiometric Sensor"
     ],
     image: "./images/research/r5.jpg",
     imageCaption: ""
@@ -73,7 +73,7 @@ export const RESEARCH_TOPICS = [
   {
     id: 6,
     title: "Machine Learning and Its Various Applications",
-    description: "This research uses MATLAB's built-in Convolutional Neural Network (CNN) architecture to collect and analyze electronic waste-related data. By inputting complete datasets into CNN for training and optimization, we ultimately establish a classification model with high accuracy and excellent performance, successfully applied to electronic waste databases.",
+    description: "This research utilized the built-in convolutional neural network (CNN) architecture in MATLAB to collect and analyze data related to electronic wastes. By inputting the complete dataset into the CNN for training and optimization, a classification model with high accuracy and excellent performance is established and successfully applied to an electronic waste database.",
     keyPoints: [
       "Convolutional Neural Network (CNN)",
       "Machine Learning"
@@ -93,12 +93,12 @@ export const RESEARCH_TOPICS = [
   {
     id: 8,
     title: "Electrochemical Preparation of Smart Windows",
-    description: "Using CST and COMSOL simulation software to observe process parameters, using nanosphere lithography process to fabricate transparent electrodes, and finally achieving electrochromic smart windows.",
+    description: "We used CST and COMSOL simulation software to design process parameters. Nanosphere lithography is used for the fabrication of transparent electrodes, ultimately leading to the development of electrochromic smart windows.",
     keyPoints: [
       "Nanosphere Lithography",
+      "Transparent Electrodes",
       "Electrochemistry",
-      "Smart Windows",
-      "Transparent Electrodes"
+      "Smart Windows"
     ],
     image: "./images/research/r8.jpg",
     imageCaption: ""
@@ -106,11 +106,11 @@ export const RESEARCH_TOPICS = [
   {
     id: 9,
     title: "Electron Beam Lithography System",
-    description: "Using a series of steps including resist coating, electron beam system exposure, development, evaporation, and lift-off to fabricate nanoscale micro-sized patterns.",
+    description: "Through a series of steps including photoresist coating, electron beam exposure, development, evaporation, and lift-off, we prepare micro- or nano-structures in different conductive or insulating substrate.",
     keyPoints: [
-      "Nanostructures",
+      "Nanostructure",
       "Lithography Process",
-      "Dual Resist Process Optimization"
+      "Double Photoresist Process Optimization"
     ],
     image: "./images/research/r9.jpg",
     imageCaption: ""
@@ -118,10 +118,10 @@ export const RESEARCH_TOPICS = [
   {
     id: 10,
     title: "Application of Nanosphere Lithography in Lithium Metal Batteries",
-    description: "Using nanosphere lithography to create patterns on copper foil and observe the morphology of lithium ion deposition on copper foil",
+    description: "We used nanosphere lithography to create patterns on copper foil to observe the deposition morphology of lithium ions on the foil.",
     keyPoints: [
       "Nanosphere Lithography",
-      "Lithium Deposition Dendrite Optimization"
+      "Optimization of Lithium Dendrite Deposition"
     ],
     image: "./images/research/r10.jpg",
     imageCaption: ""
