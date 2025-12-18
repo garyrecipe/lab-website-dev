@@ -52,45 +52,74 @@ const Home = () => {
 
   return (
     <Layout>
-      {/* 研究內容輪播 */}
+{/* 研究內容輪播 */}
       <section className="relative bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="relative h-[600px] sm:h-[600px] md:h-[400px] lg:h-[400px] overflow-hidden">
+          {/* 修正 1: 調整總高度
+            - 手機版 (預設): h-[650px]。增加高度以容納垂直排列的圖片+文字。
+            - 電腦版 (md): h-[454px]。讓圖片剛好填滿畫面。
+          */}
+          <div className="relative h-[650px] sm:h-[650px] md:h-[454px] overflow-hidden rounded-xl shadow-sm">
             {RESEARCH_TOPICS.map((topic, index) => (
               <div
                 key={index}
                 className={`absolute w-full h-full transition-all duration-500 transform ${index === currentSlide ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
                   }`}
               >
-                <div className="grid grid-cols-1 md:grid-cols-2 h-5/4">
-                  <div className="relative">
+                {/* 修正 2: 佈局結構
+                   - 手機版: flex flex-col (垂直排列)。
+                   - 電腦版: md:grid md:grid-cols-2 (左右排列)。
+                */}
+                <div className="flex flex-col md:grid md:grid-cols-2 h-full">
+                  
+                  {/* 修正 3: 圖片容器
+                     - 手機版: h-[45%]。
+                       計算邏輯：若總高 650px，45% 約為 292px。
+                       對於 4:3 的圖片，292px 的高度允許寬度達到約 390px。
+                       這足以讓圖片在絕大多數手機上「撐滿寬度」且不留白。
+                     - object-contain: 確保圖片不被裁切。
+                  */}
+                  <div className="relative h-[45%] md:h-full bg-gray-50 flex items-center justify-center w-full">
                     <img
                       src={topic.image}
                       alt={topic.title}
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-contain" 
                     />
                   </div>
-                  <div className="bg-white backdrop-blur-sm p-12 flex flex-col">
-                    <h3 className="text-3xl font-semibold text-blue-900 mb-4">
+
+                  {/* 修正 4: 文字容器
+                     - flex-1: 讓文字區塊自動填滿剩下的空間 (約 55%)，解決文字消失的問題。
+                     - overflow-y-auto: 若文字真的太多，允許區塊內捲動。
+                  */}
+                  <div className="flex-1 md:h-full bg-white backdrop-blur-sm p-6 md:p-12 flex flex-col justify-center overflow-y-auto">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-blue-900 mb-3 md:mb-4">
                       {topic.title}
                     </h3>
-                    <p className="text-gray-700 mb-6">{topic.description}</p>
-                    <Link
-                      to="/research"
-                      className="text-blue-600 hover:text-blue-900 font-medium inline-flex items-center"
-                    >
-                      {t('home.learnMore')} →
-                    </Link>
+                    
+                    {/* 移除 line-clamp 限制，讓文字盡量顯示 */}
+                    <p className="text-gray-700 mb-6 text-sm md:text-base">
+                      {topic.description}
+                    </p>
+                    
+                    <div className="mt-auto md:mt-0"> {/* 確保按鈕在手機版稍微往下推 */}
+                      <Link
+                        to="/research"
+                        className="text-blue-600 hover:text-blue-900 font-medium inline-flex items-center text-sm md:text-base"
+                      >
+                        {t('home.learnMore')} →
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
+            
             {/* 輪播指示器 */}
-            <div className="absolute bottom-8 md:bottom-4 lg:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
               {RESEARCH_TOPICS.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-3 h-3 rounded-full transition-all ${index === currentSlide ? 'bg-blue-600 w-8' : ' hover:bg-blue-600 bg-gray-300'
+                  className={`w-3 h-3 rounded-full transition-all border border-white/50 shadow-sm ${index === currentSlide ? 'bg-blue-600 w-8' : 'hover:bg-blue-600 bg-gray-300'
                     }`}
                   onClick={() => setCurrentSlide(index)}
                 />

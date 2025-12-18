@@ -28,6 +28,12 @@ export const NEWS_LIST = [
     title: 'Congratulations! Our team received the Bronze Award at the Taiwan InnoTech Expo for the research of "Fabrication Method of Smart Windows."',
     content: 'The smart windows developed by our laboratory can manipulate transmittance from 64% to zero within 3 seconds and allow continuous adjustment between 0% and 64% as needed. In addition, they can block infrared light, helping to maintain a cooler indoor temperature. This research was well received by the judges at the Taiwan Innotech Expo and was awarded the Bronze Medal.',
     image: 'images/news/n5.jpg'
+  },
+  {
+    date: 'December 16, 2025',
+    title: 'A work shop with Pitotech Co. for electroplating and CFD modules in COMSOL',
+    content: 'We held a workshop with Pitotech Co for the simulation in electroplating, single phase and two phase of CFD and learned alot.',
+    image: 'images/news/n6.jpg'
   }
 ]; 
 
