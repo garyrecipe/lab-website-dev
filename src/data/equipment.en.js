@@ -1,209 +1,219 @@
 export const EQUIPMENT_LIST = [
   {
-    name: 'Scanning Electron Microscope (SEM)',
+    name: 'Thermionic Scanning Electron Microscope',
     image: './images/equipment/e1.jpg',
-    purpose: 'Used for observing material surface morphology and microstructure, providing high-resolution surface morphology images. Equipped with Energy Dispersive X-ray Spectroscopy (EDS) for elemental analysis.',
+    purpose: 'It is used to observe the surface morphology and microstructure of materials, providing high-resolution surface images. When equipped with an Energy-Dispersive X-ray Spectrometer (EDS), it can also perform elemental analysis.',
     features: [
-      'Material Analysis',
-      'Surface Morphology',
-      'Elemental Analysis',
+      'Material analysis',
+      'Surface morphology',
+      'Elemental analysis',
     ],
-    spec: 'Manufacturer/Model: Jeol JSM 6390\nAcceleration Voltage: 10 – 30 keV\nMagnification: Up to 50,000x\nOthers: Equipped with liquid nitrogen-cooled Energy Dispersive Spectrometer (Oxford Instrument INCA x-Sight 7582)',
+    spec: 'Vendor / Model: Jiedong Technology / Jeol JSM 6390\nFilaments；LaB6 and W\nAcceleration Voltage: 10 – 30 kV\nMagnification: 50,000x\nOthers: Equipped Liquid Nitrogen Cooled Engery Dispersive X-ray Spectrum (Oxford Instrument INCA x-Sight 7582)',
     manager: 'Lu, Cheng-Yu',
     contact: 'U03187112@gmail.com'
   },
   {
     name: 'Electron Beam Lithography System',
     image: './images/equipment/e2.jpg',
-    purpose: 'Uses high-energy electron beams to precisely form micron or nanometer-scale patterns on material surfaces for manufacturing various micro and nano structures.',
+    purpose: 'By using a high-energy electron beam to transform the properties of the photoresist, micron- or nanometer-scale patterns can be written onto substrates for the fabrication of lithographic structures.',
     features: [
-      'Material Processing',
-      'Microstructure Writing',
-      'Positive/Negative Resist'
+      'Material process',
+      'Microstructure patterning'
     ],
-    spec: 'Manufacturer/Model: Raith Elphy Quantum\nResist: PMMA 950K A1~A7, PMMA 495K A1~A7, LOR 5B positive resists, and SU8 2000.5 negative resist.\nMaximum Writing Area: 1,000 mm²\nMaximum Lift-off Thickness: Up to 200 nm with dual resist process\nMinimum Feature Size: 100 nm\nOthers: Can perform microstructure writing on conductor or non-conductor substrates.',
+    spec: 'Vendor / Model: Raith / Elphy Quantum',
     manager: 'Lu, Cheng-Yu',
     contact: 'U03187112@gmail.com'
   },
   {
-    name: 'High Vacuum Thermal Evaporation System',
+    name: 'High-Vacuum Thermal Evaporation System',
     image: './images/equipment/e3.jpg',
-    purpose: 'By applying voltage, the resistor generates heat and heats the tungsten boat and target material. The coating material vaporizes and deposits on the substrate above.',
+    purpose: 'Applies voltage to heat tungsten boats and targets via resistive heating. Vaporized material deposits onto the substrate above.',
     features: [
-      'Material Processing',
-      'Thermal Evaporation',
-      'Thin Film Deposition'
+      'Material processing',
+      'Thermal evaporation',
+      'Thin-film deposition'
     ],
-    spec: 'Manufacturer/Model: Custom System\nNumber of Evaporation Sources: Four evaporation sources\nHeating Current: Up to 100 Amperes\nSubstrate Size: 25 cm diameter (3x3 cm² center area cannot place samples)\nSubstrate Rotation Speed: Up to 60 rpm\nOthers: Currently calibrated for material thickness including silver, chromium, magnesium fluoride, indium tin oxide, nickel, iron, cobalt, gold, and aluminum.',
+    spec: 'Vendor / Model: YONGFA JOYFUL INDUSTRY / Custom system\nEvaporation sources: 4\nHeating current: Up to 100 A\nSubstrate stage: Ø 25 cm\nStage rotation: Up to 60 rpm\nOthers: Calibrated for Ag, Cr, MgF2, ITO, Ni, Fe, Co, Au and Al',
     manager: 'Hsu, Hung-Yi',
-    contact: '7506'
+    contact: 'dsa82504222@gmail.com'
   },
   {
-    name: 'Ion-Assisted Electron Gun Evaporation System',
+    name: 'Ion-Assisted Electron-Beam Evaporation System',
     image: './images/equipment/e4.jpg',
-    purpose: 'Uses magnetic field to guide hot electrons to bombard the target material in the crucible, causing the target material to heat up and vaporize, depositing on the substrate above. Additionally, with the ion gun, the introduced gas can be plasmaized and guided to bombard the sample, forming dense thin films.',
+    purpose: 'Uses magnetic fields to guide thermionic electrons to heat and evaporate target materials. Additionally, ion gun provides plasma bombardment for dense thin films.',
     features: [
-      'Material Processing',
-      'Electron Beam Evaporation',
-      'Ion Assistance',
-      'Thin Film Deposition'
+      'Material processing',
+      'E-Beam evaporation',
+      'Ion-assisted deposition'
     ],
-    spec: 'Manufacturer/Model: Ion-Assisted Electron Gun Evaporation System\nNumber of Crucible Slots: Three crucible slots\nElectron Gun Maximum Power: Telemark model 880 control module with Telemark tt-15 power supply, maximum power up to 15kW\nIon Gun: CKII controller, anode maximum output voltage DC 200 V, anode maximum output current 5 Amperes\nIntroduced Gases: Oxygen, nitrogen, and argon gases\nOthers: Metals and metal oxides including aluminum, copper, gold, hafnium, magnesium, silicon, silver, zinc, and tin',
+    spec: 'Vendor / Model: CHINTECH TECHNOLOGY / Custom system\nCrucibles: 3\nE-beam power: Telemark 880 + TT-15, up to 15 kW\nIon gun: CKII, 200V/5A\nGases: O2, N2, and Ar\nOthers: Suitable for Al, Cu, Au, Yb, Mg, Si, Ag, Zn, and Sn',
     manager: 'Hsiang, Pin-Yao',
     contact: 'M1324004@cgu.edu.tw'
   },
   {
     name: 'Three-Gun Unbalanced Magnetron Sputtering System',
     image: './images/equipment/e5.jpg',
-    purpose: 'Uses DC or RF power sources with magnetic field to form plasma from inert gas, and uses electric field to guide plasma to bombard targets. Target atoms are sputtered and deposited on substrates, forming uniform thin films.',
+    purpose: 'Uses DC/RF power with plasma to sputter target atoms onto substrates.',
     features: [
-      'Material Processing',
+      'Material processing',
       'Sputtering',
-      'Plasma-Assisted',
-      'Thin Film Deposition'
+      'Plasma-assisted deposition'
     ],
-    spec: 'Manufacturer/Model: Three-Gun Unbalanced Magnetron Sputtering System\nSubstrate Diameter: 4 inches\nSubstrate Temperature: Up to 850 ℃\nPower Sources: Two DC and two RF power sources\nTarget Holders: Three 2-inch targets\nIntroduced Gases: Oxygen, hydrogen, and nitrogen\nOthers: Currently have titanium, indium tin oxide, and copper targets',
+    spec: 'Vendor / Model: Junsun Tech / Custom\nStage: 4-inch\nTemperature: Up to 850°C\nPower: 2DC + 2RF\nTargets: Three 2-inch\nGases: O2, H2, and N2',
     manager: 'Liu, Chun-Wei',
-    contact: '7506'
+    contact: 'gogohe1357924680@gmail.com'
   },
   {
     name: '3D Printer',
     image: './images/equipment/e6.jpg',
-    purpose: 'Uses photosensitive resin to print various three-dimensional structures.',
+    purpose: 'Uses photocurable resin to form 3D structures.',
     features: [
-      'Material Processing',
+      'Material processing',
       'Photocuring',
-      '3D Printing'
+      '3D printing'
     ],
-    spec: 'Manufacturer/Model: Sonic Mighty Revo 8K\nPrint Size: L 22.3 x W 12.6 x H 23.5 cm\nResolution: XY plane 16.8 x 24.8 µm, z-axis resolution 0.01-0.30 mm.',
+    spec: 'Vendor / Model: Phrozen / Sonic Mighty Revo 8K\nPrint volume: 22.3 × 12.6 × 23.5cm\nResolution: XY: 16.8 × 24.8μm; Z: 0.01–0.30mm',
     manager: 'Chan, Tzu-Hsuan',
-    contact: 'Mobile'
+    contact: 'Chanj680@gmail.com'
   },
   {
     name: 'Rapid Thermal Annealing Furnace',
     image: './images/equipment/e7.jpg',
-    purpose: 'Uses high-power heat sources (such as halogen infrared lamps) to rapidly and precisely control the heating and cooling process of samples, significantly reducing processing time compared to traditional annealing.',
+    purpose: 'Uses high-power IR lamps for fast heating and cooling.',
     features: [
-      'Material Processing',
+      'Material processing',
       'Annealing',
     ],
-    spec: 'Manufacturer/Model: R-401\nHeating Area: Four-zone heating design, total 150X150 mm²\nSample Size: Fragments to 4-inch wafers\nHeating Rate: 1-1,000 ℃/sec\nMaximum Operating Temperature: 1,000 ℃\nAvailable Gases: Compressed dry air, nitrogen, argon, and oxygen',
+    spec: 'Vendor / Model: SJ High Technology / R-401\nHeating zones: 4, 150×150mm\nRamp rate: 1–1000°C/s\nMax temp: 1000°C\nGases: Compressed Dry Air, N2, Ar, and O2',
     manager: 'Hsiang, Pin-Yao',
     contact: 'M1324004@cgu.edu.tw'
   },
   {
-    name: 'Fourier Transform Infrared Spectrometer',
+    name: 'Fourier-Transform Infrared Spectrometer (FTIR)',
     image: './images/equipment/e8.jpg',
-    purpose: 'Uses infrared light source to irradiate samples, confirming molecular structure and chemical composition of materials or compounds, determining if samples are known substances.',
+    purpose: 'Determines molecular structure and chemical composition using functional absorption peaks.',
     features: [
-      'Material Analysis',
-      'Functional Group Absorption',
-      'Optical Properties'
+      'Material analysis',
+      'Functional absorption',
+      'Optical properties'
     ],
-    spec: 'Manufacturer/Model: /PerkinElmer Spectrum\nModules: Transmission and Attenuated Total Reflection modules\nMeasurement Range: 4000 – 400 cm-1 (transmission module) and 4000 – 650 cm-1 (ATR module)\nResolution: 4 cm-1',
-    manager: 'Chen, Kuan-Wen',
-    contact: ''
+    spec: 'Vendor / Model: PerkinElmer / Spectrum\nModes: Transmission, ATR\nRange: 4000–400 cm−1; ATR: 4000–650cm−1\nResolution: 4cm−1',
+    manager: 'Chen, Guan-Wen',
+    contact: 'M13188009@mail2.mcut.edu.tw'
   },
   {
-    name: 'X-ray Diffractometer',
+    name: 'X-Ray Diffractometer (XRD)',
     image: './images/equipment/e9.jpg',
-    purpose: 'Uses interaction between X-rays and crystal structures to generate diffraction peaks, and analyzes diffraction planes to obtain information about crystal structure, phase composition, orientation, defects, or grain size of materials.',
+    purpose: 'Used for crystal structure, phase composition, orientation, and grain size analysis',
     features: [
-      'Material Analysis',
-      'Crystal Structure',
-      'Grain Size'
+      'Material analysis',
+      'Crystal structure',
+      'Grain size'
     ],
-    spec: 'Manufacturer/Model: Rigaku/\nModules: Thin film, powder, heating, and residual stress analysis modules\nMeasurement Range: In thin film mode, receiver angle range 0°~ 120°; in thin film grazing incidence mode, emitter angle range 0°~ 5°, receiver angle range 0°~ 125°. In powder diffraction mode, receiver angle 0°-135°.\nHeating Range: Up to 1,300 °C\nStage Rotation Range: Vertical rotation -5°~90° and horizontal rotation 360°',
+    spec: 'Vendor / Model: Rigaku\nModes: Thin-film, powder, heating, residual stress\nRanges: Thin film 0–120°, grazing 0–5°, powder 0–135°\nHeating: Up to 1300°C\nStage rotation range: vertical rotation from –5° to 90°, and horizontal rotation of 360°',
     manager: 'Hsiang, Pin-Yao',
     contact: 'M1324004@cgu.edu.tw'
   },
   {
-    name: 'Field Emission Scanning Electron Microscope',
+    name: 'Field-Emission Scanning Electron Microscope (FE-SEM)',
     image: './images/equipment/e10.jpg',
-    purpose: 'Used for observing material surface morphology and microstructure, providing high-resolution surface morphology images. Equipped with Energy Dispersive X-ray Spectroscopy (EDS) for elemental analysis.',
+    purpose: 'Used for materials’ surface morphology and micro- or nano-structurers. Equipped with EDS for elemental analysis.',
     features: [
-      'Material Analysis',
-      'Surface Morphology',
-      'Elemental Analysis'
+      'Material analysis',
+      'Surface morphology',
+      'Elemental analysis'
     ],
-    spec: 'Manufacturer/Model: Joel JSM-IT700HR\nAcceleration Voltage: Up to 15 keV\nResolution: Up to 1 nm\nProbe Current: Up to 300 nA\nOthers: Equipped with silicon drift energy dispersive X-ray spectrometer',
+    spec: 'Vendor / Model: Jiedong Technology / Joel JSM-IT700HR\nVoltage: Up to 15kV\nResolution: 1nm\nProbe current: 300nA\nOthers: Equipped with a Silicon Drift Energy-Dispersive X-ray Spectrometer (SDD-EDS).',
     manager: 'Chan, Tzu-Hsuan',
-    contact: ''
+    contact: 'Chanj680@gmail.com'
   },
   {
-    name: 'Atomic Force Microscope',
+    name: 'Atomic Force Microscope (AFM)',
     image: './images/equipment/e11.jpg',
-    purpose: 'Uses interaction forces between probe and sample atoms to scan sample surfaces to obtain high-resolution three-dimensional surface morphology images, achieving atomic-level resolution.',
+    purpose: 'By atomic interaction forces between the probe and a sample to obtain atomic-level 3D surface morphology with atomic-scale resolution.',
     features: [
-      'Material Analysis',
-      'Surface Morphology',
-      'Thin Film Thickness'
+      'Material processing',
+      'Surface morphology',
+      'Thin-film thickness'
       ],
-    spec: 'Manufacturer/Model: Bruker/ \nModules: Contact, tapping, and conductive material modules\nModes: General, liquid, and small-range scanning modes\nScan Range: Maximum 90X90 µm² in plane, height up to 10 µm\nResolution: 512X512 pixel resolution',
-    manager: 'Chung, Wei-Hsiang',
-    contact: ''
+    spec: 'Vendor / Model: Bruker\nModes: Contact, tapping, conductive\nMethods: General, liquid, and small-area scanning modes\nRange: XY 90×90μm; Z 10μm\nResolution: 512×512px',
+    manager: 'Chung, Wei-Xiang',
+    contact: 'M14188043@mcut.edu.tw'
   },
   {
-    name: 'Reactive Ion Etching System',
+    name: 'Reactive Ion Etching (RIE) System',
     image: './images/equipment/e12.jpg',
-    purpose: 'Reactive ion etching is a dry etching technique that simultaneously uses chemical reactions and physical bombardment to selectively remove materials. It can create high aspect ratio and anisotropic structures, making it very important in semiconductor processes, micro-nano manufacturing, and MEMS.',
+    purpose: 'Dry etching using chemical reactions and ion bombardment for anisotropic features with a high aspect ratio.',
     features: [
-      'Material Processing',
-      'Surface Modification'
+      'Material processing',
+      'Surface modification'
     ],
-    spec: 'Manufacturer/Model: Custom System\nMaximum Power: 600 W\nMaximum Flow Rate: 100 sccm\nAvailable Gases: Has four flow channels, currently available gases are oxygen, hydrogen, argon, and nitrogen\nSample Area: Maximum 226 cm²',
+    spec: 'Vendor / Model: CHINTECH TECHNOLOGY / Custom\nPower: 600W\nFlow: 100sccm\nGases: O2, H2, Ar, and N2',
     manager: 'Chin, Jung-Chun',
     contact: 'M14188014@o365.mcut.edu.tw'
   },
   {
     name: 'Potentiostat',
     image: './images/equipment/e13.jpg',
-    purpose: 'Maintains electrode at constant potential, measuring relationship between current and time or potential, used for electrochemical analysis and corrosion research.',
+    purpose: 'Maintains constant electrode potential for electrochemical tests.',
     features: [
-      'Material Processing',
-      'Material Analysis',
-      'Electrochemical Properties'
+      'Material processing',
+      'Material analysis',
+      'Electrochemical properties'
     ],
-    spec: 'Manufacturer/Model: \nVoltage Range: ± 10 V, resolution 5 µV within 200 mV\nCurrent Range: 1 A to 10 µA with resolution 0.760 nA.',
-    manager: 'Chung, Wei-Hsiang',
-    contact: ''
+    spec: 'Vendor / Model: Aurora Borealis Technology /\nVoltage: ±10V, 5μV resolution\nCurrent: 1A to 10μA',
+    manager: 'Chung, Wei-Xiang',
+    contact: 'M14188043@mcut.edu.tw'
   },
   {
     name: 'Raman Spectrometer',
     image: './images/equipment/e14.jpg',
-    purpose: 'Used to analyze molecular vibration and chemical bond information of materials, can identify chemical composition of materials, and can non-destructively evaluate stress/strain, crystallinity, and defects. Complementary to infrared absorption spectroscopy.',
+    purpose: 'Used to analyze molecular vibrations and chemical bond information in materials, enabling identification of chemical composition as well as non-destructive evaluation of stress, strain, crystallinity, and defects. This technique complements infrared absorption spectroscopy.',
     features: [
-      'Material Analysis',
-      'Raman Shift',
-      'Optical Properties'
+      'Material analysis',
+      'Raman shift',
+      'Optical properties'
     ],
-    spec: 'Manufacturer/Model: \nLight Source Specifications: Red laser with 17 mW power (wavelength 633 nm) and green laser with 25 – 200 mW power (wavelength 532 nm) two light sources.\nObjective Magnification: 10x, 50x, and 100x objectives\nResolution:',
-    manager: 'Hu, Jen-Chu',
-    contact: ''
+    spec: 'Vendor / Model: AST Instruments Corporation /\nLasers: 633 nm (17mW), 532 nm (25–200 mW)\nObjectives: 10×, 50×, 100×\nResolution: down to 0.1 cm^-1',
+    manager: 'Hu, Ren-Ju',
+    contact: 'U1218C007@o365.mcut.edu.tw'
   },
   {
     name: 'Surface Profilometer',
     image: './images/equipment/e15.jpg',
-    purpose: 'Can be used to measure parameters such as surface flatness, roughness, or thin film thickness of materials.',
+    purpose: 'Measures roughness, flatness, and film thickness.',
     features: [
-      'Material Analysis',
-      'Thin Film Thickness'
+      'Material analysis',
+      'Thin-film thickness'
     ],
-    spec: 'Manufacturer/Model: /\nProbe: Diamond tip with tip radius of approximately 2 µm\nMode: 10 to 500 µN\nZ-axis Measurement Range: Maximum 600 µm\nZ-axis Resolution: Up to 0.1 nm',
+    spec: 'Vendor/ Model:\nProbe: Diamond, 2μm radius\nForce: 10–500μN\nZ-range: 600μm\nZ-resolution: 0.1nm',
     manager: 'Lu, Cheng-Yu',
     contact: 'U03187112@gmail.com'
   },
   {
-    name: 'UV-Vis Spectrophotometer',
+    name: 'UV-Visible Spectrophotometer',
     image: './images/equipment/e16.jpg',
-    purpose: 'UV-Vis spectrophotometer determines the bandgap of materials by irradiating samples with light of different wavelengths and analyzing the transmission, reflection, and absorption of the irradiated materials.',
+    purpose: 'Measures transmission, reflection, and absorption to determine bandgap of a material',
     features: [
-      'Material Analysis',
-      'Optical Properties'
+      'Material analysis',
+      'Optical properties'
     ],
-    spec: 'Manufacturer/Model: /\nWavelength Range: 190 to 2700 nm\nModules: Thin film, aqueous solution, and integrating sphere\nSample Size: Not exceeding 2 x 2 cm².',
+    spec: 'Vendor/ Model:\nRange: 190–2700nm\nModules: Thin film, solution, integrating sphere\nSample size: Recommended smaller than 2x2cm².',
     manager: 'Hsiang, Pin-Yao',
     contact: 'M1324004@cgu.edu.tw'
+  },
+  {
+    name: 'Photoluminescence Spectrometer',
+    image: './images/equipment/e21.jpg',
+    purpose: 'The core purpose of a photoluminescence (PL) spectrometer is to investigate the electronic structure, defect states, and energy band characteristics of materials in a non-destructive manner by exciting them with light and measuring the resulting emission.',
+    features: [
+      'Characterization of energy band structure',
+      'Detection of material defects and impurities',
+      'Assessment of material quality'
+    ],
+    spec: 'Vendor / Agent / Model: Edinbuvgh / Rightek / FLS1000\nFocal Length: 325mm (2 × 325mm for double grating configuration)\nSpectral Resolution: ~0.05nm (depending on grating selection)\nStray Light Rejection: 1:10⁵ (Single Grating); 1:10¹⁰ (Double Grating)',
+    manager: 'Zhang, Chen-Kai',
+    contact: 'U10187122@o365.mcut.edu.tw'
   },
   // Can add more items based on actual equipment
 ]; 
