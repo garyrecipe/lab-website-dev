@@ -36,96 +36,91 @@ export const CURRENT_MEMBERS = {
     {
       name: "Lu, Cheng-Yu",
       photo: "./images/members/m5.jpg",
-      title: "Master's Graduate",
+      title: "Research Assistant",
     },
     {
       name: "Chen, Jue",
       photo: "./images/members/m18.jpg",
-      title: "Bachelor's Graduate",
+      title: "Research Assistant",
     },
     {
       name: "Gan, Wee-Siong",
       photo: "./images/members/m14.jpg",
-      title: "Bachelor's Graduate",
+      title: "Research Assistant",
     },
     {
       name: "Hsiao, Chih-En",
       photo: "./images/members/m19.jpg",
-      title: "Undergraduate Year 3",
+      title: "Internship",
     },
     {
-      name: "Hu, Jen-Chu",
+      name: "Hu, Ren-Ju",
       photo: "./images/members/m13.jpg",
-      title: "Continuing Education Year 2",
+      title: "Internship",
     },
   ],
   phdStudents: [
     {
       name: "Hsiao, Kai-Lin",
       photo: "./images/members/m6.jpg",
-      year: "Ph.D. Year 1 (Co-advised with NCKU)"
+      year: "Freshman Year"
     },
   ],
   masterStudents: [
     {
       name: "Chan, Tzu-Hsuan",
       photo: "./images/members/m2.jpg",
-      year: "Year 2"
+      year: "Second Year"
     },
     {
-      name: "Chen, Kuan-Wen",
+      name: "Chen, Guan-Wen",
       photo: "./images/members/m11.jpg",
-      year: "Year 2"
+      year: "Second Year"
     },
     {
       name: "Hsiang, Pin-Yao",
       photo: "./images/members/m9.jpg",
-      year: "Year 2 (Co-advised with CGU Optoelectronics)"
+      year: "Second Year"
     },
     {
-      name: "Hsu, Hung-Yi",
+      name: "Xu, Hong-Yi",
       photo: "./images/members/m8.jpg",
-      year: "Year 2 (Co-advised with CGU Optoelectronics)"
+      year: "Second Year"
     },
     {
-      name: "Chin, Jung-Chun",
+      name: "Chih, Rung-Jiun",
       photo: "./images/members/m7.jpg",
-      year: "Year 1"
+      year: "First Year"
     },
     {
-      name: "Chung, Wei-Hsiang",
+      name: "Chung, Wei-Xiang",
       photo: "./images/members/m12.jpg",
-      year: "Year 1"
+      year: "First Year"
     },
     {
-      name: "Hsiang, Chun-Hsiang",
+      name: "Siang, Jyun-Siang",
       photo: "./images/members/m21.jpg",
-      year: "Year 1"
+      year: "First Year"
     },
     {
-      name: "Chang, Chen-Kai",
-      photo: "./images/members/m20.jpg",
-      year: "Undergraduate Year 5 (4+1)"
-    },
-    {
-      name: "Huang, Cheng-Yu",
+      name: "Huang, Chen-Yo",
       photo: "./images/members/m16.jpg",
-      year: "Continuing Education Year 4"
+      year: "Fourth Year"
     },
     {
       name: "Liu, Chun-Wei",
       photo: "./images/members/m10.jpg",
-      title: "Continuing Education Year 3",
+      title: "Fourth Year",
     },
   ],
   mascots: [
     {
-      name: "Ching",
+      name: "Huang, Yong-Ching (Ching-zai)",
       photo: "./images/members/ma1.jpg",
       title: "Ph.D. Cat",
     },
     {
-      name: "Beile",
+      name: "Huang, Beile",
       photo: "./images/members/ma2.jpg",
       title: "Self-Disciplined Cat",
     },
@@ -138,7 +133,7 @@ export const ALUMNI = [
     name: "Lu, Cheng-Yu",
     graduationYear: 2020,
     degree: "",
-    company: "Metamaterial Laboratory, Department of Materials Engineering, Ming Chi University of Technology",
+    company: "M&M Laboratory at MCUT",
     position: "Research Assistant",
     link: "https://cptft.mcut.edu.tw/p/412-1019-8766.php?Lang=zh-tw"
   },
@@ -146,12 +141,12 @@ export const ALUMNI = [
     name: "Juan, Ho-Chun",
     graduationYear: 2023,
     degree: "",
-    company: "Everlight Chemical Industrial Corporation",
+    company: "Everlight Chemical Industrial Corp.",
     position: "Quality Control Engineer",
     link: "https://www.ecic.com/"
   },
   {
-    name: "Pai, Chia-Hsin",
+    name: "Bai, Chia-Hsin",
     graduationYear: 2024,
     degree: "",
     company: "Nan Ya Printed Circuit Board Corporation",
@@ -162,22 +157,22 @@ export const ALUMNI = [
     name: "Huang, Ching-Hao",
     graduationYear: 2024,
     degree: "",
-    company: "",
-    position: ""
+    company: "Nan Ya Printed Circuit Board Corporation",
+    position: "R&D Engineer"
   },
   {
     name: "Chang, Yin-Hsuan",
     graduationYear: 2021,
     degree: "",
-    company: "Kinko Optical Industrial Co., Ltd.",
-    position: "Lens Assembly Engineer",
+    company: "Kinko Optical Co. Ltd.",
+    position: "Camera Module Assembly Engineer",
     link: "http://www.kinko-optical.com/"
   },
   {
-    name: "Wu, Hsin-Hsien",
+    name: "Wu, Xin-Xian",
     graduationYear: 2021,
     degree: "",
-    company: "SPIL",
+    company: "Siliconware Precision Industries",
     position: "Process Engineer",
     link: "https://www.spilglobal.com/zh-TW/"
   },
@@ -186,7 +181,7 @@ export const ALUMNI = [
     graduationYear: 2019,
     degree: "",
     company: "ChipMOS Technologies",
-    position: "Photolithography Process Shift Engineer",
+    position: "Photolithography Process Engineer",
     link: "https://www.chipmos.com/index.aspx"
   },
   {
@@ -194,14 +189,14 @@ export const ALUMNI = [
     graduationYear: 2023,
     degree: "",
     company: "Topoint Technology",
-    position: "Coating R&D Engineer",
+    position: "Thin Film R&D Engineer",
     link: "https://www.topoint.tw/"
   },
   {
-    name: "Chen, Hsin-Yu",
+    name: "Chen, Hsin-You",
     graduationYear: 2024,
     degree: "",
-    company: "Nan Ya Printed Circuit Board",
+    company: "Nan Ya Printed Circuit Board Corporation",
     position: "R&D Engineer",
     link: "https://www.nanyapcb.com.tw/nypcb/chinese/index"
   },
@@ -214,18 +209,18 @@ export const ALUMNI = [
     link: "https://www.micron.com/"
   },
   {
-    name: "Hsiao, Cheng-Yuan",
+    name: "Xiao, Cheng-Yuan",
     graduationYear: 2025,
     degree: "",
-    company: "",
+    company: "in Military Service",
     position: ""
   },
   {
     name: "Weng, Wei-Chih",
     graduationYear: 2025,
     degree: "",
-    company: "Department of Materials Science and Engineering, National Cheng Kung University",
-    position: "Ph.D. Year 1"
+    company: "Ph D program at MSE of NCKU",
+    position: "Freshman Year"
   }
 ];
 

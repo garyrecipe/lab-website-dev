@@ -36,27 +36,27 @@ export const CURRENT_MEMBERS = {
     {
       name: "呂政育",
       photo: "./images/members/m5.jpg",
-      title: "碩士畢業",
+      title: "研究助理",
     },
     {
       name: "陳決",
       photo: "./images/members/m18.jpg",
-      title: "學士畢業",
+      title: "研究助理",
     },
     {
       name: "顏偉翔",
       photo: "./images/members/m14.jpg",
-      title: "學士畢業",
+      title: "研究助理",
     },
     {
       name: "蕭至恩",
       photo: "./images/members/m19.jpg",
-      title: "大學部三年級",
+      title: "大三工讀生",
     },
     {
       name: "胡仁聚",
       photo: "./images/members/m13.jpg",
-      title: "進修部二年級",
+      title: "研究助理",
     },
   ],
   phdStudents: [
@@ -103,11 +103,6 @@ export const CURRENT_MEMBERS = {
       year: "一年級"
     },
     {
-      name: "張宸愷",
-      photo: "./images/members/m20.jpg",
-      year: "大學部五年級(4+1)"
-    },
-    {
       name: "黃程佑",
       photo: "./images/members/m16.jpg",
       year: "進修部四年級"
@@ -115,7 +110,7 @@ export const CURRENT_MEMBERS = {
     {
       name: "劉峻瑋",
       photo: "./images/members/m10.jpg",
-      title: "進修部三年級",
+      title: "進修部四年級",
     },
   ],
   mascots: [
@@ -162,8 +157,8 @@ export const ALUMNI = [
     name: "黃璟澔",
     graduationYear: 2024,
     degree: "",
-    company: "",
-    position: ""
+    company: "南亞電路板股份有限公司",
+    position: "研發工程師"
   },
   {
     name: "張銀烜",
@@ -217,7 +212,7 @@ export const ALUMNI = [
     name: "蕭丞芫",
     graduationYear: 2025,
     degree: "",
-    company: "",
+    company: "國軍Online",
     position: ""
   },
   {

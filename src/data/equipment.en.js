@@ -174,7 +174,7 @@ export const EQUIPMENT_LIST = [
       'Raman shift',
       'Optical properties'
     ],
-    spec: 'Vendor / Model: AST Instruments Corporation /\nLasers: 633 nm (17mW), 532 nm (25–200 mW)\nObjectives: 10×, 50×, 100×\nResolution: down to 0.1 cm^-1',
+    spec: 'Vendor / Model: AST Instruments Corporation /\nLasers: 633 nm (17mW), 532 nm (25–200 mW)\nObjectives: 10×, 50×, 100×\nResolution: down to 0.1 cm⁻¹',
     manager: 'Hu, Ren-Ju',
     contact: 'U1218C007@o365.mcut.edu.tw'
   },
