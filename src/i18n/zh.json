@@ -105,7 +105,7 @@
     "viewMorePhotos": "查看更多照片 ({{count}})"
   },
   "courses": {
-    "week": "第 {week} 週",
+    "week": "第 {{week}} 週",
     "noVideos": "此科目目前沒有影片",
     "noCourses": "目前沒有課程"
   }

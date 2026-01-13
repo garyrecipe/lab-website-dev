@@ -105,7 +105,7 @@
     "viewMorePhotos": "View More Photos ({{count}})"
   },
   "courses": {
-    "week": "Week {week}",
+    "week": "Week {{week}}",
     "noVideos": "No videos available for this course",
     "noCourses": "No courses available"
   }
