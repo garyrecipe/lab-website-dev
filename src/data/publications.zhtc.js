@@ -16,6 +16,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Optics Letters",
     info: [50, 24, 7428],
     tags: ["Mie resonance and Dielectric"],
+    catagory: ["超材料", "奈米雷射", "光學元件"],
     url: "https://doi.org/10.1364/OL.572351"
   },
   {
@@ -27,6 +28,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "明志學報",
     info: [],
     tags: ["metamateiral", "slow light", "optical switch"],
+    catagory: ["超材料", "慢光", "光學元件"],
     url: ""
   },
   {
@@ -38,6 +40,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Surfaces and Intefaces",
     info: [72, 1, 107189],
     tags: ["quantum dots", "photodetector"],
+    catagory: ["光感測器"],
     url: "https://doi.org/10.1016/j.surfin.2025.107189"
   },
   {
@@ -49,6 +52,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Analytica Chimica Acta",
     info: [1341, null, 343640],
     tags: ["deep learning"],
+    catagory: ["表面電漿共振", "機器學習"],
     url: "https://doi.org/10.1016/j.aca.2025.343640"
   },
   {
@@ -60,6 +64,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [15, 1, 9427],
     tags: ["transformation optics", "3D cloak", "dielectric metamaterials"],
+    catagory: ["超材料", "隱形斗篷", "光學元件"],
     url: "https://doi.org/10.1038/s41598-025-94344-z"
   },
   {
@@ -71,6 +76,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "ACS Applied Materials & Interfaces",
     info: [16, 35, 46280],
     tags: ["thermoelectric", "bismuth telluride", "energy efficiency", "intercalation", "thermal-driven", "sustainable manufacturing"],
+    catagory: ["熱電材料"],
     url: "https://doi.org/10.1021/acsami.4c08479"
   },
   {
@@ -82,6 +88,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Materials Advances",
     info: [5, 11, 4679],
     tags: ["oxide semiconductor", "p type", "high mobility"],
+    catagory: ["功能性薄膜", "半導體元件"],
     url: "https://doi.org/10.1039/D3MA01119D"
   },
   {
@@ -93,6 +100,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [14, 1, 27328],
     tags: ["oblique deposition", "metamaterial absorber", "Fano resonance", "sensors"],
+    catagory: ["超材料", "吸收體", "感測器", "光學元件"],
     url: "https://doi.org/10.1038/s41598-024-78633-7"
   },
   {
@@ -104,6 +112,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [12, 1, 11029],
     tags: ["metamaterials", "transparent conductive electrode"],
+    catagory: ["超材料", "透明導電電極", "光學元件"],
     url: "https://doi.org/10.1038/s41598-022-14756-z"
   },
   {
@@ -115,6 +124,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [12, 1, 3557],
     tags: ["oblique depostiton", "metamaterial absorber", "sensors"],
+    catagory: ["超材料", "吸收體", "感測器", "光學元件"],
     url: "https://doi.org/10.1038/s41598-022-07338-6"
   },
   {
@@ -126,6 +136,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "ACS Applied Nano Materials",
     info: [5, 1, 925],
     tags: ["Huygens'", "flat s", "beam bending", "phase manipulation", "ultraviolet"],
+    catagory: ["超材料", "光學元件"],
     url: "https://doi.org/10.1021/acsanm.1c03585"
   },
   {
@@ -137,6 +148,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [11, 1, 18713],
     tags: ["oblique deposition", "metamaterial absorber", "braodband and wide-angle"],
+    catagory: ["超材料", "吸收體", "光學元件"],
     url: "https://doi.org/10.1038/s41598-021-98077-7"
   },
   {
@@ -148,6 +160,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Coatings",
     info: [11, 7, 789],
     tags: ["SEIRA", "Fano resonance", "metamaterial perfect absorber", "chemical detection"],
+    catagory: ["超材料", "吸收體", "感測器", "光學元件"],
     url: "https://doi.org/10.3390/coatings11070789"
   },
   {
@@ -159,6 +172,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Journal of Optics",
     info: [22, 8, 85101],
     tags: ["transformation optics", "reciprocal cloak", "illusion optics"],
+    catagory: ["超材料", "隱形斗篷", "光學元件"],
     url: "https://doi.org/10.1088/2040-8986/ab9cdb"
   },
   {
@@ -170,6 +184,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [10, 1, 5296],
     tags: ["hyperbolic metamaterials", "hyperlens", "subwavelength imaging"],
+    catagory: ["超材料", "次波長成像", "光學元件"],
     url: "https://doi.org/10.1038/s41598-020-62243-0"
   },
   {
@@ -181,6 +196,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Journal of Optics",
     info: [21, 8, 8],
     tags: ["transformation optics", "reciprocal cloak", "dielectric metamaterials"],
+    catagory: ["超材料", "隱形斗篷", "光學元件"],
     url: "https://doi.org/10.1088/2040-8986/ab2358"
   },
   {
@@ -192,6 +208,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [9, 1, 3538],
     tags: ["dielectric metamaterials", "slow light", "broadband waveguide"],
+    catagory: ["超材料", "慢光", "光學元件"],
     url: "https://doi.org/10.1038/s41598-019-39906-8"
   },
   {
@@ -203,6 +220,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [7, 1, 45549],
     tags: ["metamaterials", "3D negative refraction"],
+    catagory: ["超材料", "光學元件"],
     url: "https://doi.org/10.1038/srep45549"
   },
   {
@@ -214,6 +232,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Applied Physics Express",
     info: [9, 1, 12003],
     tags: ["dielectric metmaterials", "slow light", "negative refractive waveguide"],
+    catagory: ["超材料", "慢光", "光學元件"],
     url: "https://doi.org/10.7567/APEX.9.012003"
   },
   {
@@ -225,6 +244,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Scientific Reports",
     info: [5, 1, 18605],
     tags: ["metamaterial absorber", "stochastic design process"],
+    catagory: ["超材料", "吸收體", "光學元件"],
     url: "https://doi.org/10.1038/srep18605"
   },
   {
@@ -236,6 +256,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Applied Physics Letters",
     info: [102, 11, 111102],
     tags: ["slow light", "negative refractive waveguide"],
+    catagory: ["超材料", "慢光", "光學元件"],
     url: "https://doi.org/10.1063/1.4795788"
   },
   {
@@ -247,6 +268,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Optics Express",
     info: [20, 7, 7580],
     tags: ["metamaterials", "wavelegnth filtering devices", "microstructure fabrication"],
+    catagory: ["超材料", "濾波器", "光學元件"],
     url: "https://doi.org/10.1364/OE.20.007580"
   },
   {
@@ -258,6 +280,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Applied Physics Letters",
     info: [101, 15, 151901],
     tags: ["transformation optics", "reciprocal cloak"],
+    catagory: ["超材料", "隱形斗篷", "光學元件"],
     url: "https://doi.org/10.1063/1.4757868"
   },
   {
@@ -269,6 +292,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Journal of Applied Physics",
     info: [110, 9, 93907],
     tags: ["metamaterials", "artificial magnetism"],
+    catagory: ["超材料"],
     url: "https://doi.org/10.1063/1.3656717"
   },
   {
@@ -280,6 +304,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Progress In Electromagnetics Research Letters",
     info: [21, null, 19],
     tags: ["metamaterials", "bandpass filter"],
+    catagory: ["超材料", "濾波器", "光學元件"],
     url: "https://doi.org/10.2528/PIERL10111706"
   },
   {
@@ -291,6 +316,7 @@ export const MOCK_PUBLICATIONS = [
     journal: "Optics Letters",
     info: [50, 24, 7428],
     tags: ["Mie resonance", "Dielectric"],
+    catagory: ["超材料", "奈米雷射", "光學元件"],
     url: "https://doi.org/10.1364/OL.572351"
   }
 ]; 
