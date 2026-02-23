@@ -1,5 +1,24 @@
 export const ACTIVITIES = [
   {
+    title: "2026 實驗室尾牙在阿北私房菜",
+    date: "February 6, 2026",
+    description: "今年在帶著些許的遺憾和些許的進步結束了，感謝實驗室大家這一年來的努力，持續努力囉",
+    photos: [
+      {
+        url: "./images/activities/a12-1.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a12-2.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a12-3.jpg",
+        caption: "餵食秀"
+      }
+    ]
+  },
+  {
     title: "OPTIC 2025",
     date: "December 4-7, 2025",
     description: "實驗室大家參加OPTIC 2025，這次會議讓我知道拍照不要找男生拍！結束後的小膳香好吃～",

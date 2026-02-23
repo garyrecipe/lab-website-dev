@@ -1,5 +1,24 @@
 export const ACTIVITIES = [
   {
+    title: "2026 Lab Year-End Party in Aben Kitchen",
+    date: "February 6, 2026",
+    description: "This year has come to an end with a mix of some regrets and some progress. I sincerely thank everyone in the lab for all the hard work over the past year. Let's keep pushing forward and continue striving together.",
+    photos: [
+      {
+        url: "./images/activities/a12-1.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a12-2.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a12-3.jpg",
+        caption: "Feeding Show"
+      }
+    ]
+  },
+  {
     title: "OPTIC 2025",
     date: "December 4-7, 2025",
     description: "We attended OPTIC 2025 @ Taiwan Tech and learned that never ask males to take a group photo!!! Shao Shan Xiang was so good~",
