@@ -34,6 +34,12 @@ export const NEWS_LIST = [
     title: '超材料和超元件實驗室很高興和皮托科技共同舉辦COMSOL工作坊',
     content: '和皮托科技共同舉辦工作坊。在工作坊中，我們針對電鍍和流體力學進行詳細的教學和討論。學生模擬實力大增！',
     image: 'images/news/n6.jpg'
+  },
+  {
+    date: 'March 11, 2026',
+    title: '恭賀！超材料和超元件實驗室獲得第一件台灣專利',
+    content: '本實驗室利用奈米球微影和電鍍製程製備智慧窗戶，獲得台灣發明專利。',
+    image: 'images/news/n7.jpg'
   }
 ]; 
 

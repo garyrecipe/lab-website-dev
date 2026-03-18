@@ -34,6 +34,12 @@ export const NEWS_LIST = [
     title: 'A work shop with Pitotech Co. for electroplating and CFD modules in COMSOL',
     content: 'We held a workshop with Pitotech Co for the simulation in electroplating, single phase and two phase of CFD and learned alot.',
     image: 'images/news/n6.jpg'
+  },
+  {
+    date: 'March 11, 2026',
+    title: 'Congratulations! The Metamaterials and Metadevices Laboratory has been granted its first Taiwan patent.',
+    content: 'The laboratory has been granted a Taiwan invention patent for the fabrication of smart windows using nanosphere lithography and electroplating processes.',
+    image: 'images/news/n7.jpg'
   }
 ]; 
 
