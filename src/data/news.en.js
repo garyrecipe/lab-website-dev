@@ -38,7 +38,7 @@ export const NEWS_LIST = [
   {
     date: 'March 11, 2026',
     title: 'Congratulations! The Metamaterials and Metadevices Laboratory has been granted its first Taiwan patent.',
-    content: 'The laboratory has been granted a Taiwan invention patent for the fabrication of smart windows using nanosphere lithography and electroplating processes.',
+    content: 'Our laboratory has developed smart windows using nanosphere lithography and electroplating processes, and has been granted a Taiwan invention patent. This technology can be applied in the future to building windows or vehicle heat-insulating films.',
     image: 'images/news/n7.jpg'
   }
 ]; 
