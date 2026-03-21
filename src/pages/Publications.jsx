@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Layout from '../components/Layout';
 import { usePublicationsData } from '../hooks/usePublicationsData';
 import { useTranslation } from '../hooks/useTranslation';
@@ -10,24 +10,34 @@ const Publications = () => {
   const { t } = useTranslation();
   const { publicationsData, loading } = usePublicationsData();
   const MOCK_PUBLICATIONS = publicationsData.MOCK_PUBLICATIONS || [];
+  const MOCK_PATENTS = publicationsData.MOCK_PATENTS || [];
+  const [viewMode, setViewMode] = useState('journals'); // 'journals' or 'patents'
   
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
   const [sortBy, setSortBy] = useState('date'); // 'date' or 'title'
   const [currentPage, setCurrentPage] = useState(1);
+  const currentItems = viewMode === 'journals' ? MOCK_PUBLICATIONS : MOCK_PATENTS;
+
+  useEffect(() => {
+    setSearchTerm('');
+    setSelectedTag('');
+    setSortBy('date');
+    setCurrentPage(1);
+  }, [viewMode]);
 
   // 獲取所有獨特的標籤
   const allTags = useMemo(() => {
     const tags = new Set();
-    MOCK_PUBLICATIONS.forEach(pub => {
+    currentItems.forEach(pub => {
       pub.tags.forEach(tag => tags.add(tag));
     });
     return Array.from(tags);
-  }, [MOCK_PUBLICATIONS]);
+  }, [currentItems]);
 
   // 過濾和排序論文
   const filteredPublications = useMemo(() => {
-    return MOCK_PUBLICATIONS
+    return currentItems
       .filter(pub => {
         const matchesSearch = (
           pub.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -44,7 +54,7 @@ const Publications = () => {
         }
         return a.title.localeCompare(b.title);
       });
-  }, [MOCK_PUBLICATIONS, searchTerm, selectedTag, sortBy]);
+  }, [currentItems, searchTerm, selectedTag, sortBy]);
 
   // 分頁
   const totalPages = Math.ceil(filteredPublications.length / ITEMS_PER_PAGE);
@@ -79,11 +89,40 @@ const Publications = () => {
       {/* 主要內容區域 */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6 lg:pb-8">
         {/* 搜尋和過濾區域 */}
+        <div className="mb-6 flex justify-center">
+          <div className="inline-flex rounded-lg bg-gray-100 p-1 shadow-sm">
+            <button
+              onClick={() => setViewMode('journals')}
+              className={`px-6 py-2 rounded-md font-medium cursor-pointer transition-all duration-200 ${
+                viewMode === 'journals'
+                  ? 'bg-white text-blue-600 shadow-md'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              {t('publications.journals')}
+            </button>
+            <button
+              onClick={() => setViewMode('patents')}
+              className={`px-6 py-2 rounded-md font-medium cursor-pointer transition-all duration-200 ${
+                viewMode === 'patents'
+                  ? 'bg-white text-blue-600 shadow-md'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              {t('publications.patents')}
+            </button>
+          </div>
+        </div>
+
         <div className="mb-8 space-y-4 md:space-y-0 md:flex md:items-center md:space-x-4 text-gray-900">
           <div className="flex-1">
             <input
               type="text"
-              placeholder={t('publications.searchPlaceholder')}
+              placeholder={t(
+                viewMode === 'journals'
+                  ? 'publications.searchPlaceholder'
+                  : 'publications.patentSearchPlaceholder'
+              )}
               className="w-full px-4 py-2 bg-white rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
@@ -112,9 +151,9 @@ const Publications = () => {
         </div>
 
         {/* 論文列表 */}
-        {MOCK_PUBLICATIONS.length === 0 ? (
+        {currentItems.length === 0 ? (
           <div className="text-center py-12 text-gray-600">
-            {t('publications.noPublications')}
+            {viewMode === 'journals' ? t('publications.noPublications') : t('publications.noPatents')}
           </div>
         ) : (
           <div className="divide-y divide-gray-200">

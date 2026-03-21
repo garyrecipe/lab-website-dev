@@ -6,7 +6,9 @@ export const usePublicationsData = () => {
   const { language } = useLanguage();
   const [publicationsData, setPublicationsData] = useState({
     MOCK_PUBLICATIONS: [],
-    LATEST_PUBLICATIONS: []
+    LATEST_PUBLICATIONS: [],
+    MOCK_PATENTS: [],
+    LATEST_PATENTS: []
   });
   const [loading, setLoading] = useState(true);
 

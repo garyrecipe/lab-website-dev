@@ -85,7 +85,7 @@ const Equipment = () => {
           <div className="inline-flex rounded-lg bg-gray-100 p-1 shadow-sm">
             <button
               onClick={() => setViewMode('equipment')}
-              className={`px-6 py-2 rounded-md font-medium transition-all duration-200 ${
+              className={`px-6 py-2 rounded-md font-medium cursor-pointer transition-all duration-200 ${
                 viewMode === 'equipment'
                   ? 'bg-white text-blue-600 shadow-md'
                   : 'text-gray-600 hover:text-gray-900'
@@ -95,7 +95,7 @@ const Equipment = () => {
             </button>
             <button
               onClick={() => setViewMode('software')}
-              className={`px-6 py-2 rounded-md font-medium transition-all duration-200 ${
+              className={`px-6 py-2 rounded-md font-medium cursor-pointer transition-all duration-200 ${
                 viewMode === 'software'
                   ? 'bg-white text-blue-600 shadow-md'
                   : 'text-gray-600 hover:text-gray-900'

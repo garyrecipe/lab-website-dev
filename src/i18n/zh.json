@@ -7,7 +7,7 @@
     "members": "研究團隊",
     "equipment": "實驗室資源",
     "courses": "課程影片",
-    "publications": "發表論文",
+    "publications": "實驗室發表",
     "activities": "活動照片",
     "contact": "聯絡我們"
   },
@@ -76,25 +76,29 @@
   "home": {
     "learnMore": "了解更多",
     "latestNews": "最新消息",
-    "latestPublications": "最新發表論文",
-    "viewMorePublications": "查看更多論文",
+    "latestPublications": "最新實驗室發表",
+    "viewMorePublications": "查看更多實驗室發表",
     "contactInfo": "聯絡方式",
     "address": "地址",
     "phone": "電話",
     "moreContactInfo": "更多聯絡資訊",
-    "noPublications": "目前沒有發表論文"
+    "noPublications": "目前沒有實驗室發表"
   },
   "research": {
     "title": "研究方向",
     "keyPoints": "研究重點："
   },
   "publications": {
-    "title": "發表論文",
+    "title": "實驗室發表",
+    "journals": "期刊論文",
+    "patents": "專利",
     "searchPlaceholder": "搜尋論文標題、摘要、作者或期刊...",
+    "patentSearchPlaceholder": "搜尋專利名稱、摘要、發明人或專利編號...",
     "allCategories": "所有類別",
     "sortByDate": "依日期排序",
     "sortByTitle": "依標題排序",
-    "noPublications": "目前沒有發表論文",
+    "noPublications": "目前沒有實驗室發表",
+    "noPatents": "目前沒有專利資料",
     "noResults": "沒有找到符合條件的論文",
     "previousPage": "上一頁",
     "nextPage": "下一頁",

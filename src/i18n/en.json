@@ -89,12 +89,16 @@
     "keyPoints": "Research Highlights:"
   },
   "publications": {
-    "title": "Publications",
+    "title": "Laboratory Publications",
+    "journals": "Journal Papers",
+    "patents": "Patents",
     "searchPlaceholder": "Search publication title, abstract, authors, or journal...",
+    "patentSearchPlaceholder": "Search patent title, abstract, inventors, or patent number...",
     "allCategories": "All Categories",
     "sortByDate": "Sort by Date",
     "sortByTitle": "Sort by Title",
     "noPublications": "No publications available",
+    "noPatents": "No patent data available",
     "noResults": "No publications found matching your criteria",
     "previousPage": "Previous",
     "nextPage": "Next",

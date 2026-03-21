@@ -110,16 +110,30 @@ export const getResearchDataSync = (language) => {
 export const getPublicationsDataSync = (language) => {
   switch (language) {
     case 'en':
-      return import('../data/publications.en.js').then(module => ({
-        MOCK_PUBLICATIONS: module.MOCK_PUBLICATIONS,
-        LATEST_PUBLICATIONS: module.LATEST_PUBLICATIONS
-      }));
+      return Promise.all([
+        import('../data/publications.en.js'),
+        import('../data/patents.en.js')
+      ]).then(([publicationsModule, patentsModule]) => {
+        return {
+          MOCK_PUBLICATIONS: publicationsModule.MOCK_PUBLICATIONS,
+          LATEST_PUBLICATIONS: publicationsModule.LATEST_PUBLICATIONS,
+          MOCK_PATENTS: patentsModule.MOCK_PATENTS,
+          LATEST_PATENTS: patentsModule.LATEST_PATENTS
+        };
+      });
     case 'zhtc':
     default:
-      return import('../data/publications.zhtc.js').then(module => ({
-        MOCK_PUBLICATIONS: module.MOCK_PUBLICATIONS,
-        LATEST_PUBLICATIONS: module.LATEST_PUBLICATIONS
-      }));
+      return Promise.all([
+        import('../data/publications.zhtc.js'),
+        import('../data/patents.zhtc.js')
+      ]).then(([publicationsModule, patentsModule]) => {
+        return {
+          MOCK_PUBLICATIONS: publicationsModule.MOCK_PUBLICATIONS,
+          LATEST_PUBLICATIONS: publicationsModule.LATEST_PUBLICATIONS,
+          MOCK_PATENTS: patentsModule.MOCK_PATENTS,
+          LATEST_PATENTS: patentsModule.LATEST_PATENTS
+        };
+      });
   }
 };
 
