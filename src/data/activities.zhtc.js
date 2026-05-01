@@ -1,5 +1,43 @@
 export const ACTIVITIES = [
   {
+    title: "2026 MRS spring meeting在夏威夷火奴魯魯",
+    date: "April 26-May 1, 2026",
+    description: "今年的MRS在夏威夷舉辦，夏威夷好讚好Chill～～報告小爛，回去要多練習了",
+    photos: [
+      {
+        url: "./images/activities/a14-1.jpg",
+        caption: "夏威夷火奴魯魯"
+      },
+      {
+        url: "./images/activities/a14-2.jpg",
+        caption: ""
+      },
+      {
+        url: "./images/activities/a14-3.jpg",
+        caption: ""
+      }
+    ]
+  },
+  {
+    title: "ICMCTF2026在美國聖地牙哥",
+    date: "April 20-25, 2026",
+    description: "今年和冠文還有品堯一起參加ICMCTF2026，很久沒有英文報告的我依舊很罩，讚讚～",
+    photos: [
+      {
+        url: "./images/activities/a13-1.jpg",
+        caption: "合照"
+      },
+      {
+        url: "./images/activities/a13-2.jpg",
+        caption: "會場"
+      },
+      {
+        url: "./images/activities/a13-3.jpg",
+        caption: "合照"
+      }
+    ]
+  },
+  {
     title: "2026 實驗室尾牙在阿北私房菜",
     date: "February 6, 2026",
     description: "今年在帶著些許的遺憾和些許的進步結束了，感謝實驗室大家這一年來的努力，持續努力囉",

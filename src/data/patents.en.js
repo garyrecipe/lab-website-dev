@@ -5,7 +5,7 @@ export const MOCK_PATENTS = [
     abstract: "Nanosphere lithography is used for the fabrication of transparent electrodes, ultimately leading to the development of electrochromic smart windows.",
     authors: ["Tsung-Yu Huang", "Cheng-Yuan Xiao"],
     publishDate: "2026",
-    journal: "Taiwan Invention Patent I918481",
+    journal: "Assignee: Ming Chi University of Technology, Taiwan Invention Patent I918481",
     info: ["Granted"],
     tags: ["metamaterial", "nanosphere"],
     catagory: ["Metamaterial", "Optical Device"],

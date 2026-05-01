@@ -1,5 +1,43 @@
 export const ACTIVITIES = [
   {
+    title: "2026 MRS spring meeting in Honolulu, Hawai‘i",
+    date: "April 26-May 1, 2026",
+    description: "MRS is being held in Hawai‘i this year, and the atmosphere here is wonderful. My presentation was a bit shaky, so I’ll need to put in more practice after I return.",
+    photos: [
+      {
+        url: "./images/activities/a14-1.jpg",
+        caption: "Honolulu, Hawai‘i"
+      },
+      {
+        url: "./images/activities/a14-2.jpg",
+        caption: ""
+      },
+      {
+        url: "./images/activities/a14-3.jpg",
+        caption: ""
+      }
+    ]
+  },
+  {
+    title: "ICMCTF 2026, San Diego, California, USA",
+    date: "April 20-25, 2026",
+    description: "Attended ICMCTF 2026 with Guan-Wen and Pin-Yao this year. It's been a while since my last English presentation, but I still crushed it! Feeling great.",
+    photos: [
+      {
+        url: "./images/activities/a13-1.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a13-2.jpg",
+        caption: "ICMCTF2026"
+      },
+      {
+        url: "./images/activities/a13-3.jpg",
+        caption: "Group Photo"
+      }
+    ]
+  },
+  {
     title: "2026 Lab Year-End Party in Aben Kitchen",
     date: "February 6, 2026",
     description: "This year has come to an end with a mix of some regrets and some progress. I sincerely thank everyone in the lab for all the hard work over the past year. Let's keep pushing forward and continue striving together.",
