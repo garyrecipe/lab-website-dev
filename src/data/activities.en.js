@@ -6,15 +6,15 @@ export const ACTIVITIES = [
     photos: [
       {
         url: "./images/activities/a14-1.jpg",
-        caption: "Honolulu, Hawai‘i"
+        caption: "2026 MRS spring meeting"
       },
       {
         url: "./images/activities/a14-2.jpg",
-        caption: ""
+        caption: "2026 MRS spring meeting"
       },
       {
         url: "./images/activities/a14-3.jpg",
-        caption: ""
+        caption: "Group Photo"
       }
     ]
   },
