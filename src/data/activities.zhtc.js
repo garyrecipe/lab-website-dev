@@ -1,5 +1,20 @@
 export const ACTIVITIES = [
   {
+    title: "2026全國技專校院實務專題競賽在世貿一館",
+    date: "May 14-15, 2026",
+    description: "帶領學生參加全國技專校院學生實務專題競賽，獲得第二名殊榮，你們超棒的！",
+    photos: [
+      {
+        url: "./images/activities/a15-1.jpg",
+        caption: "合照"
+      },
+      {
+        url: "./images/activities/a15-2.jpg",
+        caption: "合照"
+      }
+    ]
+  },
+  {
     title: "2026 MRS spring meeting在夏威夷火奴魯魯",
     date: "April 26-May 1, 2026",
     description: "今年的MRS在夏威夷舉辦，夏威夷好讚好Chill～～報告小爛，回去要多練習了",
