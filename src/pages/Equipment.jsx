@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import Layout from '../components/Layout';
 import { useEquipmentData } from '../hooks/useEquipmentData';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Equipment = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -9,15 +10,16 @@ const Equipment = () => {
   const [viewMode, setViewMode] = useState('equipment'); // 'equipment' or 'software'
   const { equipmentList, softwareList, loading } = useEquipmentData();
   const { t } = useTranslation();
+  const { language } = useLanguage();
 
   // 根據 viewMode 選擇當前列表
   const currentList = viewMode === 'equipment' ? equipmentList : softwareList;
 
-  // 當切換模式時，重置搜尋和篩選
+  // 當切換模式或語言時，重置搜尋和篩選
   useEffect(() => {
     setSearchQuery('');
     setSelectedFeature('');
-  }, [viewMode]);
+  }, [viewMode, language]);
 
   // 收集所有唯一的 features
   const allFeatures = useMemo(() => {

@@ -306,18 +306,6 @@ export const MOCK_PUBLICATIONS = [
     tags: ["metamaterials", "bandpass filter"],
     catagory: ["超材料", "濾波器", "光學元件"],
     url: "https://doi.org/10.2528/PIERL10111706"
-  },
-  {
-    id: 26,
-    title: "Mie theory-based calculation of pumping enhancing and nano-lasing abilities for a single dielectric sphere",
-    abstract: "To conquer Ohmic losses and enhance pump absorption efficiency of a nanolaser, we theoretically calculate Mie coefficients of a single dielectric sphere and obtain negative effective permittivity and permeability simultaneously at frequencies above around 153 THz under a plane wave excitation with the expected negative Goos-Hänchen effect, thus promoting the pump absorption efficiency in a laser system. Meanwhile, a magnetic lasing mode is demonstrated in the dielectric sphere with an energy vortex loop, providing a possible stopped light feedback mechanism and validating the lasing ability of a single dielectric nanoparticle. Finally, according to Mie resonance, we make an analogue between lasing modes of the dielectric and metallic nanoparticles.",
-    authors: ["Kai-Lin Hsiao", "Tsung-Yu Huang"],
-    publishDate: "2025",
-    journal: "Optics Letters",
-    info: [50, 24, 7428],
-    tags: ["Mie resonance", "Dielectric"],
-    catagory: ["超材料", "奈米雷射", "光學元件"],
-    url: "https://doi.org/10.1364/OL.572351"
   }
 ]; 
 

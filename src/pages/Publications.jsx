@@ -2,12 +2,14 @@ import { useState, useMemo, useEffect } from 'react';
 import Layout from '../components/Layout';
 import { usePublicationsData } from '../hooks/usePublicationsData';
 import { useTranslation } from '../hooks/useTranslation';
+import { useLanguage } from '../contexts/LanguageContext';
 import { Trans } from 'react-i18next';
 
 const ITEMS_PER_PAGE = 10;
 
 const Publications = () => {
   const { t } = useTranslation();
+  const { language } = useLanguage();
   const { publicationsData, loading } = usePublicationsData();
   const MOCK_PUBLICATIONS = publicationsData.MOCK_PUBLICATIONS || [];
   const MOCK_PATENTS = publicationsData.MOCK_PATENTS || [];
@@ -24,15 +26,20 @@ const Publications = () => {
     setSelectedTag('');
     setSortBy('date');
     setCurrentPage(1);
-  }, [viewMode]);
+  }, [viewMode, language]);
 
-  // 獲取所有獨特的標籤
+  // 獲取所有獨特的分類
   const allTags = useMemo(() => {
-    const tags = new Set();
+    const categories = new Set();
     currentItems.forEach(pub => {
-      pub.tags.forEach(tag => tags.add(tag));
+      const list = pub.catagory || [];
+      list.forEach(cat => {
+        if (cat && cat.trim()) {
+          categories.add(cat.trim());
+        }
+      });
     });
-    return Array.from(tags);
+    return Array.from(categories);
   }, [currentItems]);
 
   // 過濾和排序論文
@@ -45,7 +52,7 @@ const Publications = () => {
           pub.authors.some(author => author.toLowerCase().includes(searchTerm.toLowerCase())) ||
           pub.journal.toLowerCase().includes(searchTerm.toLowerCase())
         );
-        const matchesTag = !selectedTag || pub.tags.includes(selectedTag);
+        const matchesTag = !selectedTag || (pub.catagory && pub.catagory.includes(selectedTag));
         return matchesSearch && matchesTag;
       })
       .sort((a, b) => {
