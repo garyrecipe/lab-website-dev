@@ -40,6 +40,24 @@ export const NEWS_LIST = [
     title: 'Congratulations! The Metamaterials and Metadevices Laboratory has been granted its first Taiwan patent.',
     content: 'Our laboratory has developed smart windows using nanosphere lithography and electroplating processes, and has been granted a Taiwan invention patent. This technology can be applied in the future to building windows or vehicle heat-insulating films.',
     image: 'images/news/n7.jpg'
+  },
+  {
+    date: 'May 15, 2026',
+    title: 'Congratulations! The Metamaterials and Metadevices Laboratory has been awarded Second Place in the National Competition and Exhibition of Practical Projects for Technological and Vocational Colleges.',
+    content: 'Students Mao-Yuan Kuo, Chun-Yu Wu, and Kai-Jie Wu from our laboratory designed an acoustic metamaterial with a thickness of only 1/120 of the incident sound wavelength, capable of achieving noise reduction exceeding 20 dB by efficiently absorbing incoming sound waves. In addition, a triboelectric nanogenerator was integrated at the opening end of the acoustic metamaterial, enabling the absorbed acoustic pressure—previously dissipated only as thermal energy—to be first converted into mechanical energy and subsequently transformed into electrical energy. At present, a single device can power 20 LED lights. By repeatedly arranging the unit cells and connecting the generators in parallel, the system is expected to power more than 500 LED lights.',
+    image: 'images/news/n8.jpg'
+  },
+  {
+    date: 'May 22, 2026',
+    title: 'Congratulations! Senior undergraduate project students from the Metamaterials and Metadevices Laboratory have received the Distinguished Award in the Project Competition',
+    content: 'Students Mao-Yuan Kuo, Chun-Yu Wu, and Kai-Jie Wu from our laboratory received the Distinguished Award in the Department of Materials Engineering Project Competition for their project titled "Applications of Metamaterials and Intelligent Computing in Future Optoelectronic and Energy Devices."',
+    image: 'images/news/n9.jpg'
+  },
+  {
+    date: 'May 27, 2026',
+    title: 'Congratulations! The Metamaterials and Metadevices Laboratory\'s Continuing Education Division undergraduate project team has been awarded First Place in the 2026 PBL Project-Based Learning Competition.',
+    content: 'Mr. Ren-Ju Hu, Ms. Yu-Hsuan Dai, Mr. Yu-An Hu, and Mr. Yu-Chang Hsu from our laboratory were awarded First Place in the PBL Project Competition for their project entitled "COMSOL Simulation of Two-Phase Flow Fields and Pressure Distribution in a Chemical Purification Filtration Tank."',
+    image: 'images/news/n10.jpg'
   }
 ]; 
 
