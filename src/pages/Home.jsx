@@ -154,7 +154,7 @@ const Home = () => {
                   )}
                   <div className="flex-1 p-6">
                     <div className="text-sm text-gray-500 mb-2">{news.date}</div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       {news.title}
                     </h3>
                     <p className="text-gray-700 line-clamp-3">

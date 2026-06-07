@@ -3,60 +3,41 @@ import React from 'react';
 
 const NewsModal = ({ show, onClose, newsItem }) => {
   if (!show) {
-    return null; // Don't render if the modal is not visible
+    return null;
   }
 
-  // Basic styling for the modal overlay and content.
-  // You can enhance this with Tailwind CSS classes or a separate CSS file.
-  const modalOverlayStyle = {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    zIndex: 1000, // Ensure it's on top of other content
-  };
-
-  const modalContentStyle = {
-    backgroundColor: 'white',
-    padding: '30px',
-    borderRadius: '10px',
-    maxWidth: '700px',
-    maxHeight: '80vh', // Limit height for scrollability
-    overflowY: 'auto', // Add scroll for long content
-    position: 'relative',
-    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
-  };
-
-  const closeButtonStyle = {
-    position: 'absolute',
-    top: '15px',
-    right: '15px',
-    background: 'none',
-    border: 'none',
-    fontSize: '1.5rem',
-    cursor: 'pointer',
-    color: '#333',
-  };
-
   return (
-    <div style={modalOverlayStyle} onClick={onClose}> {/* Close modal when clicking outside */}
-      <div style={modalContentStyle} onClick={(e) => e.stopPropagation()}> {/* Prevent modal from closing when clicking inside */}
-        <button style={closeButtonStyle} onClick={onClose}>
-          &times; {/* HTML entity for 'x' */}
+    <div
+      className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/70"
+      onClick={onClose}
+    >
+      <div
+        className="relative mx-4 flex w-full max-w-4xl max-h-[80vh] flex-col overflow-hidden rounded-xl bg-white p-8 shadow-xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          className="absolute right-4 top-4 cursor-pointer border-none bg-transparent text-2xl text-gray-700 hover:text-gray-900"
+          onClick={onClose}
+          aria-label="Close"
+        >
+          &times;
         </button>
         {newsItem && (
           <>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">{newsItem.title}</h2>
-            <p className="text-gray-600 mb-4 text-sm">{newsItem.date}</p>
+            <h2 className="mb-2 pr-8 text-xl font-bold text-gray-900">{newsItem.title}</h2>
+            <p className="mb-4 text-sm text-gray-600">{newsItem.date}</p>
             {newsItem.image && (
-              <img src={newsItem.image} alt={newsItem.title} className="w-full h-auto object-cover mb-4 rounded-lg" />
+              <div className="mb-4 h-[calc(80vh*0.5)] max-h-[50%] shrink-0 overflow-hidden rounded-lg">
+                <img
+                  src={newsItem.image}
+                  alt={newsItem.title}
+                  className="h-full w-full object-contain object-center"
+                />
+              </div>
             )}
-            <p className="text-gray-800 leading-relaxed whitespace-pre-line">{newsItem.content}</p>
+            <p className="min-h-0 flex-1 overflow-y-auto text-gray-800 leading-relaxed whitespace-pre-line">
+              {newsItem.content}
+            </p>
           </>
         )}
       </div>
