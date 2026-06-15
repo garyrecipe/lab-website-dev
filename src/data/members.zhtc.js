@@ -49,6 +49,11 @@ export const CURRENT_MEMBERS = {
       title: "研究助理",
     },
     {
+      name: "陳柏瑋",
+      photo: "./images/members/m22.jpg",
+      title: "研究助理",
+    },
+    {
       name: "蕭至恩",
       photo: "./images/members/m19.jpg",
       title: "大三工讀生",
@@ -90,27 +95,42 @@ export const CURRENT_MEMBERS = {
     {
       name: "秦戎駿",
       photo: "./images/members/m7.jpg",
-      year: "一年級"
+      year: "二年級"
     },
     {
       name: "鐘韋翔",
       photo: "./images/members/m12.jpg",
-      year: "一年級"
-    },
-    {
-      name: "項峻翔",
-      photo: "./images/members/m21.jpg",
-      year: "一年級"
+      year: "二年級"
     },
     {
       name: "黃程佑",
       photo: "./images/members/m16.jpg",
-      year: "進修部四年級"
+      year: "一年級"
     },
     {
       name: "劉峻瑋",
       photo: "./images/members/m10.jpg",
-      title: "進修部四年級",
+      title: "一年級",
+    },
+    {
+      name: "郭茂原",
+      photo: "./images/members/m23.jpg",
+      title: "一年級",
+    },
+    {
+      name: "吳凱傑",
+      photo: "./images/members/m24.jpg",
+      title: "一年級",
+    },
+    {
+      name: "賴依淳",
+      photo: "./images/members/m25.jpg",
+      title: "一年級",
+    },
+    {
+      name: "高佑齊",
+      photo: "./images/members/m26.jpg",
+      title: "一年級",
     },
   ],
   mascots: [
@@ -212,8 +232,8 @@ export const ALUMNI = [
     name: "蕭丞芫",
     graduationYear: 2025,
     degree: "",
-    company: "國軍Online",
-    position: ""
+    company: "日月光半導體製造股份有限公司高雄廠",
+    position: "製程工程師"
   },
   {
     name: "翁瑋志",

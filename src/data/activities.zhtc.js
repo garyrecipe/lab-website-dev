@@ -1,5 +1,19 @@
 export const ACTIVITIES = [
   {
+    title: "2026老師生日慶生",
+    date: "Jun 10, 2026",
+    description: "破4的慶生有淡淡的哀愁，無法裝年輕說自己是學生了!!",
+    photos: [
+      {
+        url: "./images/activities/a16-1.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a16-2.jpg",
+        caption: "壽星"
+      }
+    ]
+  },{
     title: "2026全國技專校院實務專題競賽在世貿一館",
     date: "May 14-15, 2026",
     description: "帶領學生參加全國技專校院學生實務專題競賽，獲得第二名殊榮，你們超棒的！",

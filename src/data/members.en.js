@@ -98,11 +98,6 @@ export const CURRENT_MEMBERS = {
       year: "First Year"
     },
     {
-      name: "Siang, Jyun-Siang",
-      photo: "./images/members/m21.jpg",
-      year: "First Year"
-    },
-    {
       name: "Huang, Chen-Yo",
       photo: "./images/members/m16.jpg",
       year: "Fourth Year"
@@ -212,8 +207,8 @@ export const ALUMNI = [
     name: "Xiao, Cheng-Yuan",
     graduationYear: 2025,
     degree: "",
-    company: "in Military Service",
-    position: ""
+    company: "ASE Kaohsiung",
+    position: "Process Engineer"
   },
   {
     name: "Weng, Wei-Chih",
