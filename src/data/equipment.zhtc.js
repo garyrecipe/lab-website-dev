@@ -269,5 +269,17 @@ export const SOFTWARE_LIST = [
     spec: '',
     manager: '',
     contact: ''
+  },
+  {
+    name: 'VASP 第一原理計算軟體',
+    image: './images/equipment/e22.jpg',
+    purpose: '用於材料之原子尺度模擬與電子結構分析，可進行晶體、薄膜、表面、界面與奈米結構之第一原理計算，協助研究材料能帶結構、態密度、功函數、吸附能、缺陷形成能、結構最佳化與反應能量變化等性質。',
+    features: [
+      '數值模擬',
+      '密度泛函理論'
+    ],
+    spec: '',
+    manager: '',
+    contact: ''
   }
 ]

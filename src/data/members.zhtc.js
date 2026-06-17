@@ -131,7 +131,7 @@ export const CURRENT_MEMBERS = {
       name: "高佑齊",
       photo: "./images/members/m26.jpg",
       title: "一年級",
-    },
+    }
   ],
   mascots: [
     {

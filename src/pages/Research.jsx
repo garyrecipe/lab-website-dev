@@ -13,12 +13,14 @@ const Research = () => {
 
   // 從研究主題列表中提取所有圖片（過濾掉佔位符圖片）
   const researchImages = RESEARCH_OVERVIEW && RESEARCH_TOPICS
-    ? [{image: RESEARCH_OVERVIEW.image, caption: RESEARCH_OVERVIEW.imageCaption}, ...RESEARCH_TOPICS
-        .map(topic => ({
+    ? [
+        // 只有當大綱圖片存在時，才放入陣列
+        ...(RESEARCH_OVERVIEW.image ? [{ image: RESEARCH_OVERVIEW.image, caption: RESEARCH_OVERVIEW.imageCaption }] : []),
+        ...RESEARCH_TOPICS.map(topic => ({
           image: topic.image,
           caption: topic.imageCaption || topic.title
-        }))]
-        .filter(item => !item.image.includes('placehold.co'))
+        }))
+      ].filter(item => item.image && !item.image.includes('placehold.co')) // 確保 item.image 有值
     : [];
 
   // 自動輪播效果
@@ -47,10 +49,7 @@ const Research = () => {
   // 如果沒有圖片，使用原來的圖片
   const displayImage = researchImages.length > 0 
     ? researchImages[currentImageIndex]
-    : {
-        image: RESEARCH_OVERVIEW.image,
-        caption: RESEARCH_OVERVIEW.imageCaption
-      };
+    : null;
 
   return (
     <Layout title={t('research.title')}>
@@ -67,25 +66,32 @@ const Research = () => {
               </p>
             </div>
             <div className="lg:p-8 p-4">
-              <div className="relative aspect-[2/1]">
-                <img
-                  src={displayImage.image}
-                  alt={displayImage.caption}
-                  className="rounded-lg shadow-md w-full h-full object-cover transition-opacity duration-500"
-                  key={currentImageIndex}
-                />
-                <p className="text-sm text-gray-600 mt-2 text-center">
-                  {displayImage.caption}
-                </p>
+  <div className="relative aspect-[2/1] flex flex-col justify-center items-center bg-gray-50 rounded-lg">
+    {displayImage ? (
+      <>
+        <img
+          src={displayImage.image}
+                      alt={displayImage.caption}
+                      className="rounded-lg shadow-md w-full h-full object-cover transition-opacity duration-500"
+                      key={currentImageIndex}
+                    />
+                    <p className="text-sm text-gray-600 mt-2 text-center">
+                      {displayImage.caption}
+                    </p>
+                  </>
+                ) : (
+                  // 當完全沒有圖片時顯示的替代畫面（例如只顯示文字，或留白）
+                  <p className="text-sm text-gray-400 italic">暫無圖片</p>
+                )}
+
                 {/* 輪播指示點 */}
                 {researchImages.length > 1 && (
                   <div className="flex justify-center mt-2 space-x-2">
                     {researchImages.map((_, index) => (
                       <span
                         key={index}
-                        className={`inline-block w-2 h-2 rounded-full transition-colors ${
-                          index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'
-                        }`}
+                        className={`inline-block w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'
+                          }`}
                       />
                     ))}
                   </div>

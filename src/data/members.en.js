@@ -90,23 +90,43 @@ export const CURRENT_MEMBERS = {
     {
       name: "Chih, Rung-Jiun",
       photo: "./images/members/m7.jpg",
-      year: "First Year"
+      year: "Second Year"
     },
     {
       name: "Chung, Wei-Xiang",
       photo: "./images/members/m12.jpg",
-      year: "First Year"
+      year: "Second Year"
     },
     {
       name: "Huang, Chen-Yo",
       photo: "./images/members/m16.jpg",
-      year: "Fourth Year"
+      year: "First Year"
     },
     {
       name: "Liu, Chun-Wei",
       photo: "./images/members/m10.jpg",
-      title: "Fourth Year",
+      title: "First Year",
     },
+    {
+      name: "Guo, Mao-Yuan",
+      photo: "./images/members/m23.jpg",
+      title: "First Year",
+    },
+    {
+      name: "Wu, Kai-Jie",
+      photo: "./images/members/m24.jpg",
+      title: "First Year",
+    },
+    {
+      name: "Lai, Yi-Chun",
+      photo: "./images/members/m25.jpg",
+      title: "First Year",
+    },
+    {
+      name: "Gao, You-Chi",
+      photo: "./images/members/m26.jpg",
+      title: "First Year",
+    }
   ],
   mascots: [
     {

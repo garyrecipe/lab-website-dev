@@ -265,5 +265,17 @@ export const SOFTWARE_LIST = [
     spec: '',
     manager: '',
     contact: ''
+  },
+  {
+    name: 'Vienna Ab initio Simulation Package (VASP), a first-principles calculation software package',
+    image: './images/equipment/e22.jpg',
+    purpose: 'This software is used for atomic-scale modeling and electronic structure analysis of materials. It performs first-principles calculations on crystals, thin films, surfaces, interfaces, and nanostructures, enabling the study of fundamental material properties, including electronic band structures, density of states (DOS), work functions, adsorption energies, defect formation energies, structural optimization, and reaction energetics.',
+    features: [
+      'Numerical Simulation',
+      'Density Functional Theory'
+    ],
+    spec: '',
+    manager: '',
+    contact: ''
   }
 ]

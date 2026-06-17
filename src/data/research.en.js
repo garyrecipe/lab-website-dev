@@ -3,7 +3,7 @@ export const RESEARCH_OVERVIEW = {
   title: "Research Overview",
   description: `Our laboratory is dedicated to the design, fabrication, and application research of metamaterials. We focus on developing artificial structural materials with special physical properties,
     which can achieve characteristics difficult to find in nature. Our research covers the complete process from theoretical design, numerical simulation to actual fabrication and performance testing.`,
-  image: "./images/research/r0.jpg",
+  image: "",
   imageCaption: "Overview of Metamaterials Research Field"
 };
 
