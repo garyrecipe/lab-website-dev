@@ -10,6 +10,18 @@ export const MOCK_PATENTS = [
     tags: ["超材料", "奈米球微影"],
     catagory: ["超材料", "光學元件"],
     url: ""
+  },
+  {
+    id: 2,
+    title: "細胞三維成像方法",
+    abstract: " ",
+    authors: ["黃宗鈺", "黃政頲", "呂政育"],
+    publishDate: "2026",
+    journal: "專利權人：明志科技大學，中華民國 發明I931130號",
+    info: ["核准"],
+    tags: [],
+    catagory: [],
+    url: ""
   }
 ];
 
