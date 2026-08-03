@@ -4,7 +4,11 @@ export const PROFESSOR = {
   photo: "./images/members/t1.jpg",
   phone: "02-29089899#6316",
   email: "huang.tsungyu@mail.mcut.edu.tw",
-  title: "材料工程系副教授暨榮譽學程主任",
+  title: [
+    "材料工程系副教授暨榮譽學程主任",
+    "榮譽學程主任",
+    "電漿與薄膜科技中心產學服務組組長"
+  ],
   education: [
     "國立清華大學材料科學與工程學系 博士",
     "國立清華大學材料科學與工程學系 碩士",

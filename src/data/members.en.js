@@ -4,7 +4,11 @@ export const PROFESSOR = {
   photo: "./images/members/t1.jpg",
   phone: "02-29089899#6316",
   email: "huang.tsungyu@mail.mcut.edu.tw",
-  title: "Associate Professor and Director of the Honors Program",
+  title: [
+    "Associate Professor",
+    "Director of the Honors Program",
+    "Section Leader of Division of Industrial Project Service, Center for Plasma and Thin Film Technologies"
+  ],
   education: [
     "Ph.D., Materials Science and Engineering, National Tsing Hua University",
     "M.S., Materials Science and Engineering, National Tsing Hua University",

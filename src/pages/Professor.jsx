@@ -37,12 +37,22 @@ const Professor = () => {
               {<div>
                 <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.title')}</h3>
                 <ul className="space-y-3">
-                  <li
-                    className="text-gray-700 flex items-start"
-                  >
-                    <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
-                    <span>{PROFESSOR.title}</span>
-                  </li>
+                  {Array.isArray(PROFESSOR.title) ? (
+                    PROFESSOR.title.map((item, index) => (
+                      <li 
+                        key={index} 
+                        className="text-gray-700 flex items-start"
+                      >
+                        <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
+                        <span>{item}</span>
+                      </li>
+                    ))
+                  ) : (
+                    <li className="text-gray-700 flex items-start">
+                      <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
+                      <span>{PROFESSOR.title}</span>
+                    </li>
+                  )}
                 </ul>
               </div>}
               <div>
@@ -104,15 +114,11 @@ const Professor = () => {
               {<div>
                 <h3 className="text-xl font-semibold text-blue-900 mb-4">{t('professor.contactInfo')}</h3>
                 <ul className="space-y-3">
-                  <li
-                    className="text-gray-700 flex items-start"
-                  >
+                  <li className="text-gray-700 flex items-start">
                     <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
                     <span>{PROFESSOR.phone}</span>
                   </li>
-                  <li
-                    className="text-gray-700 flex items-start"
-                  >
+                  <li className="text-gray-700 flex items-start">
                     <span className="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2" />
                     <span>{PROFESSOR.email}</span>
                   </li>
@@ -126,4 +132,4 @@ const Professor = () => {
   );
 };
 
-export default Professor; 
+export default Professor;
