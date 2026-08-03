@@ -1,5 +1,20 @@
 export const ACTIVITIES = [
   {
+    title: "2026實驗室聚餐在茹絲葵",
+    date: "July 21, 2026",
+    description: "去年的績效達標了，來吃茹絲葵慶功一下。吃完繼續為今年的績效奮鬥！",
+    photos: [
+      {
+        url: "./images/activities/a18-1.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a18-2.jpg",
+        caption: "大合照"
+      }
+    ]
+  },
+  {
     title: "馬來西亞短期交換生的歡迎宴",
     date: "July 17, 2026",
     description: "歡迎馬來西亞伊斯蘭大學的兩位交換生Nasya和Balqis來我們實驗室進行短期研究",
@@ -13,7 +28,8 @@ export const ACTIVITIES = [
         caption: "用餐愉快"
       }
     ]
-  },{
+  },
+  {
     title: "2026老師生日慶生",
     date: "Jun 10, 2026",
     description: "破4的慶生有淡淡的哀愁，無法裝年輕說自己是學生了!!",
