@@ -22,6 +22,18 @@ export const MOCK_PATENTS = [
     tags: [],
     catagory: [],
     url: ""
+  },
+  {
+    id: 3,
+    title: "聲能轉換成電能的方法",
+    abstract: " ",
+    authors: ["黃宗鈺", "翁瑋志"],
+    publishDate: "2026",
+    journal: "專利權人：明志科技大學，中華民國 發明I932276號",
+    info: ["核准"],
+    tags: [],
+    catagory: [],
+    url: ""
   }
 ];
 
