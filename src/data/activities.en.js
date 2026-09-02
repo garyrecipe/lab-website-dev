@@ -1,5 +1,24 @@
 export const ACTIVITIES = [
   {
+    title: "2026 Lab Tour in Okinawa",
+    date: "August 25-29, 2026",
+    description: "Many thanks for the hard work of this year from all group members. Let's have a fun at Okinawa. Just keep fighting and work for the tour abroad next year.",
+    photos: [
+      {
+        url: "./images/activities/a19-1.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a19-2.jpg",
+        caption: "Group Photo"
+      },
+      {
+        url: "./images/activities/a19-3.jpg",
+        caption: "Group Photo"
+      }
+    ]
+  },
+  {
     title: "2026 MRS spring meeting in Honolulu, Hawai‘i",
     date: "April 26-May 1, 2026",
     description: "MRS is being held in Hawai‘i this year, and the atmosphere here is wonderful. My presentation was a bit shaky, so I’ll need to put in more practice after I return.",

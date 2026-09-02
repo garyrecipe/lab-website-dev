@@ -1,5 +1,24 @@
 export const ACTIVITIES = [
   {
+    title: "2026實驗室出遊在沖繩",
+    date: "August 25-29, 2026",
+    description: "實驗室的大家辛苦了一年，一起去沖繩嗨一下。大家繼續加油，為了明天的出國績效繼續打拼吧！",
+    photos: [
+      {
+        url: "./images/activities/a19-1.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a19-2.jpg",
+        caption: "大合照"
+      },
+      {
+        url: "./images/activities/a19-3.jpg",
+        caption: "大合照"
+      }
+    ]
+  },
+    {
     title: "2026實驗室聚餐在茹絲葵",
     date: "July 21, 2026",
     description: "去年的績效達標了，來吃茹絲葵慶功一下。吃完繼續為今年的績效奮鬥！",
