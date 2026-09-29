@@ -53,8 +53,8 @@ export const CURRENT_MEMBERS = {
       title: "研究助理",
     },
     {
-      name: "陳柏瑋",
-      photo: "./images/members/m22.jpg",
+      name: "張凱婷",
+      photo: "./images/members/m27.jpg",
       title: "研究助理",
     },
     {

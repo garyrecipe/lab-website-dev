@@ -53,6 +53,11 @@ export const CURRENT_MEMBERS = {
       title: "Research Assistant",
     },
     {
+      name: "Zhang, Kai-Ting",
+      photo: "./images/members/m27.jpg",
+      title: "Research Assistant",
+    },
+    {
       name: "Hsiao, Chih-En",
       photo: "./images/members/m19.jpg",
       title: "Internship",

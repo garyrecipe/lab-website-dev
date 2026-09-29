@@ -58,6 +58,12 @@ export const NEWS_LIST = [
     title: 'Congratulations! The Metamaterials and Metadevices Laboratory\'s Continuing Education Division undergraduate project team has been awarded First Place in the 2026 PBL Project-Based Learning Competition.',
     content: 'Mr. Ren-Ju Hu, Ms. Yu-Hsuan Dai, Mr. Yu-An Hu, and Mr. Yu-Chang Hsu from our laboratory were awarded First Place in the PBL Project Competition for their project entitled "COMSOL Simulation of Two-Phase Flow Fields and Pressure Distribution in a Chemical Purification Filtration Tank."',
     image: 'images/news/n10.jpg'
+  },
+  {
+    date: 'September 19, 2026',
+    title: 'Congratulations! Our team received the Silver Award at the Taiwan InnoTech Expo for the research of "METHOD AND DEVICE FOR CONVERTING SOUND ENERGY TO ELECTRICAL ENERGY"',
+    content: 'The acoustic metamaterial absorber developed by our laboratory integrates a nanotriboelectric nanogenerator (TENG) to achieve both noise reduction and energy harvesting. The absorber effectively captures incident acoustic energy and converts it into mechanical energy, which is subsequently converted into electrical energy through the triboelectric nanogenerator. This approach enables simultaneous acoustic noise reduction and waste-energy recovery. This research was recognized by the judges at the Taiwan InnoTech Expo and received a Silver Medal Award.',
+    image: 'images/news/n13.jpg'
   }
 ]; 
 
