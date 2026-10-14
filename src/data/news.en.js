@@ -63,7 +63,12 @@ export const NEWS_LIST = [
     date: 'September 19, 2026',
     title: 'Congratulations! Our team received the Silver Award at the Taiwan InnoTech Expo for the research of "METHOD AND DEVICE FOR CONVERTING SOUND ENERGY TO ELECTRICAL ENERGY"',
     content: 'The acoustic metamaterial absorber developed by our laboratory integrates a nanotriboelectric nanogenerator (TENG) to achieve both noise reduction and energy harvesting. The absorber effectively captures incident acoustic energy and converts it into mechanical energy, which is subsequently converted into electrical energy through the triboelectric nanogenerator. This approach enables simultaneous acoustic noise reduction and waste-energy recovery. This research was recognized by the judges at the Taiwan InnoTech Expo and received a Silver Medal Award.',
-    image: 'images/news/n13.jpg'
+    image: 'images/news/n13.jpg',
+    images: [
+    'images/news/n13.jpg',
+    'images/news/n13-2.jpg',
+    'images/news/n13-3.jpg'
+  ]
   }
 ]; 
 

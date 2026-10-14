@@ -34,6 +34,30 @@ export const MOCK_PATENTS = [
     tags: [],
     catagory: [],
     url: ""
+  },
+  {
+    id: 4,
+    title: "表面電漿子奈米雷射元件",
+    abstract: " ",
+    authors: ["黃宗鈺", "吳峻宇"],
+    publishDate: "2026",
+    journal: "專利權人：明志科技大學，中華民國 發明I942267號",
+    info: ["核准"],
+    tags: [],
+    catagory: [],
+    url: ""
+  },
+  {
+    id: 5,
+    title: "反應裝置",
+    abstract: " ",
+    authors: ["吳容銘","黃宗鈺", "詹子萱"],
+    publishDate: "2026",
+    journal: "專利權人：明志科技大學，中華民國 發明I942120號",
+    info: ["核准"],
+    tags: [],
+    catagory: [],
+    url: ""
   }
 ];
 

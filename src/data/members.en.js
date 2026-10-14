@@ -43,11 +43,6 @@ export const CURRENT_MEMBERS = {
       title: "Research Assistant",
     },
     {
-      name: "Chen, Jue",
-      photo: "./images/members/m18.jpg",
-      title: "Research Assistant",
-    },
-    {
       name: "Gan, Wee-Siong",
       photo: "./images/members/m14.jpg",
       title: "Research Assistant",

@@ -43,11 +43,6 @@ export const CURRENT_MEMBERS = {
       title: "研究助理",
     },
     {
-      name: "陳決",
-      photo: "./images/members/m18.jpg",
-      title: "研究助理",
-    },
-    {
       name: "顏偉翔",
       photo: "./images/members/m14.jpg",
       title: "研究助理",

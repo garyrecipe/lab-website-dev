@@ -75,7 +75,24 @@ export const NEWS_LIST = [
     date: 'September 19, 2026',
     title: '恭賀實驗室研發成果『聲能轉換成電能的方法』榮獲台灣創新博覽會銀牌獎',
     content: '本實驗室開發的聲學超材料吸收體結合奈米摩擦發電機可以吸收聲能達到降噪的效果。此外，被吸收的聲能可以轉換成機械能並藉由摩擦發電機轉換成電能，達到廢能回收的效果。該研究獲得台灣創新博覽會評審青睞，獲頒銀牌獎。',
-    image: 'images/news/n13.jpg'
+    image: 'images/news/n13.jpg',
+    images: [
+    'images/news/n13.jpg',
+    'images/news/n13-2.jpg',
+    'images/news/n13-3.jpg'
+  ]
+  },
+  {
+    date: 'September 28, 2026',
+    title: '恭賀黃宗鈺老師獲得114學年環境資源學院優良教學奉獻獎、優良教學創新獎和輔導優良導師獎',
+    content: '恭喜黃宗鈺老師獲得院級三項獎項。棒棒！',
+    image: 'images/news/n14.jpg',
+    images: [
+    'images/news/n14.jpg',
+    'images/news/n14-2.jpg',
+    'images/news/n14-3.jpg',
+    'images/news/n14-4.jpg'
+  ]
   }
 ]; 
 
