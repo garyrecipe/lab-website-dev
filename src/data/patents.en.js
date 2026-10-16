@@ -22,6 +22,42 @@ export const MOCK_PATENTS = [
     tags: [],
     catagory: [],
     url: ""
+  },
+  {
+    id: 3,
+    title: "Method and Device for Converting Sound Energy to Electrical Energy",
+    abstract: " ",
+    authors: ["Tsung-Yu Huang", "Wei-Zhi Weng"],
+    publishDate: "2026",
+    journal: "Assignee: Ming Chi University of Technology, Republic of China (Taiwan), Invention Patent I932276",
+    info: ["Granted"],
+    tags: [],
+    catagory: [],
+    url: ""
+  },
+  {
+    id: 4,
+    title: "Surface Plasmon Nanolaser Device",
+    abstract: " ",
+    authors: ["Tsung-Yu Huang", "Jun-Yu Wu"],
+    publishDate: "2026",
+    journal: "Assignee: Ming Chi University of Technology, Republic of China (Taiwan), Invention Patent I942267",
+    info: ["Granted"],
+    tags: [],
+    catagory: [],
+    url: ""
+  },
+  {
+    id: 5,
+    title: "Hydrogen Production Reaction Apparatus",
+    abstract: " ",
+    authors: ["Jung-Ming Wu", "Tsung-Yu Huang", "Tze-Hsuan Chan"],
+    publishDate: "2026",
+    journal: "Assignee: Ming Chi University of Technology, Republic of China (Taiwan), Invention Patent I942120",
+    info: ["Granted"],
+    tags: [],
+    catagory: [],
+    url: ""
   }
 ];
 
