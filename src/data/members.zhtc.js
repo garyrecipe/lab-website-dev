@@ -53,11 +53,6 @@ export const CURRENT_MEMBERS = {
       title: "研究助理",
     },
     {
-      name: "蕭至恩",
-      photo: "./images/members/m19.jpg",
-      title: "大三工讀生",
-    },
-    {
       name: "胡仁聚",
       photo: "./images/members/m13.jpg",
       title: "研究助理",
@@ -71,16 +66,6 @@ export const CURRENT_MEMBERS = {
     },
   ],
   masterStudents: [
-    {
-      name: "詹子萱",
-      photo: "./images/members/m2.jpg",
-      year: "二年級"
-    },
-    {
-      name: "陳冠文",
-      photo: "./images/members/m11.jpg",
-      year: "二年級"
-    },
     {
       name: "項品堯",
       photo: "./images/members/m9.jpg",
@@ -240,6 +225,20 @@ export const ALUMNI = [
     degree: "",
     company: "國立成功大學材料科學與工程學系",
     position: "博士班一年級"
+  },
+  {
+    name: "詹子萱",
+    graduationYear: 2026,
+    degree: "",
+    company: "",
+    position: ""
+  },
+  {
+    name: "陳冠文",
+    graduationYear: 2026,
+    degree: "",
+    company: "",
+    position: ""
   }
 ];
 

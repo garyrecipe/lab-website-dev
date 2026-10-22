@@ -53,14 +53,9 @@ export const CURRENT_MEMBERS = {
       title: "Research Assistant",
     },
     {
-      name: "Hsiao, Chih-En",
-      photo: "./images/members/m19.jpg",
-      title: "Internship",
-    },
-    {
       name: "Hu, Ren-Ju",
       photo: "./images/members/m13.jpg",
-      title: "Internship",
+      title: "Research Assistant",
     },
   ],
   phdStudents: [
@@ -71,16 +66,6 @@ export const CURRENT_MEMBERS = {
     },
   ],
   masterStudents: [
-    {
-      name: "Chan, Tzu-Hsuan",
-      photo: "./images/members/m2.jpg",
-      year: "Second Year"
-    },
-    {
-      name: "Chen, Guan-Wen",
-      photo: "./images/members/m11.jpg",
-      year: "Second Year"
-    },
     {
       name: "Hsiang, Pin-Yao",
       photo: "./images/members/m9.jpg",
@@ -240,6 +225,20 @@ export const ALUMNI = [
     degree: "",
     company: "Ph D program at MSE of NCKU",
     position: "Freshman Year"
+  },
+  {
+    name: "Chan, Tzu-Hsuan",
+    graduationYear: 2026,
+    degree: "",
+    company: "",
+    position: ""
+  },
+  {
+    name: "Chen, Guan-Wen",
+    graduationYear: 2026,
+    degree: "",
+    company: "",
+    position: ""
   }
 ];
 
