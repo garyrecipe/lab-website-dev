@@ -57,6 +57,11 @@ export const CURRENT_MEMBERS = {
       photo: "./images/members/m13.jpg",
       title: "研究助理",
     },
+    {
+      name: "賴彥丞",
+      photo: "./images/members/m28.jpg",
+      title: "大三工讀生",
+    },
   ],
   phdStudents: [
     {
@@ -87,6 +92,11 @@ export const CURRENT_MEMBERS = {
       year: "二年級"
     },
     {
+      name: "駱安琪",
+      photo: "./images/members/m29.jpg",
+      year: "二年級"
+    },
+    {
       name: "黃程佑",
       photo: "./images/members/m16.jpg",
       year: "一年級"
@@ -114,6 +124,11 @@ export const CURRENT_MEMBERS = {
     {
       name: "高佑齊",
       photo: "./images/members/m26.jpg",
+      title: "一年級",
+    },
+    {
+      name: "張乃文",
+      photo: "./images/members/m30.jpg",
       title: "一年級",
     }
   ],

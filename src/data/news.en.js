@@ -69,6 +69,12 @@ export const NEWS_LIST = [
     'images/news/n13-2.jpg',
     'images/news/n13-3.jpg'
   ]
+  },
+  {
+    date: 'November 4, 2026',
+    title: 'Congratulations! Kai-Lin Hsiao, a co-supervised Ph.D. student from the Metamaterials and Meta-Devices Laboratory, has received the Outstanding Poster Presentation Award at IUMRS-ICA 2026!',
+    content: 'Our laboratory’s co-supervised Ph.D. student, Kai-Lin Hsiao, received the Outstanding Poster Presentation Award at IUMRS-ICA 2026 for the research titled "High-Entropy Metal–Organic Frameworks for Efficient Bifunctional Water Splitting Electrocatalysis."',
+    image: 'images/news/n15.jpg'
   }
 ]; 
 

@@ -93,6 +93,12 @@ export const NEWS_LIST = [
     'images/news/n14-3.jpg',
     'images/news/n14-4.jpg'
   ]
+  },
+  {
+    date: 'November 4, 2026',
+    title: '狂賀！超材料和超元件實驗室共指博士班學生蕭楷霖榮獲IUMRS-ICA2026海報發表傑出獎',
+    content: '本實驗室共指博士班學生蕭楷霖以"High-Entropy Metal–Organic Frameworks for Efficient Bifunctional Water Splitting Electrocatalysis"獲得IUMRS-ICA2026海報發表傑出獎',
+    image: 'images/news/n15.jpg'
   }
 ]; 
 
